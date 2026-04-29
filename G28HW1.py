@@ -9,7 +9,6 @@ import time
 
 
 def fair_fft_sequential(Ka, Kb, points):
-    #if partition is empty, return empty list
     if not points:
         return []
     
@@ -23,7 +22,6 @@ def fair_fft_sequential(Ka, Kb, points):
     
     centers = []
     is_center = np.zeros(n, dtype=bool) 
-    min_distances = np.full(n, np.inf)
 
     idx = int(np.random.uniform(n))
     centers.append(idx)
@@ -34,45 +32,48 @@ def fair_fft_sequential(Ka, Kb, points):
     else:
         remKb -= 1
 
-    min_distances = np.sum((coords - coords[idx]) ** 2, axis=1)#fast np implementation of euclidean distance without sqrt
-
+    min_distances = np.sum((coords - coords[idx]) ** 2, axis=1)#fast with np and no need to sqrt since we only compare distances
+    #using total num (ka + kb) so we always return the desired num of centers even if for one class we do not have enough
     while len(centers) < target_total and len(centers) < n:
-        sorted_indices = np.argsort(min_distances)[::-1]#slow part, maybe wee can do something just getting the max without sorting the entire array
-        chosen_idx = None #used to know when to fill up in case we don't have enough points of one class
         
-        if remKa > 0 or remKb > 0:
-            for candidate_idx in sorted_indices:
-                if is_center[candidate_idx]: 
-                    continue 
+        #mask already selected centers with neg distances 
+        valid_distances = np.where(is_center, -1.0, min_distances)
+        chosen_idx = -1
+        
+        if remKa > 0 and remKb > 0:
+            chosen_idx = np.argmax(valid_distances)
+            
+        elif remKa > 0:
+            mask_A = (labels == 'A') & (~is_center)
+            dists_A = np.where(mask_A, min_distances, -1.0)
+            chosen_idx = np.argmax(dists_A)
+            
+            if dists_A[chosen_idx] == -1.0:
+                chosen_idx = np.argmax(valid_distances)
                 
-                label = labels[candidate_idx]
-                if (label == 'A' and remKa > 0) or (label != 'A' and remKb > 0):
-                    chosen_idx = candidate_idx
-                    if label == 'A':
-                        remKa -= 1
-                    else:
-                        remKb -= 1
-                    break
+        elif remKb > 0:
+            mask_B = (labels != 'A') & (~is_center)
+            dists_B = np.where(mask_B, min_distances, -1.0)
+            chosen_idx = np.argmax(dists_B)
+            
+
+            if dists_B[chosen_idx] == -1.0:
+                chosen_idx = np.argmax(valid_distances)
         
-        # adding extra points if we didn't have enough points of one class
-        if chosen_idx is None:
-            for candidate_idx in sorted_indices:
-                if not is_center[candidate_idx]:
-                    chosen_idx = candidate_idx
-                    break
-                    
-        # Lock in the choice
+        label = labels[chosen_idx]
+        if label == 'A':
+            remKa -= 1
+        else:
+            remKb -= 1
+            
         centers.append(chosen_idx)
         is_center[chosen_idx] = True
         
-        
         new_center = coords[chosen_idx]
-        #fast np implementation instead of loop
-        dists_to_new = np.sum((coords - new_center) ** 2, axis=1)#fast np implementation of euclidean distance without sqrt
+        dists_to_new = np.sum((coords - new_center) ** 2, axis=1)
         min_distances = np.minimum(min_distances, dists_to_new)
 
-    centers_tuples = [points[i] for i in centers]
-    return centers_tuples
+    return [points[i] for i in centers]
 
 
 
@@ -93,40 +94,15 @@ def compute_objective(rdd, centers):
     return rdd.map(min_dist_to_centers).max()
 
 def map_reduce_fair_fft(rdd, Ka, Kb, L):
-
-    initial_partition_sizes = rdd.mapPartitions(lambda it: [sum(1 for _ in it)]).collect()
-    print("\n" + "="*50)
-    print(f"[ROUND 1 INPUT] Points per partition: {initial_partition_sizes}")
-    print(f"[ROUND 1 INPUT] Total points distributed: {sum(initial_partition_sizes)}")
-    print("="*50 + "\n")
-
-    #ROUND 1
-    # mapPartitions hands an iterator of the partition's data directly to your function.
-    # We cast that iterator to a list, extract the coreset, and return it.
-    # Spark flattens the returned lists back into a unified RDD of tuples.
+    # R 1: fairfft on local partitions to get coresets
     local_coresets_rdd = rdd.mapPartitions(
         lambda partition_iterator: fair_fft_sequential(Ka, Kb, list(partition_iterator))
     )
 
-    coreset_partition_sizes = local_coresets_rdd.mapPartitions(lambda it: [sum(1 for _ in it)]).collect()
-    print("\n" + "="*50)
-    print(f"[ROUND 1 OUTPUT] Coreset points returned per partition: {coreset_partition_sizes}")
-    print(f"[ROUND 1 OUTPUT] Total points entering Reducer: {sum(coreset_partition_sizes)}")
-    print("="*50 + "\n")
-    #------------
-    #ROUND 2
-    print("[ROUND 2] Starting global aggregation on single node...")
-    # coalesce(1) forces all local coresets onto a single worker node.
-    # glom() packages them into a single list.
-    # map() runs the sequential algorithm one final time.
-    # collect()[0] pulls the final answer out of the RDD and back to the driver node.
-    final_centers = local_coresets_rdd.coalesce(1).glom().map(
-            lambda global_list: fair_fft_sequential(Ka, Kb, global_list)
-        ).collect()[0]
+    # R 2: collect all local coresets to the driver
+    global_coreset = local_coresets_rdd.collect()
     
-    print("\n" + "="*50)
-    print(f"[FINAL OUTPUT] Extracted exactly {len(final_centers)} global centers.")
-    print("="*50 + "\n")
+    final_centers = fair_fft_sequential(Ka, Kb, global_coreset)
 
     return final_centers
 
