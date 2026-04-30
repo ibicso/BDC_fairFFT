@@ -153,13 +153,15 @@ def main():
     objective = compute_objective(rdd, final_centers)
     
     
-    print(f"File path = {data_path}, KA = {Ka}, KB = {Kb}, L = {L}")
+    file_name = os.path.basename(data_path)
+    
+    print(f"File path = {file_name}, KA = {Ka}, KB = {Kb}, L = {L}")
     print(f"N = {N}, NA = {NA}, NB = {NB}")
     
     for center in final_centers:
-        coords = [float(val) for val in center[:-1]]
+        coords_str = "[" + ",".join(str(float(val)) for val in center[:-1]) + "]"
         label = center[-1]
-        print(f"Center = {coords} Label = {label}")
+        print(f"Center = {coords_str} Label = {label}")
         
     print(f"Objective function = {objective}")
     print(f"Running time of MRFairFFT = {running_time_ms} ms")
