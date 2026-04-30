@@ -1,0 +1,368 @@
+=== FILE: ArtificialN130kD7k10_16.log ===
+File path = ArtificialN130kD7K10.csv, KA = 8, KB = 2, L = 16
+N = 130000, NA = 100000, NB = 30000
+Center = [100.183237,-0.103889,-0.167304,-0.102789,0.125715,0.03653,0.029628] Label = A
+Center = [-8.919555,108.124292,111.745217,0.253218,-3.213212,2.437455,-4.79845] Label = B
+Center = [-14.894787,1.09942,-2.503046,109.339966,-2.844038,6.109215,1.193751] Label = B
+Center = [0.142703,99.870546,-0.187253,-0.166631,0.125048,-0.153475,0.054516] Label = A
+Center = [100.1822,99.819484,99.830423,-0.054724,0.085272,0.129575,0.093529] Label = A
+Center = [0.186521,-0.183042,99.844514,-0.184418,0.022286,-0.133474,0.060163] Label = A
+Center = [100.188012,0.174611,-0.117115,100.188957,-0.049696,-0.103366,0.09391] Label = A
+Center = [-0.081977,-0.178667,-0.183687,0.102578,-0.010962,0.045394,0.126336] Label = A
+Center = [100.185295,100.130223,-0.183565,-0.055278,-0.147736,-0.168158,0.116766] Label = A
+Center = [100.187466,-0.172319,100.174103,0.002602,0.159881,-0.159333,0.068145] Label = A
+Objective function = 37.76468409574191
+Running time of MRFairFFT = 235 ms
+=== FILE: ArtificialN130kD7k10_2.log ===
+File path = ArtificialN130kD7K10.csv, KA = 8, KB = 2, L = 16
+N = 130000, NA = 100000, NB = 30000
+Center = [100.166262,-0.094548,-0.185179,-0.16748,-0.033426,-0.140977,0.115837] Label = A
+Center = [-4.602911,109.430993,107.714769,-12.425827,-2.514565,-2.509144,1.922275] Label = B
+Center = [-14.894787,1.09942,-2.503046,109.339966,-2.844038,6.109215,1.193751] Label = B
+Center = [-0.1468,-0.187776,100.056602,0.082286,-0.128144,0.176134,-0.002859] Label = A
+Center = [0.006094,100.147981,-0.188741,0.060425,-0.100273,0.094987,-0.179543] Label = A
+Center = [100.188391,100.130139,99.958784,0.04861,0.11843,0.026428,0.069478] Label = A
+Center = [100.18216,0.148378,-0.040392,100.136478,-0.039439,-0.176838,-0.085983] Label = A
+Center = [100.177215,-0.165741,100.073124,-0.002324,-0.113347,-0.054776,0.102693] Label = A
+Center = [-0.11275,-0.17444,-0.18067,-0.048066,-0.081506,0.05753,-0.180438] Label = A
+Center = [100.18794,100.128713,-0.164644,0.15131,-0.141303,-0.019797,0.007361] Label = A
+Objective function = 37.76468409574191
+Running time of MRFairFFT = 821 ms
+=== FILE: ArtificialN130kD7k10_4.log ===
+File path = ArtificialN130kD7K10.csv, KA = 8, KB = 2, L = 16
+N = 130000, NA = 100000, NB = 30000
+Center = [-0.179818,100.178825,-0.188792,-0.005316,-0.008632,-0.140274,0.135267] Label = A
+Center = [111.856363,-13.479656,101.346454,0.037465,-5.133633,-5.685127,-2.928768] Label = B
+Center = [-1.841927,-13.566858,-6.268806,110.901587,1.055404,-2.911015,-1.639783] Label = B
+Center = [99.924987,100.186821,100.046231,-0.116401,0.053184,-0.185844,-0.111352] Label = A
+Center = [-0.187257,8.5e-05,100.185672,0.156405,0.086209,0.069463,-0.038714] Label = A
+Center = [100.184073,0.155984,0.135085,99.939369,0.181397,0.109548,-0.11399] Label = A
+Center = [-0.17901,-0.18196,-0.175403,-0.020438,0.10536,-0.131505,0.152528] Label = A
+Center = [100.185295,100.130223,-0.183565,-0.055278,-0.147736,-0.168158,0.116766] Label = A
+Center = [100.161437,-0.037469,-0.112075,-0.185376,-0.175031,-0.170731,-0.112926] Label = A
+Center = [-0.184608,100.131475,100.15038,0.089321,-0.001699,0.04963,-0.126733] Label = A
+Objective function = 38.005170721444166
+Running time of MRFairFFT = 505 ms
+File path = ArtificialN130kD7K10.csv, KA = 8, KB = 2, L = 16
+N = 130000, NA = 100000, NB = 30000
+Center = [-0.001992,0.065008,-0.037778,-0.187735,0.11339,-0.065077,-0.129613] Label = A
+Center = [106.575675,111.547121,110.771853,6.120225,0.381254,-4.785472,-6.511899] Label = B
+Center = [111.989473,6.463157,0.803482,113.311537,-1.761526,1.305607,4.139606] Label = B
+Center = [99.821978,-0.185898,99.823481,-0.107496,0.185945,0.031542,0.08762] Label = A
+Center = [100.030707,99.919564,-0.187928,-0.168884,0.150722,0.023837,0.091125] Label = A
+Center = [-0.185453,99.849227,99.91066,-0.156723,-0.000373,0.000328,0.127288] Label = A
+Center = [-0.126821,0.041953,0.088967,100.188896,-0.04471,0.015809,0.166854] Label = A
+Center = [-0.184148,100.184597,-0.18657,-0.064033,-0.103311,-0.009317,-0.17629] Label = A
+Center = [-0.188554,-0.180823,100.176266,0.099154,-0.06254,0.054933,-0.114285] Label = A
+Center = [100.166262,-0.094548,-0.185179,-0.16748,-0.033426,-0.140977,0.115837] Label = A
+Objective function = 39.12166187124107
+Running time of MRFairFFT = 332 ms
+File path = ArtificialN130kD7K10.csv, KA = 8, KB = 2, L = 16
+N = 130000, NA = 100000, NB = 30000
+Center = [-0.162326,99.822579,0.110135,0.157745,0.103756,0.18151,-0.176861] Label = A
+Center = [113.514832,-12.876863,104.046426,-0.084399,1.153439,-0.222982,-3.120662] Label = B
+Center = [100.427111,-4.230424,-12.0793,112.485415,2.973515,-6.001831,-0.078009] Label = B
+Center = [-0.187739,0.127828,99.873041,-0.024937,0.034031,0.077611,0.170235] Label = A
+Center = [99.841424,100.188285,99.939084,0.099836,-0.167365,-0.160498,-0.069433] Label = A
+Center = [99.919416,0.103203,-0.186794,0.188218,0.128406,0.080071,0.139564] Label = A
+Center = [-0.172331,0.139624,0.17103,99.816393,-0.169956,0.117022,-0.051852] Label = A
+Center = [100.140925,100.1853,-0.180571,0.16767,0.06494,0.025237,0.097346] Label = A
+Center = [-0.188523,100.14255,100.153268,0.132461,-0.065004,0.045827,-0.123066] Label = A
+Center = [-0.145754,-0.177126,-0.117514,-0.141924,0.15983,0.03629,0.12053] Label = A
+Objective function = 37.895905333487626
+Running time of MRFairFFT = 459 ms
+=== FILE: ArtificialN130kD7k10_8.log ===
+File path = ArtificialN130kD7K10.csv, KA = 8, KB = 2, L = 16
+N = 130000, NA = 100000, NB = 30000
+Center = [100.1054,100.18739,100.10914,0.10839,-0.052409,0.094982,-0.129363] Label = A
+Center = [-8.809564,-9.948311,-10.441081,101.893488,3.950623,-7.786624,-2.117196] Label = B
+Center = [-14.569633,-5.577345,106.195456,-2.51453,-5.57946,1.93702,6.100977] Label = B
+Center = [99.869469,-0.182431,-0.188687,-0.161476,-0.104789,-0.103292,0.144742] Label = A
+Center = [-0.184148,100.184597,-0.18657,-0.064033,-0.103311,-0.009317,-0.17629] Label = A
+Center = [100.187466,-0.172319,100.174103,0.002602,0.159881,-0.159333,0.068145] Label = A
+Center = [99.952829,0.009996,0.14167,100.188661,0.132819,0.152404,0.12096] Label = A
+Center = [100.175809,100.089799,-0.155659,-0.125334,0.127207,0.188853,-0.160863] Label = A
+Center = [-0.154214,100.159598,100.167452,0.102396,-0.113948,0.002827,0.050237] Label = A
+Center = [-0.182583,-0.162701,-0.154083,-0.005589,-0.120763,0.124639,0.135052] Label = A
+Objective function = 38.486598880997256
+Running time of MRFairFFT = 367 ms
+=== FILE: ArtificialN130mD7K10_16.log ===
+Traceback (most recent call last):
+  File "/home/group28/G28HW1.py", line 171, in <module>
+    main()
+  File "/home/group28/G28HW1.py", line 149, in main
+    final_centers = map_reduce_fair_fft(rdd, Ka, Kb, L)
+  File "/home/group28/G28HW1.py", line 103, in map_reduce_fair_fft
+    global_coreset = local_coresets_rdd.collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 1833, in collect
+  File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+  File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 326, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe.
+: org.apache.spark.SparkException: Job aborted due to stage failure: ResultStage 5 (collect at /home/group28/G28HW1.py:103) has failed the maximum allowable number of times: 4. Most recent failure reason:
+org.apache.spark.shuffle.FetchFailedException
+	at org.apache.spark.errors.SparkCoreErrors$.fetchFailedError(SparkCoreErrors.scala:437)
+	at org.apache.spark.storage.ShuffleBlockFetcherIterator.throwFetchFailedException(ShuffleBlockFetcherIterator.scala:1233)
+	at org.apache.spark.storage.ShuffleBlockFetcherIterator.next(ShuffleBlockFetcherIterator.scala:971)
+	at org.apache.spark.storage.ShuffleBlockFetcherIterator.next(ShuffleBlockFetcherIterator.scala:86)
+	at org.apache.spark.util.CompletionIterator.next(CompletionIterator.scala:29)
+	at scala.collection.Iterator$$anon$11.nextCur(Iterator.scala:486)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:492)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.util.CompletionIterator.hasNext(CompletionIterator.scala:31)
+	at org.apache.spark.InterruptibleIterator.hasNext(InterruptibleIterator.scala:37)
+	at scala.collection.Iterator$$anon$11.hasNext(Iterator.scala:490)
+	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+	at org.apache.spark.storage.memory.MemoryStore.putIterator(MemoryStore.scala:223)
+	at org.apache.spark.storage.memory.MemoryStore.putIteratorAsBytes(MemoryStore.scala:352)
+	at org.apache.spark.storage.BlockManager.$anonfun$doPutIterator$1(BlockManager.scala:1614)
+	at org.apache.spark.storage.BlockManager.org$apache$spark$storage$BlockManager$$doPut(BlockManager.scala:1524)
+	at org.apache.spark.storage.BlockManager.doPutIterator(BlockManager.scala:1588)
+	at org.apache.spark.storage.BlockManager.getOrElseUpdate(BlockManager.scala:1389)
+	at org.apache.spark.storage.BlockManager.getOrElseUpdateRDDBlock(BlockManager.scala:1343)
+	at org.apache.spark.rdd.RDD.getOrCompute(RDD.scala:379)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:329)
+	at org.apache.spark.api.python.PythonRDD.compute(PythonRDD.scala:67)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:367)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:331)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.apache.spark.ExecutorDeadException: [INTERNAL_ERROR_NETWORK] The relative remote executor(Id: 20), which maintains the block data to fetch is dead.
+	at org.apache.spark.network.netty.NettyBlockTransferService$$anon$2.createAndStart(NettyBlockTransferService.scala:141)
+	at org.apache.spark.network.shuffle.RetryingBlockTransferor.transferAllOutstanding(RetryingBlockTransferor.java:173)
+	at org.apache.spark.network.shuffle.RetryingBlockTransferor.start(RetryingBlockTransferor.java:152)
+	at org.apache.spark.network.netty.NettyBlockTransferService.fetchBlocks(NettyBlockTransferService.scala:151)
+	at org.apache.spark.storage.ShuffleBlockFetcherIterator.sendRequest(ShuffleBlockFetcherIterator.scala:374)
+	at org.apache.spark.storage.ShuffleBlockFetcherIterator.send$1(ShuffleBlockFetcherIterator.scala:1203)
+	at org.apache.spark.storage.ShuffleBlockFetcherIterator.fetchUpToMaxBytes(ShuffleBlockFetcherIterator.scala:1195)
+	at org.apache.spark.storage.ShuffleBlockFetcherIterator.next(ShuffleBlockFetcherIterator.scala:1067)
+	... 32 more
+
+	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)
+	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)
+	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskCompletion(DAGScheduler.scala:2031)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3054)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2398)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2419)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2438)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2463)
+	at org.apache.spark.rdd.RDD.$anonfun$collect$1(RDD.scala:1049)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:410)
+	at org.apache.spark.rdd.RDD.collect(RDD.scala:1048)
+	at org.apache.spark.api.python.PythonRDD$.collectAndServe(PythonRDD.scala:195)
+	at org.apache.spark.api.python.PythonRDD.collectAndServe(PythonRDD.scala)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+ERROR:root:Exception while sending command.
+Traceback (most recent call last):
+  File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/clientserver.py", line 511, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/opt/python-3.10/lib/python3.10/socket.py", line 705, in readinto
+    return self._sock.recv_into(b)
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/context.py", line 381, in signal_handler
+    self.cancelAllJobs()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/context.py", line 2446, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+  File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+    return_value = get_return_value(
+  File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o31.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/clientserver.py", line 539, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+Traceback (most recent call last):
+  File "/home/group28/G28HW1.py", line 171, in <module>
+    main()
+  File "/home/group28/G28HW1.py", line 149, in main
+    final_centers = map_reduce_fair_fft(rdd, Ka, Kb, L)
+  File "/home/group28/G28HW1.py", line 103, in map_reduce_fair_fft
+    global_coreset = local_coresets_rdd.collect()
+  File "/opt/spark/python/lib/pyspark.zip/pyspark/rdd.py", line 1833, in collect
+  File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+  File "/opt/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/protocol.py", line 334, in get_return_value
+py4j.protocol.Py4JError: An error occurred while calling z:org.apache.spark.api.python.PythonRDD.collectAndServe
+=== FILE: ArtificialN1.3mD7K10_16.log ===
+File path = ArtificialN1.3mD7K10.csv, KA = 8, KB = 2, L = 16
+N = 1300000, NA = 1000000, NB = 300000
+Center = [-0.057932,-0.188805,99.890813,-0.053384,0.046037,-0.023754,-0.182204] Label = A
+Center = [112.040136,-0.146678,-8.403422,109.57579,-6.049142,-2.9937,-6.698265] Label = B
+Center = [97.560283,113.537579,6.547506,-9.818062,-3.0701,5.249886,4.059471] Label = B
+Center = [-0.178845,-0.158916,0.172601,99.908103,0.140467,0.143868,0.187289] Label = A
+Center = [99.823751,0.084132,0.161496,-0.185966,0.109488,0.184766,0.062757] Label = A
+Center = [0.042914,100.188864,100.171624,-0.049182,0.113418,-0.115235,-0.018117] Label = A
+Center = [100.152674,-0.158271,100.188818,0.049657,-0.04435,-0.021055,-0.173973] Label = A
+Center = [-0.187833,-0.071535,-0.15838,-0.161531,0.082425,0.146871,0.033014] Label = A
+Center = [-0.186301,99.822469,-0.153199,0.145241,0.095378,-0.167535,-0.058013] Label = A
+Center = [99.819812,99.811063,100.188917,0.178375,0.173422,-0.0794,0.159482] Label = A
+Objective function = 38.866618130712794
+Running time of MRFairFFT = 347 ms
+=== FILE: ArtificialN13mD7K10_16.log ===
+File path = ArtificialN13mD7K10.csv, KA = 8, KB = 2, L = 16
+N = 13000000, NA = 10000000, NB = 3000000
+Center = [92.641602,-5.622087,2.449381,94.66219,-4.151416,0.840581,-3.628101] Label = B
+Center = [-7.48913,108.564793,109.385984,-13.322365,1.055342,-0.48441,0.319448] Label = B
+Center = [100.160908,100.179448,-0.099588,-0.18877,0.113249,0.17751,0.081999] Label = A
+Center = [100.164234,0.151647,100.187272,-0.184458,0.1276,0.031112,0.025573] Label = A
+Center = [-0.186132,0.133998,0.12963,-0.188406,0.125255,-0.181242,-0.054607] Label = A
+Center = [0.023761,-0.13431,100.18886,0.166766,-0.163925,-0.021159,0.121113] Label = A
+Center = [-0.024275,100.188792,-0.121397,0.177908,0.128272,0.176642,-0.09216] Label = A
+Center = [99.872118,100.188939,100.08934,0.159948,-0.149918,-0.142657,0.155855] Label = A
+Center = [100.139616,0.15961,-0.125704,-0.187608,0.145503,-0.119164,0.0483] Label = A
+Center = [-0.186215,0.171193,-0.081641,100.096081,0.183625,-0.015686,0.176691] Label = A
+Objective function = 39.618530698833304
+Running time of MRFairFFT = 4514 ms
+File path = ArtificialN13mD7K10.csv, KA = 8, KB = 2, L = 16
+N = 13000000, NA = 10000000, NB = 3000000
+Center = [99.98335,0.155238,0.035091,99.835264,0.111776,0.042225,0.098493] Label = A
+Center = [-9.098231,112.418312,109.450917,-6.416159,3.894973,1.004791,1.895221] Label = B
+Center = [-12.037661,-3.6042,-0.460399,-14.819507,-1.858539,-1.529228,-2.042486] Label = B
+Center = [99.940177,-0.036459,100.188641,-0.187573,-0.184671,0.0773,-0.036148] Label = A
+Center = [100.078359,100.188857,-0.148769,-0.188759,-0.004129,0.025425,-0.125216] Label = A
+Center = [-0.188909,99.953969,0.069381,0.100245,0.129109,-0.170127,0.17965] Label = A
+Center = [100.117823,100.188919,100.175884,0.143947,0.141489,0.170708,0.149605] Label = A
+Center = [-0.188758,-0.024185,-0.172206,100.112647,-0.143112,-0.142795,-0.168519] Label = A
+Center = [-0.188761,0.013722,99.84523,0.171336,0.140851,0.131336,-0.183065] Label = A
+Center = [100.086248,-0.16613,-0.139381,-0.188944,-0.039826,-0.184715,-0.065264] Label = A
+Objective function = 39.413580726769304
+Running time of MRFairFFT = 2363 ms
+=== FILE: ArtificialN1.3mD7K10_2.log ===
+File path = ArtificialN1.3mD7K10.csv, KA = 8, KB = 2, L = 16
+N = 1300000, NA = 1000000, NB = 300000
+Center = [100.188679,100.059841,100.148774,-0.013796,0.182585,0.068784,-0.059527] Label = A
+Center = [-8.064485,-10.669902,-6.595698,108.334319,-3.030539,0.258298,5.922022] Label = B
+Center = [0.64038,111.785383,-5.06794,-14.232956,-3.694425,1.123712,-0.363359] Label = B
+Center = [-0.187353,-0.188582,100.148023,0.075379,0.134277,0.072013,0.142423] Label = A
+Center = [100.101608,-0.183664,-0.18853,-0.114857,0.106557,0.091999,0.097422] Label = A
+Center = [-0.175659,100.171854,100.126171,0.046042,0.168165,-0.064855,0.037743] Label = A
+Center = [100.187604,100.171599,-0.188837,0.123594,-0.131706,0.046916,0.085993] Label = A
+Center = [100.166041,0.186193,0.126745,100.188899,0.069968,0.042102,-0.120995] Label = A
+Center = [-0.163797,-0.178112,-0.131665,-0.171937,-0.175244,-0.000523,0.096688] Label = A
+Center = [100.187798,-0.188854,100.14268,0.093939,0.0287,0.135689,0.155733] Label = A
+Objective function = 39.220138132468946
+Running time of MRFairFFT = 1924 ms
+=== FILE: ArtificialN13mD7K10_2.log ===
+File path = ArtificialN13mD7K10.csv, KA = 8, KB = 2, L = 16
+N = 13000000, NA = 10000000, NB = 3000000
+Center = [100.177501,-0.151622,-0.188851,-0.179816,-0.025987,-0.080129,0.096877] Label = A
+Center = [-9.084889,114.867919,108.305621,0.201129,2.962943,1.420435,-2.811123] Label = B
+Center = [-14.786329,2.5069,-0.016582,112.030805,1.945602,-1.990487,2.998043] Label = B
+Center = [0.167457,-0.186393,99.826278,0.130569,-0.134873,-0.024536,0.114933] Label = A
+Center = [100.188173,99.818877,99.873151,-0.005158,-0.097934,-0.175984,0.135122] Label = A
+Center = [0.097549,99.824568,-0.188087,0.067334,-0.121537,-0.164621,0.176009] Label = A
+Center = [99.909145,-0.173951,0.15835,100.188933,0.185043,-0.106661,0.14971] Label = A
+Center = [100.163352,100.177462,-0.18818,-0.180951,0.021226,0.169562,-0.095149] Label = A
+Center = [0.023966,-0.186635,-0.185224,-0.002848,0.135109,-0.177365,-0.110391] Label = A
+Center = [100.180903,-0.188117,100.157989,0.159181,-0.050563,0.170028,-0.098361] Label = A
+Objective function = 39.33373631456705
+Running time of MRFairFFT = 16667 ms
+=== FILE: ArtificialN1.3mD7K10_4.log ===
+File path = ArtificialN1.3mD7K10.csv, KA = 8, KB = 2, L = 16
+N = 1300000, NA = 1000000, NB = 300000
+Center = [99.916853,-0.069089,99.954887,-0.0194,-0.175287,-0.042318,0.153414] Label = A
+Center = [-11.604198,112.36101,-8.965944,-3.212696,-2.495623,-1.555463,2.956561] Label = B
+Center = [-4.456925,-12.49915,-4.183415,112.71816,1.711592,0.146881,-2.661201] Label = B
+Center = [0.168685,-0.170111,0.059892,-0.18488,0.160211,0.026395,0.037133] Label = A
+Center = [100.188809,99.813947,0.155008,0.054172,0.009814,-0.005483,-0.115508] Label = A
+Center = [0.182365,99.82742,100.185874,0.000731,0.168127,-0.029426,-0.085953] Label = A
+Center = [100.186549,0.128021,0.144725,99.850362,0.065248,-0.051931,0.02911] Label = A
+Center = [-0.186356,-0.188736,100.115135,0.160886,-0.003975,0.062455,-0.043523] Label = A
+Center = [100.18802,100.138421,100.181357,-0.039575,-0.144957,0.16698,-0.148543] Label = A
+Center = [100.188757,-0.169437,-0.184232,-0.145219,-0.012032,0.083743,0.0332] Label = A
+Objective function = 39.000155028877764
+Running time of MRFairFFT = 1053 ms
+=== FILE: ArtificialN13mD7K10_4.log ===
+File path = ArtificialN13mD7K10.csv, KA = 8, KB = 2, L = 16
+N = 13000000, NA = 10000000, NB = 3000000
+Center = [100.185535,99.853225,-0.188734,-0.063123,-0.130805,-0.148383,-0.048602] Label = A
+Center = [-13.342315,-9.998412,3.714171,109.900265,-0.10204,2.456392,1.799803] Label = B
+Center = [0.597909,-0.611434,115.568416,-10.715675,-3.819627,-2.948483,2.079475] Label = B
+Center = [100.188195,0.160607,-0.154739,99.871598,-0.132013,-0.12166,-0.144625] Label = A
+Center = [0.183976,0.179451,-0.174153,-0.188373,0.113977,-0.104446,-0.129976] Label = A
+Center = [-0.115368,100.187486,99.813609,0.164761,0.09696,0.107479,-0.138087] Label = A
+Center = [100.185961,0.019062,99.817657,0.175663,0.18828,0.127427,0.155625] Label = A
+Center = [100.160107,100.188696,100.163346,-0.139009,-0.021006,-0.127999,-0.057324] Label = A
+Center = [-0.188683,100.184947,-0.188824,-0.177012,0.046528,0.162414,-0.16029] Label = A
+Center = [100.185508,-0.188525,-0.181875,-0.177763,0.092195,-0.123552,0.057792] Label = A
+Objective function = 39.48771774845358
+Running time of MRFairFFT = 8298 ms
+=== FILE: ArtificialN1.3mD7K10_8.log ===
+File path = ArtificialN1.3mD7K10.csv, KA = 8, KB = 2, L = 16
+N = 1300000, NA = 1000000, NB = 300000
+Center = [100.183719,100.168799,100.060448,-0.118869,0.129208,0.079695,0.083425] Label = A
+Center = [-7.905946,-9.83261,-11.585945,108.11003,2.893331,-3.41313,3.868632] Label = B
+Center = [-12.145955,101.277513,-13.986183,-6.193882,-1.694074,-0.191623,-1.318056] Label = B
+Center = [-0.187605,-0.188982,99.841012,0.136808,-0.004314,-0.005803,-0.056558] Label = A
+Center = [100.188324,-0.180288,-0.180031,0.023555,0.095568,-0.091581,-0.024859] Label = A
+Center = [-0.18861,100.171297,100.14951,-0.122848,-0.144592,0.002884,0.084254] Label = A
+Center = [100.182519,-0.18855,100.170086,-0.128886,0.169999,-0.135454,0.006768] Label = A
+Center = [100.164074,100.091665,-0.188954,0.032147,0.034558,-0.080202,-0.086781] Label = A
+Center = [99.981591,0.028625,0.158306,100.188859,-0.045938,0.18753,0.168983] Label = A
+Center = [0.006677,-0.185586,-0.188877,-0.008968,-0.089531,-0.102254,0.148111] Label = A
+Objective function = 38.91490358692991
+Running time of MRFairFFT = 586 ms
+=== FILE: ArtificialN13mD7K10_8.log ===
+File path = ArtificialN13mD7K10.csv, KA = 8, KB = 2, L = 16
+N = 13000000, NA = 10000000, NB = 3000000
+Center = [-0.162365,100.130778,-0.188917,-0.167385,0.007515,-0.082798,0.034665] Label = A
+Center = [111.164932,-7.854677,-1.385024,113.720058,-2.7231,-1.822548,-3.506002] Label = B
+Center = [111.582571,-14.218994,101.913309,-5.481893,2.373736,1.098162,-3.1148] Label = B
+Center = [100.073608,100.188887,100.146665,0.085959,-0.170134,-0.153042,-0.132614] Label = A
+Center = [-0.18485,0.098399,100.18791,-0.170699,0.140845,-0.105167,-0.070406] Label = A
+Center = [-0.188445,0.184217,0.115228,99.840901,0.148032,0.049256,0.176326] Label = A
+Center = [100.174435,0.132135,-0.188946,0.100734,-0.170214,0.136969,-0.114663] Label = A
+Center = [-0.031659,100.188859,100.139843,0.179982,-0.187589,-0.170595,-0.146321] Label = A
+Center = [100.188245,100.188537,-0.083824,-0.040364,0.165715,0.027371,0.072565] Label = A
+Center = [-0.043792,-0.128845,0.129356,-0.18886,-0.181371,0.091206,-0.183885] Label = A
+Objective function = 39.47118131209928
+Running time of MRFairFFT = 4362 ms
