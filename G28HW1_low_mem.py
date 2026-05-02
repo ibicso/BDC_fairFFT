@@ -115,7 +115,7 @@ def compute_objective(rdd, centers):
 def map_reduce_fair_fft(rdd, Ka, Kb, L):
     # R 1: fairfft on local partitions to get coresets
     local_coresets_rdd = rdd.mapPartitions(
-        lambda partition_iterator: fair_fft_sequential(Ka, Kb, list(partition_iterator))
+        lambda partition_iterator: fair_fft_sequential(Ka, Kb, partition_iterator)
     )
 
     # R 2: collect all local coresets to the driver
