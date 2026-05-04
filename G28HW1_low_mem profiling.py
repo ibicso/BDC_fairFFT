@@ -4,6 +4,7 @@ from pyspark.storagelevel import StorageLevel
 import sys
 import os
 import time
+from memory_profiler import profile
 
 
 def fair_fft_sequential(Ka, Kb, points):
@@ -127,9 +128,36 @@ def map_reduce_fair_fft(rdd, Ka, Kb, L):
     return final_centers
 
 
+def map_reduce_fair_fft_profiling(rdd, Ka, Kb, L):
+    # Wrapper function to dynamically profile Round 1 partitions
+    def round1_wrapper(partition_idx, partition_iterator):
+        log_filename = f"logs/mem_profile_lm_R1_P{partition_idx}.log"
+        os.makedirs(os.path.dirname(log_filename), exist_ok=True)
+        with open(log_filename, "a") as f:
+            f.write(f"\n--- Profiling Round 1 | Partition {partition_idx} ---\n")
+            profiled_func = profile(stream=f)(fair_fft_sequential)
+            return profiled_func(Ka, Kb, partition_iterator)
+
+    # R1
+    local_coresets_rdd = rdd.mapPartitionsWithIndex(round1_wrapper)
+
+    # R2
+    global_coreset = local_coresets_rdd.collect()
+
+    log_filename_r2 = "logs/mem_profile_lm_R2_Driver.log"
+    with open(log_filename_r2, "a") as f:
+        f.write("\n--- Profiling Round 2 | Driver ---\n")
+        profiled_func = profile(stream=f)(fair_fft_sequential)
+        final_centers = profiled_func(Ka, Kb, global_coreset)
+
+    return final_centers
+
+
 def main():
     # CHECKING NUMBER OF CMD LINE PARAMTERS
-    assert len(sys.argv) == 5, "Usage: python G28HW1.py <file_name> <Ka> <Kb> <L>"
+    assert (
+        len(sys.argv) >= 5 and len(sys.argv) <= 6
+    ), "Usage: python G28HW1.py <file_name> <Ka> <Kb> <L> [--mem-profile]"
     # SPARK SETUP
     conf = SparkConf().setAppName("FairFFT")
     # Suppress excessive Spark logging so your print statements are actually readable
@@ -153,6 +181,10 @@ def main():
     assert L.isdigit(), "L must be an integer"
     L = int(L)
 
+    mem_profile = False
+    if len(sys.argv) == 6 and sys.argv[5] == "--mem-profile":
+        mem_profile = True
+
     # Read the data
     raw_rdd = sc.textFile(data_path)
     rdd = raw_rdd.map(parse_line).repartition(L)
@@ -164,7 +196,10 @@ def main():
 
     start_time = time.time()
 
-    final_centers = map_reduce_fair_fft(rdd, Ka, Kb, L)
+    if mem_profile:
+        final_centers = map_reduce_fair_fft_profiling(rdd, Ka, Kb, L)
+    else:
+        final_centers = map_reduce_fair_fft(rdd, Ka, Kb, L)
 
     end_time = time.time()
     running_time_ms = int((end_time - start_time) * 1000)
