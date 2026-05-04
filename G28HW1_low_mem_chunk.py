@@ -1,9 +1,10 @@
+import math
+
 import numpy as np
 from pyspark import SparkContext, SparkConf
 import sys
 import os
 import time
-from memory_profiler import profile
 
 
 def fair_fft_sequential(Ka, Kb, points):
@@ -129,19 +130,58 @@ def fair_fft_sequential(Ka, Kb, points):
 
 def parse_line(line):
     parts = line.strip().split(",")
-    # Convert all features to float, keep the label at the end as a string
     return tuple([float(x) for x in parts[:-1]] + [parts[-1].strip()])
 
 
 def compute_objective(rdd, centers):
-    center_coords = np.array([[float(val) for val in p[:-1]] for p in centers])
+    center_coords = np.array([p[:-1] for p in centers], dtype=np.float32)
 
-    def min_dist_to_centers(point):
-        p_coords = np.array([float(val) for val in point[:-1]])
-        distances = np.sqrt(np.sum((center_coords - p_coords) ** 2, axis=1))
-        return np.min(distances)
+    def partition_objective(iterator):
+        try:
+            first_p = next(iterator)
+        except StopIteration:
+            yield 0.0
+            return
 
-    return rdd.map(min_dist_to_centers).max()
+        D = len(first_p) - 1
+        CHUNK_SIZE = 50000
+        curr_coords = np.empty((CHUNK_SIZE, D), dtype=np.float32)
+        idx = 0
+        curr_coords[idx] = first_p[:-1]
+        idx += 1
+
+        max_obj_in_partition = 0.0
+
+        for p in iterator:
+            if idx == CHUNK_SIZE:
+                min_sq_dists = np.full(CHUNK_SIZE, np.inf, dtype=np.float32)
+                
+                for c in center_coords:
+                    sq_dist = np.sum((curr_coords - c) ** 2, axis=1)
+                    min_sq_dists = np.minimum(min_sq_dists, sq_dist)
+                
+                chunk_max_obj = np.max(np.sqrt(min_sq_dists))
+                max_obj_in_partition = max(max_obj_in_partition, float(chunk_max_obj))
+
+                idx = 0 
+
+            curr_coords[idx] = p[:-1]
+            idx += 1
+
+        if idx > 0:
+            final_chunk = curr_coords[:idx]
+            min_sq_dists = np.full(idx, np.inf, dtype=np.float32)
+            
+            for c in center_coords:
+                sq_dist = np.sum((final_chunk - c) ** 2, axis=1)
+                min_sq_dists = np.minimum(min_sq_dists, sq_dist)
+                
+            chunk_max_obj = np.max(np.sqrt(min_sq_dists))
+            max_obj_in_partition = max(max_obj_in_partition, float(chunk_max_obj))
+
+        yield max_obj_in_partition
+
+    return rdd.mapPartitions(partition_objective).max()
 
 
 def map_reduce_fair_fft(rdd, Ka, Kb, L):
@@ -158,46 +198,17 @@ def map_reduce_fair_fft(rdd, Ka, Kb, L):
     return final_centers
 
 
-def map_reduce_fair_fft_profiling(rdd, Ka, Kb, L):
-    # Wrapper function to dynamically profile Round 1 partitions
-    def round1_wrapper(partition_idx, partition_iterator):
-        log_filename = f"logs/mem_profile_lm_R1_P{partition_idx}.log"
-        os.makedirs(os.path.dirname(log_filename), exist_ok=True)
-        with open(log_filename, "a") as f:
-            f.write(f"\n--- Profiling Round 1 | Partition {partition_idx} ---\n")
-            profiled_func = profile(stream=f)(fair_fft_sequential)
-            return profiled_func(Ka, Kb, partition_iterator)
-
-    # R1
-    local_coresets_rdd = rdd.mapPartitionsWithIndex(round1_wrapper)
-
-    # R2
-    global_coreset = local_coresets_rdd.collect()
-
-    log_filename_r2 = "logs/mem_profile_lm_R2_Driver.log"
-    with open(log_filename_r2, "a") as f:
-        f.write("\n--- Profiling Round 2 | Driver ---\n")
-        profiled_func = profile(stream=f)(fair_fft_sequential)
-        final_centers = profiled_func(Ka, Kb, global_coreset)
-
-    return final_centers
-
 
 def main():
-    # CHECKING NUMBER OF CMD LINE PARAMTERS
     assert (
         len(sys.argv) >= 5 and len(sys.argv) <= 6
-    ), "Usage: python G28HW1.py <file_name> <Ka> <Kb> <L> [--mem-profile]"
-    # SPARK SETUP
+    ), "Usage: python G28HW1.py <file_name> <Ka> <Kb> <L>"
     conf = SparkConf().setAppName("FairFFT")
-    # Suppress excessive Spark logging so your print statements are actually readable
     conf.set("spark.logLevel", "ERROR")
     sc = SparkContext(conf=conf)
     sc.setLogLevel("ERROR")
 
-    # INPUT READING
     data_path = sys.argv[1]
-    # assert os.path.isfile(data_path), "File or folder not found"
 
     Ka = sys.argv[2]
     assert Ka.isdigit(), "Ka must be an integer"
@@ -211,25 +222,23 @@ def main():
     assert L.isdigit(), "L must be an integer"
     L = int(L)
 
-    mem_profile = False
-    if len(sys.argv) == 6 and sys.argv[5] == "--mem-profile":
-        mem_profile = True
 
-    # Read the data
     raw_rdd = sc.textFile(data_path)
     rdd = raw_rdd.map(parse_line).repartition(L)
-    rdd.cache()
-    # dataset stat
+    
+    #removed to prevent memory issues with large datasets
+    #rdd.cache() 
+    
+
+
     N = rdd.count()
     NA = rdd.filter(lambda p: p[-1] == "A").count()
     NB = N - NA
 
     start_time = time.time()
 
-    if mem_profile:
-        final_centers = map_reduce_fair_fft_profiling(rdd, Ka, Kb, L)
-    else:
-        final_centers = map_reduce_fair_fft(rdd, Ka, Kb, L)
+ 
+    final_centers = map_reduce_fair_fft(rdd, Ka, Kb, L)
 
     end_time = time.time()
     running_time_ms = int((end_time - start_time) * 1000)
