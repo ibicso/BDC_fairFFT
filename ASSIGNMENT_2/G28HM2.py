@@ -10,7 +10,6 @@ import math
 
 
 THRESHOLD = -1
-C = 55
 P = 8191
 
 
@@ -18,7 +17,7 @@ def getTrueFreqItems():
     global histogram
     return [key for key in histogram if histogram[key] >= phi*THRESHOLD]
 
-def stickySampling(element, phi, epsilon, delta):
+def stickySampling(element):
     global S, r, p
     if(element in S):
         S[element] += 1
@@ -28,16 +27,16 @@ def stickySampling(element, phi, epsilon, delta):
 
 
 def getStickyFreqItems(phi, epsilon):
-    global S
+    global S, THRESHOLD
     return [key for key in S if S[key] >= (phi-epsilon)*THRESHOLD]
 
 def HashCountFunc(x, a, b):
+    global P, C
     return ((a*x + b) % P) % C
     
 
 def countMinSketch(element, phi):
-    global CMS
-    element = int(element)
+    global CMS, hash_params, F_CMS
     current_min = float('inf')
     for i in range(len(CMS)):
         a, b = hash_params[i]
@@ -67,9 +66,10 @@ def process_batch(time, batch):
     streamLength[0] += batch_size
     
     # Update the streaming state
-    for item in batch_items:
+    for row_item in batch_items:
+        item = int(row_item)
         histogram[item] = histogram.get(item, 0) + 1
-        stickySampling(item, phi, epsilon, delta)
+        stickySampling(item)
         countMinSketch(item, phi)
 
             
@@ -142,19 +142,26 @@ if __name__ == '__main__':
     # COMPUTE AND PRINT FINAL STATISTICS
     true_freq_items = getTrueFreqItems()
     sticky_freq_items = getStickyFreqItems(phi, epsilon)
-    print("INPUT PARAMETERS:")
-    print(f"n: {n}, phi: {phi}, epsilon: {epsilon}, delta: {delta}, d: {d}, w: {w}, portExp: {portExp}")
+    
+    print("INPUT PARAMETERS")
+    print(f"n = {n}")
+    print(f"phi = {phi}")
+    print(f"epsilon = {epsilon}")
+    print(f"delta = {delta}")
+    print(f"d = {d}")
+    print(f"w = {w}")
+    print(f"port = {portExp}")
 
-    print("\nTRUE FREQUENT ITEMS:")
-    # Cast to integer for sorting, lookup true frequency in histogram using the string key
+    print("\nTRUE FREQUENT ITEMS")
     for item in sorted(int(x) for x in true_freq_items):
-        print(f"{item} {histogram[str(item)]}")
+        print(f"Item = {item} True Freq = {histogram[item]}")
 
-    print("\nF_SS:")
+    print("\nSTICKY SAMPLING")
+    print(f"Size of dictionary = {len(S)}")
     for item in sorted(int(x) for x in sticky_freq_items):
-        print(f"{item} {histogram[str(item)]}")
+        print(f"Item = {item} True Freq = {histogram[item]}")
 
-    print("\nF_CM:")
-    # F_CMS already contains integers due to your cast inside countMinSketch
+    print("\nCOUNT-MIN SKETCH")
+    print(f"Size of F_CM = {len(F_CMS)}")
     for item in sorted(int(x) for x in F_CMS):
-        print(f"{item} {histogram[str(item)]}")
+        print(f"Item = {item} True Freq = {histogram[item]}")
