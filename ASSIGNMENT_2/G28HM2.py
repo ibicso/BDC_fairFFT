@@ -54,15 +54,12 @@ def countMinSketch(element, phi):
 def process_batch(time, batch):
     # We are working on the batch at time `time`.
     global streamLength, histogram
-    batch_size = batch.count()
     # If we already have enough points (> THRESHOLD), skip this batch.
     if streamLength[0]>=THRESHOLD:
         return
-    
-    if(streamLength[0] + batch_size > THRESHOLD):
-        batch_size = THRESHOLD - streamLength[0]
-    
-    batch_items = batch.take(batch_size)
+    remaining = THRESHOLD - streamLength[0]
+    batch_items = batch.take(remaining)
+    batch_size = len(batch_items)
     streamLength[0] += batch_size
     
     # Update the streaming state
