@@ -14,7 +14,6 @@ def fair_fft_sequential(Ka, Kb, points):
     except StopIteration:
         return []
 
-    # Dynamically determine dimensions from the first point
     D = len(first_p) - 1
     print(f"Dimensions = {D}")
     CHUNK_SIZE = 50000
@@ -22,7 +21,7 @@ def fair_fft_sequential(Ka, Kb, points):
     coords_chunks = []
     labels_chunks = []
 
-    # Pre-allocate the first dense chunk
+    #pre-allocate the first chunk
     curr_coords = np.empty((CHUNK_SIZE, D), dtype=np.float32)
     curr_labels = np.empty(CHUNK_SIZE, dtype=object)
 
@@ -31,10 +30,10 @@ def fair_fft_sequential(Ka, Kb, points):
     curr_labels[idx] = first_p[-1].strip()
     idx += 1
 
-    # Stream the iterator directly into pre-allocated memory
+    #iterator directly into pre-allocated memory
     for p in iterator:
         if idx == CHUNK_SIZE:
-            # Chunk is full, save it and allocate a new one
+            #chunk is full save it and allocate a new one
             coords_chunks.append(curr_coords)
             labels_chunks.append(curr_labels)
 
@@ -46,16 +45,15 @@ def fair_fft_sequential(Ka, Kb, points):
         curr_labels[idx] = p[-1].strip()
         idx += 1
 
-    # Save the final partially-filled chunk
     if idx > 0:
         coords_chunks.append(curr_coords[:idx])
         labels_chunks.append(curr_labels[:idx])
 
-    # Combine chunks
+    #combine chunks
     coords = np.vstack(coords_chunks)
     labels = np.concatenate(labels_chunks)
 
-    # Free intermediate buffers immediately
+    #free intermediate buffers immediately
     del coords_chunks, labels_chunks, curr_coords, curr_labels
 
     n = coords.shape[0]
@@ -124,7 +122,6 @@ def fair_fft_sequential(Ka, Kb, points):
 
         min_distances = np.minimum(min_distances, dists_to_new)
 
-    # convert to original tuple format
     return [tuple(coords[i].tolist()) + (labels[i],) for i in centers]
 
 
@@ -225,9 +222,6 @@ def main():
 
     raw_rdd = sc.textFile(data_path)
     rdd = raw_rdd.map(parse_line).repartition(L)
-    
-    #removed to prevent memory issues with large datasets
-    #rdd.cache() 
     
 
 
