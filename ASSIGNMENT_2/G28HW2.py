@@ -1,5 +1,3 @@
-
-
 import random
 import sys
 from pyspark import SparkContext, SparkConf
@@ -12,14 +10,17 @@ import math
 THRESHOLD = -1
 P = 8191
 
+random.seed(42)  # make deterministic stream results reproducible
+
 
 def getTrueFreqItems():
     global histogram
-    return [key for key in histogram if histogram[key] >= phi*THRESHOLD]
+    return [key for key in histogram if histogram[key] >= phi * THRESHOLD]
+
 
 def stickySampling(element):
-    global S, r, p
-    if(element in S):
+    global S, p
+    if element in S:
         S[element] += 1
     else:
         if random.random() <= p:
@@ -28,16 +29,17 @@ def stickySampling(element):
 
 def getStickyFreqItems(phi, epsilon):
     global S, THRESHOLD
-    return [key for key in S if S[key] >= (phi-epsilon)*THRESHOLD]
+    return [key for key in S if S[key] >= (phi - epsilon) * THRESHOLD]
+
 
 def HashCountFunc(x, a, b):
     global P, C
-    return ((a*x + b) % P) % C
-    
+    return ((a * x + b) % P) % C
+
 
 def countMinSketch(element, phi):
     global CMS, hash_params, F_CMS
-    current_min = float('inf')
+    current_min = float("inf")
     for i in range(len(CMS)):
         a, b = hash_params[i]
         hash = HashCountFunc(element, a, b)
@@ -45,23 +47,21 @@ def countMinSketch(element, phi):
 
         if CMS[i][hash] < current_min:
             current_min = CMS[i][hash]
-    if current_min >= phi*THRESHOLD:
+    if current_min >= phi * THRESHOLD:
         F_CMS.add(element)
-
-    
 
 
 def process_batch(time, batch):
     # We are working on the batch at time `time`.
     global streamLength, histogram
     # If we already have enough points (> THRESHOLD), skip this batch.
-    if streamLength[0]>=THRESHOLD:
+    if streamLength[0] >= THRESHOLD:
         return
     remaining = THRESHOLD - streamLength[0]
     batch_items = batch.take(remaining)
     batch_size = len(batch_items)
     streamLength[0] += batch_size
-    
+
     # Update the streaming state
     for row_item in batch_items:
         item = int(row_item)
@@ -69,7 +69,6 @@ def process_batch(time, batch):
         stickySampling(item)
         countMinSketch(item, phi)
 
-            
     # If we wanted, here we could run some additional code on the global histogram
     if batch_size > 0:
         print("Batch size at time [{0}] is: {1}".format(time, batch_size))
@@ -78,12 +77,7 @@ def process_batch(time, batch):
         stopping_condition.set()
 
 
-
-
-
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     assert len(sys.argv) == 8, "USAGE: n, phi, epsilon, delta, d, w, portExp"
     n = int(sys.argv[1])
     THRESHOLD = n
@@ -93,53 +87,55 @@ if __name__ == '__main__':
     d = int(sys.argv[5])
     w = int(sys.argv[6])
     C = w
-    
+
     portExp = int(sys.argv[7])
-
-
 
     conf = SparkConf().setMaster("local[*]").setAppName("TrueFrequentItems")
     sc = SparkContext(conf=conf)
     ssc = StreamingContext(sc, 0.1)  # Batch duration of 0.1 sec = 100 ms
     ssc.sparkContext.setLogLevel("ERROR")
-    
+
     stopping_condition = threading.Event()
 
     streamLength = [0]
-    histogram = {} # Hash Table for the distinct elements
-    S = {} #hash table for  sticky sampling
+    histogram = {}  # Hash Table for the distinct elements
+    S = {}  # hash table for  sticky sampling
     r = math.log(1.0 / (delta * phi)) / epsilon
-    p = r/THRESHOLD
-    CMS = [[0 for _ in range(w)] for _ in range(d)] # count min sketch matrix
-    F_CMS = set()#set of freq items for countmin sketch
-    hash_params = [(random.randint(1, P-1), random.randint(0, P-1)) for _ in range(d)]
+    p = r / THRESHOLD
+    CMS = [[0 for _ in range(w)] for _ in range(d)]  # count min sketch matrix
+    F_CMS = set()  # set of freq items for countmin sketch
+    hash_params = [
+        (random.randint(1, P - 1), random.randint(0, P - 1)) for _ in range(d)
+    ]
 
     # CODE TO PROCESS AN UNBOUNDED STREAM OF DATA IN BATCHES
-    stream = ssc.socketTextStream("algo.dei.unipd.it", portExp, StorageLevel.MEMORY_AND_DISK)
+    stream = ssc.socketTextStream(
+        "algo.dei.unipd.it", portExp, StorageLevel.MEMORY_AND_DISK
+    )
     # For each batch, to the following.
     # BEWARE: the `foreachRDD` method has "at least once semantics", meaning
     # that the same data might be processed multiple times in case of failure.
     stream.foreachRDD(lambda time, batch: process_batch(time, batch))
-    
+
     # MANAGING STREAMING SPARK CONTEXT
     print("Starting streaming engine")
     ssc.start()
     print("Waiting for shutdown condition")
     stopping_condition.wait()
     print("Stopping the streaming engine")
-    
+
     # The following command stops the execution of the stream. The first boolean, if true, also
     # stops the SparkContext, while the second boolean, if true, stops gracefully by waiting for
     # the processing of all received data to be completed. You might get some error messages when the
     # program ends, but they will not affect the correctness.
-    
+
     ssc.stop(False, False)
     print("Streaming engine stopped")
 
     # COMPUTE AND PRINT FINAL STATISTICS
     true_freq_items = getTrueFreqItems()
     sticky_freq_items = getStickyFreqItems(phi, epsilon)
-    
+
     print("INPUT PARAMETERS")
     print(f"n = {n}")
     print(f"phi = {phi}")
