@@ -5,7 +5,12 @@ from pyspark.streaming import StreamingContext
 from pyspark import StorageLevel
 import threading
 import math
+from collections import OrderedDict
 
+
+# Initialize with an arbitrary max size, e.g., 100
+MAX_HISTORY = 100
+processed_batches = OrderedDict()
 
 THRESHOLD = -1
 P = 8191
@@ -52,6 +57,12 @@ def countMinSketch(element, phi):
 
 
 def process_batch(time, batch):
+
+    # duplicate batch check
+    if time in processed_batches:
+        print(f"Batch with time {time} already processed. Skipping...")
+        return
+
     # We are working on the batch at time `time`.
     global streamLength, histogram
     # If we already have enough points (> THRESHOLD), skip this batch.
@@ -75,6 +86,11 @@ def process_batch(time, batch):
 
     if streamLength[0] >= THRESHOLD:
         stopping_condition.set()
+
+    processed_batches[time] = True
+    if len(processed_batches) > MAX_HISTORY:
+        # Remove the oldest batch
+        processed_batches.popitem(last=False)
 
 
 if __name__ == "__main__":
