@@ -1,0 +1,11 @@
+STICKY SAMPLING: n=1000000, phi=0.07, delta=0.05, port=8888
+epsilon,Frequent returned,Almost frequent returned,Rare returned,Dict Size
+0.01,10.00,0.00,0.00,35.00
+0.02,10.00,0.00,0.00,25.67
+0.04,10.00,3.67,0.00,19.67
+
+COUNT MIN: n=1000000, phi=0.07, d=5, port=8888
+w,Frequent returned,Almost frequent (eps=0.04),Rare (eps=0.04),Total items returned
+15,10.00,0.00,192.33,202.33
+30,10.00,0.00,13.00,23.00
+60,10.00,0.00,2.00,12.00

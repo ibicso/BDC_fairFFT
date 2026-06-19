@@ -1,0 +1,4080 @@
+
+============================================================
+ALGORITHM: SS | PARAM: 0.01 | RUN: 1
+COMMAND ARGS: eps=0.01, w=15, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:26:26.300000] is: 1259
+Batch size at time [2026-06-19 10:26:26.500000] is: 2934
+Batch size at time [2026-06-19 10:26:26.700000] is: 36643
+Batch size at time [2026-06-19 10:26:26.900000] is: 26139
+Batch size at time [2026-06-19 10:26:27.100000] is: 19584
+Batch size at time [2026-06-19 10:26:27.300000] is: 27539
+Batch size at time [2026-06-19 10:26:27.500000] is: 17204
+Batch size at time [2026-06-19 10:26:27.700000] is: 19299
+Batch size at time [2026-06-19 10:26:27.900000] is: 21255
+Batch size at time [2026-06-19 10:26:28.100000] is: 13560
+Batch size at time [2026-06-19 10:26:28.300000] is: 22639
+Batch size at time [2026-06-19 10:26:28.500000] is: 22089
+Batch size at time [2026-06-19 10:26:28.700000] is: 16917
+Batch size at time [2026-06-19 10:26:28.900000] is: 17897
+Batch size at time [2026-06-19 10:26:29.100000] is: 15242
+Batch size at time [2026-06-19 10:26:29.300000] is: 18314
+Batch size at time [2026-06-19 10:26:29.500000] is: 24465
+Batch size at time [2026-06-19 10:26:29.700000] is: 15794
+Batch size at time [2026-06-19 10:26:29.900000] is: 24753
+Batch size at time [2026-06-19 10:26:30.100000] is: 20967
+Batch size at time [2026-06-19 10:26:30.300000] is: 21533
+Batch size at time [2026-06-19 10:26:30.500000] is: 31176
+Batch size at time [2026-06-19 10:26:30.700000] is: 19295
+Batch size at time [2026-06-19 10:26:30.900000] is: 34266
+Batch size at time [2026-06-19 10:26:31.100000] is: 33125
+Batch size at time [2026-06-19 10:26:31.300000] is: 22223
+Batch size at time [2026-06-19 10:26:31.500000] is: 38864
+Batch size at time [2026-06-19 10:26:31.700000] is: 24193
+Batch size at time [2026-06-19 10:26:31.900000] is: 39704
+Batch size at time [2026-06-19 10:26:32.100000] is: 40124
+Batch size at time [2026-06-19 10:26:32.300000] is: 15241
+Batch size at time [2026-06-19 10:26:32.500000] is: 36199
+Batch size at time [2026-06-19 10:26:32.700000] is: 27696
+Batch size at time [2026-06-19 10:26:32.900000] is: 18595
+Batch size at time [2026-06-19 10:26:33.100000] is: 24594
+Batch size at time [2026-06-19 10:26:33.300000] is: 18733
+Batch size at time [2026-06-19 10:26:33.500000] is: 20415
+Batch size at time [2026-06-19 10:26:33.700000] is: 19432
+Batch size at time [2026-06-19 10:26:33.900000] is: 16219
+Batch size at time [2026-06-19 10:26:34.100000] is: 19297
+Batch size at time [2026-06-19 10:26:34.300000] is: 20404
+Batch size at time [2026-06-19 10:26:34.500000] is: 16776
+Batch size at time [2026-06-19 10:26:34.700000] is: 20137
+Batch size at time [2026-06-19 10:26:34.900000] is: 13563
+Batch size at time [2026-06-19 10:26:35.100000] is: 19862
+Batch size at time [2026-06-19 10:26:35.300000] is: 3841
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.01
+delta = 0.05
+d = 5
+w = 15
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 39
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 175
+Item = 2884218 True Freq = 1
+Item = 3898220 True Freq = 1
+Item = 18354392 True Freq = 1
+Item = 19806903 True Freq = 1
+Item = 20242224 True Freq = 1
+Item = 55048241 True Freq = 1
+Item = 66124648 True Freq = 1
+Item = 116332847 True Freq = 1
+Item = 133506153 True Freq = 1
+Item = 135865418 True Freq = 1
+Item = 137940497 True Freq = 1
+Item = 155838417 True Freq = 1
+Item = 157155816 True Freq = 1
+Item = 187975558 True Freq = 1
+Item = 195773912 True Freq = 80280
+Item = 204409214 True Freq = 1
+Item = 207723200 True Freq = 1
+Item = 224687737 True Freq = 1
+Item = 226754714 True Freq = 1
+Item = 234284833 True Freq = 1
+Item = 270572708 True Freq = 1
+Item = 276605132 True Freq = 1
+Item = 296040762 True Freq = 1
+Item = 313025645 True Freq = 1
+Item = 328633063 True Freq = 1
+Item = 339323283 True Freq = 80161
+Item = 353870474 True Freq = 1
+Item = 356196297 True Freq = 1
+Item = 373543305 True Freq = 1
+Item = 410285110 True Freq = 1
+Item = 418723557 True Freq = 1
+Item = 424528663 True Freq = 1
+Item = 432281326 True Freq = 1
+Item = 434415286 True Freq = 80012
+Item = 444079888 True Freq = 1
+Item = 482661306 True Freq = 1
+Item = 510546438 True Freq = 1
+Item = 517016481 True Freq = 1
+Item = 539524246 True Freq = 1
+Item = 541472280 True Freq = 1
+Item = 550503823 True Freq = 1
+Item = 554632585 True Freq = 1
+Item = 556545126 True Freq = 1
+Item = 565214785 True Freq = 1
+Item = 571457948 True Freq = 1
+Item = 572776200 True Freq = 1
+Item = 573893682 True Freq = 1
+Item = 575305550 True Freq = 1
+Item = 578952012 True Freq = 1
+Item = 581840200 True Freq = 1
+Item = 590771767 True Freq = 1
+Item = 592906579 True Freq = 1
+Item = 606880460 True Freq = 1
+Item = 612312226 True Freq = 1
+Item = 624864453 True Freq = 1
+Item = 625944528 True Freq = 1
+Item = 631944140 True Freq = 1
+Item = 637121204 True Freq = 40134
+Item = 638404929 True Freq = 1
+Item = 641486445 True Freq = 79600
+Item = 647379742 True Freq = 1
+Item = 655700212 True Freq = 1
+Item = 662530544 True Freq = 1
+Item = 705196370 True Freq = 1
+Item = 729358050 True Freq = 1
+Item = 743969469 True Freq = 1
+Item = 744606575 True Freq = 1
+Item = 759576393 True Freq = 1
+Item = 770269054 True Freq = 1
+Item = 776328238 True Freq = 1
+Item = 780318905 True Freq = 1
+Item = 794716940 True Freq = 1
+Item = 809947206 True Freq = 1
+Item = 818324118 True Freq = 1
+Item = 819911327 True Freq = 80096
+Item = 844439900 True Freq = 1
+Item = 848370041 True Freq = 1
+Item = 850182879 True Freq = 1
+Item = 857939178 True Freq = 1
+Item = 870070186 True Freq = 79779
+Item = 874158864 True Freq = 1
+Item = 881966911 True Freq = 1
+Item = 890766320 True Freq = 1
+Item = 900470941 True Freq = 1
+Item = 902993707 True Freq = 1
+Item = 916012456 True Freq = 1
+Item = 922210481 True Freq = 1
+Item = 924004826 True Freq = 1
+Item = 950057659 True Freq = 1
+Item = 951990813 True Freq = 1
+Item = 953169017 True Freq = 1
+Item = 953593541 True Freq = 1
+Item = 966788474 True Freq = 1
+Item = 1003175121 True Freq = 1
+Item = 1007492512 True Freq = 1
+Item = 1027953558 True Freq = 1
+Item = 1039227623 True Freq = 1
+Item = 1047624302 True Freq = 1
+Item = 1056322283 True Freq = 1
+Item = 1073820313 True Freq = 1
+Item = 1077323344 True Freq = 1
+Item = 1084668901 True Freq = 1
+Item = 1093622186 True Freq = 1
+Item = 1094463767 True Freq = 1
+Item = 1134932519 True Freq = 1
+Item = 1139582551 True Freq = 1
+Item = 1161436135 True Freq = 1
+Item = 1169846430 True Freq = 1
+Item = 1171461919 True Freq = 1
+Item = 1202505736 True Freq = 1
+Item = 1215375645 True Freq = 1
+Item = 1238383013 True Freq = 1
+Item = 1253248021 True Freq = 1
+Item = 1271734751 True Freq = 1
+Item = 1314058238 True Freq = 1
+Item = 1335763326 True Freq = 1
+Item = 1340957249 True Freq = 1
+Item = 1348428013 True Freq = 1
+Item = 1353762791 True Freq = 1
+Item = 1378192669 True Freq = 1
+Item = 1383316729 True Freq = 1
+Item = 1387087971 True Freq = 1
+Item = 1392612980 True Freq = 1
+Item = 1445585491 True Freq = 1
+Item = 1467635142 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1474546552 True Freq = 1
+Item = 1485552421 True Freq = 1
+Item = 1496383247 True Freq = 1
+Item = 1500170915 True Freq = 1
+Item = 1503522161 True Freq = 1
+Item = 1525990739 True Freq = 1
+Item = 1557138496 True Freq = 1
+Item = 1575468595 True Freq = 1
+Item = 1587224521 True Freq = 1
+Item = 1590293530 True Freq = 79482
+Item = 1645045133 True Freq = 1
+Item = 1684525753 True Freq = 1
+Item = 1690049656 True Freq = 80737
+Item = 1698694674 True Freq = 1
+Item = 1704261820 True Freq = 1
+Item = 1716048811 True Freq = 1
+Item = 1726805275 True Freq = 1
+Item = 1742946000 True Freq = 1
+Item = 1749255059 True Freq = 1
+Item = 1758191506 True Freq = 1
+Item = 1767474967 True Freq = 1
+Item = 1769674392 True Freq = 1
+Item = 1770896889 True Freq = 1
+Item = 1789526709 True Freq = 1
+Item = 1810724669 True Freq = 1
+Item = 1821041011 True Freq = 1
+Item = 1822781642 True Freq = 1
+Item = 1826987910 True Freq = 1
+Item = 1828994191 True Freq = 1
+Item = 1830571486 True Freq = 1
+Item = 1860492048 True Freq = 1
+Item = 1861120277 True Freq = 1
+Item = 1872966047 True Freq = 1
+Item = 1926908593 True Freq = 1
+Item = 1936875793 True Freq = 80062
+Item = 2008588780 True Freq = 1
+Item = 2018592459 True Freq = 1
+Item = 2033499802 True Freq = 1
+Item = 2041738304 True Freq = 1
+Item = 2045688287 True Freq = 1
+Item = 2047159677 True Freq = 1
+Item = 2067321704 True Freq = 1
+Item = 2096712911 True Freq = 1
+Item = 2097607144 True Freq = 1
+Item = 2113782395 True Freq = 1
+Item = 2117961835 True Freq = 1
+Item = 2132135634 True Freq = 1
+Item = 2138791989 True Freq = 1
+Item = 2143172032 True Freq = 1
+
+
+============================================================
+ALGORITHM: SS | PARAM: 0.01 | RUN: 2
+COMMAND ARGS: eps=0.01, w=15, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:26:41.900000] is: 10898
+Batch size at time [2026-06-19 10:26:42.100000] is: 122365
+Batch size at time [2026-06-19 10:26:42.300000] is: 41246
+Batch size at time [2026-06-19 10:26:42.500000] is: 99261
+Batch size at time [2026-06-19 10:26:42.700000] is: 52981
+Batch size at time [2026-06-19 10:26:42.900000] is: 120797
+Batch size at time [2026-06-19 10:26:43.100000] is: 138128
+Batch size at time [2026-06-19 10:26:43.300000] is: 39853
+Batch size at time [2026-06-19 10:26:43.500000] is: 38153
+Batch size at time [2026-06-19 10:26:43.700000] is: 84166
+Batch size at time [2026-06-19 10:26:43.900000] is: 20844
+Batch size at time [2026-06-19 10:26:44.100000] is: 90994
+Batch size at time [2026-06-19 10:26:44.300000] is: 55648
+Batch size at time [2026-06-19 10:26:44.500000] is: 39282
+Batch size at time [2026-06-19 10:26:44.700000] is: 45384
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.01
+delta = 0.05
+d = 5
+w = 15
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 38
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 161
+Item = 1854788 True Freq = 1
+Item = 12931182 True Freq = 1
+Item = 14410060 True Freq = 1
+Item = 14673339 True Freq = 39880
+Item = 16258086 True Freq = 1
+Item = 43296577 True Freq = 1
+Item = 60429161 True Freq = 1
+Item = 80870765 True Freq = 1
+Item = 110516493 True Freq = 1
+Item = 112757447 True Freq = 1
+Item = 113886814 True Freq = 1
+Item = 118741732 True Freq = 1
+Item = 120613934 True Freq = 1
+Item = 123753044 True Freq = 1
+Item = 128650607 True Freq = 1
+Item = 142205318 True Freq = 1
+Item = 143400236 True Freq = 1
+Item = 163593349 True Freq = 1
+Item = 171327333 True Freq = 1
+Item = 178751343 True Freq = 1
+Item = 180444050 True Freq = 1
+Item = 195773912 True Freq = 80280
+Item = 207705351 True Freq = 1
+Item = 209375909 True Freq = 1
+Item = 224218635 True Freq = 1
+Item = 224687737 True Freq = 1
+Item = 260621807 True Freq = 1
+Item = 285082562 True Freq = 1
+Item = 313098944 True Freq = 1
+Item = 321710881 True Freq = 1
+Item = 339323283 True Freq = 80161
+Item = 341363341 True Freq = 1
+Item = 344236573 True Freq = 1
+Item = 353487797 True Freq = 1
+Item = 379385334 True Freq = 1
+Item = 428738647 True Freq = 1
+Item = 434415286 True Freq = 80012
+Item = 437772558 True Freq = 1
+Item = 446126504 True Freq = 1
+Item = 458134168 True Freq = 1
+Item = 497499286 True Freq = 1
+Item = 514095066 True Freq = 1
+Item = 523271617 True Freq = 1
+Item = 570244438 True Freq = 1
+Item = 592635858 True Freq = 1
+Item = 608965679 True Freq = 1
+Item = 641486445 True Freq = 79600
+Item = 643096303 True Freq = 1
+Item = 644975840 True Freq = 1
+Item = 647673322 True Freq = 1
+Item = 660330250 True Freq = 1
+Item = 660919562 True Freq = 1
+Item = 689455549 True Freq = 1
+Item = 693787302 True Freq = 1
+Item = 704952239 True Freq = 1
+Item = 705196370 True Freq = 1
+Item = 725141795 True Freq = 1
+Item = 736501339 True Freq = 1
+Item = 751535138 True Freq = 1
+Item = 780400941 True Freq = 1
+Item = 809108563 True Freq = 1
+Item = 819911327 True Freq = 80096
+Item = 861228759 True Freq = 1
+Item = 870070186 True Freq = 79779
+Item = 922210481 True Freq = 1
+Item = 924004826 True Freq = 1
+Item = 936699209 True Freq = 1
+Item = 970111973 True Freq = 1
+Item = 981011210 True Freq = 1
+Item = 992646238 True Freq = 1
+Item = 1003440062 True Freq = 1
+Item = 1023740476 True Freq = 1
+Item = 1027775575 True Freq = 1
+Item = 1038579727 True Freq = 1
+Item = 1039227623 True Freq = 1
+Item = 1040021044 True Freq = 1
+Item = 1059869381 True Freq = 1
+Item = 1061302110 True Freq = 1
+Item = 1093622186 True Freq = 1
+Item = 1110018092 True Freq = 1
+Item = 1123522808 True Freq = 1
+Item = 1148020871 True Freq = 1
+Item = 1163564432 True Freq = 1
+Item = 1168983164 True Freq = 1
+Item = 1174865182 True Freq = 1
+Item = 1194626441 True Freq = 1
+Item = 1216747297 True Freq = 1
+Item = 1245185350 True Freq = 1
+Item = 1260194908 True Freq = 1
+Item = 1265137710 True Freq = 1
+Item = 1269535875 True Freq = 1
+Item = 1271913756 True Freq = 1
+Item = 1286357185 True Freq = 1
+Item = 1321592020 True Freq = 1
+Item = 1331714420 True Freq = 1
+Item = 1342843986 True Freq = 1
+Item = 1350671953 True Freq = 1
+Item = 1412883426 True Freq = 1
+Item = 1428634927 True Freq = 1
+Item = 1433351566 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1487154074 True Freq = 1
+Item = 1487919436 True Freq = 1
+Item = 1491848746 True Freq = 1
+Item = 1493725207 True Freq = 1
+Item = 1494791913 True Freq = 1
+Item = 1496638347 True Freq = 1
+Item = 1510734067 True Freq = 1
+Item = 1517367951 True Freq = 1
+Item = 1526292187 True Freq = 1
+Item = 1538921599 True Freq = 1
+Item = 1551857292 True Freq = 1
+Item = 1552257867 True Freq = 1
+Item = 1568295635 True Freq = 1
+Item = 1572612728 True Freq = 1
+Item = 1578920134 True Freq = 1
+Item = 1590293530 True Freq = 79482
+Item = 1601876052 True Freq = 1
+Item = 1620753154 True Freq = 1
+Item = 1628734826 True Freq = 1
+Item = 1663440982 True Freq = 1
+Item = 1686545713 True Freq = 1
+Item = 1690049656 True Freq = 80737
+Item = 1711716150 True Freq = 1
+Item = 1733030607 True Freq = 1
+Item = 1734427673 True Freq = 1
+Item = 1746960173 True Freq = 1
+Item = 1747540806 True Freq = 1
+Item = 1748793083 True Freq = 1
+Item = 1770896889 True Freq = 1
+Item = 1778501441 True Freq = 1
+Item = 1778978043 True Freq = 1
+Item = 1789526709 True Freq = 1
+Item = 1795118412 True Freq = 1
+Item = 1832253766 True Freq = 1
+Item = 1859660130 True Freq = 1
+Item = 1859813535 True Freq = 1
+Item = 1869507504 True Freq = 1
+Item = 1885147254 True Freq = 1
+Item = 1885754708 True Freq = 1
+Item = 1887139747 True Freq = 1
+Item = 1926908593 True Freq = 1
+Item = 1936875793 True Freq = 80062
+Item = 1938899127 True Freq = 1
+Item = 1947418323 True Freq = 1
+Item = 1957934155 True Freq = 1
+Item = 1964363249 True Freq = 1
+Item = 1965597268 True Freq = 1
+Item = 1969141128 True Freq = 1
+Item = 1972562584 True Freq = 1
+Item = 1975285803 True Freq = 1
+Item = 1988785124 True Freq = 1
+Item = 2015278443 True Freq = 1
+Item = 2026229351 True Freq = 1
+Item = 2046119932 True Freq = 1
+Item = 2049488072 True Freq = 1
+Item = 2079999849 True Freq = 1
+Item = 2085773191 True Freq = 1
+Item = 2119679548 True Freq = 1
+Item = 2135787705 True Freq = 1
+Item = 2137502673 True Freq = 1
+
+
+============================================================
+ALGORITHM: SS | PARAM: 0.01 | RUN: 3
+COMMAND ARGS: eps=0.01, w=15, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:26:51.500000] is: 6854
+Batch size at time [2026-06-19 10:26:51.700000] is: 19840
+Batch size at time [2026-06-19 10:26:51.900000] is: 112302
+Batch size at time [2026-06-19 10:26:52.100000] is: 74370
+Batch size at time [2026-06-19 10:26:52.300000] is: 15522
+Batch size at time [2026-06-19 10:26:52.500000] is: 60965
+Batch size at time [2026-06-19 10:26:52.700000] is: 52002
+Batch size at time [2026-06-19 10:26:52.900000] is: 48410
+Batch size at time [2026-06-19 10:26:53.100000] is: 46518
+Batch size at time [2026-06-19 10:26:53.300000] is: 25025
+Batch size at time [2026-06-19 10:26:53.500000] is: 56492
+Batch size at time [2026-06-19 10:26:53.700000] is: 32143
+Batch size at time [2026-06-19 10:26:53.900000] is: 23624
+Batch size at time [2026-06-19 10:26:54.100000] is: 41677
+Batch size at time [2026-06-19 10:26:54.300000] is: 22927
+Batch size at time [2026-06-19 10:26:54.500000] is: 27665
+Batch size at time [2026-06-19 10:26:54.700000] is: 33846
+Batch size at time [2026-06-19 10:26:54.900000] is: 14947
+Batch size at time [2026-06-19 10:26:55.100000] is: 25307
+Batch size at time [2026-06-19 10:26:55.300000] is: 15943
+Batch size at time [2026-06-19 10:26:55.500000] is: 16646
+Batch size at time [2026-06-19 10:26:55.700000] is: 20828
+Batch size at time [2026-06-19 10:26:55.800000] is: 12295
+Batch size at time [2026-06-19 10:26:56.100000] is: 17757
+Batch size at time [2026-06-19 10:26:56.300000] is: 15230
+Batch size at time [2026-06-19 10:26:56.500000] is: 3358
+Batch size at time [2026-06-19 10:26:56.700000] is: 18453
+Batch size at time [2026-06-19 10:26:56.900000] is: 11614
+Batch size at time [2026-06-19 10:26:57] is: 2655
+Batch size at time [2026-06-19 10:26:57.300000] is: 13283
+Batch size at time [2026-06-19 10:26:57.500000] is: 9230
+Batch size at time [2026-06-19 10:26:57.700000] is: 11178
+Batch size at time [2026-06-19 10:26:57.900000] is: 13140
+Batch size at time [2026-06-19 10:26:58.100000] is: 19570
+Batch size at time [2026-06-19 10:26:58.300000] is: 19578
+Batch size at time [2026-06-19 10:26:58.500000] is: 9648
+Batch size at time [2026-06-19 10:26:58.700000] is: 17210
+Batch size at time [2026-06-19 10:26:58.900000] is: 10625
+Batch size at time [2026-06-19 10:26:59.100000] is: 1323
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.01
+delta = 0.05
+d = 5
+w = 15
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 28
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 292
+Item = 445536 True Freq = 1
+Item = 1854788 True Freq = 1
+Item = 5232273 True Freq = 1
+Item = 12517326 True Freq = 1
+Item = 26089926 True Freq = 1
+Item = 30012444 True Freq = 1
+Item = 35590520 True Freq = 1
+Item = 45797257 True Freq = 1
+Item = 48458327 True Freq = 1
+Item = 51524967 True Freq = 1
+Item = 53009933 True Freq = 1
+Item = 54897346 True Freq = 1
+Item = 60429161 True Freq = 1
+Item = 63561968 True Freq = 1
+Item = 72342802 True Freq = 1
+Item = 75215316 True Freq = 1
+Item = 75247280 True Freq = 1
+Item = 75355270 True Freq = 1
+Item = 80037231 True Freq = 1
+Item = 92591731 True Freq = 1
+Item = 94507531 True Freq = 1
+Item = 97797214 True Freq = 1
+Item = 98146141 True Freq = 1
+Item = 104300125 True Freq = 1
+Item = 112368326 True Freq = 1
+Item = 121416420 True Freq = 1
+Item = 133407329 True Freq = 1
+Item = 151981094 True Freq = 1
+Item = 155838417 True Freq = 1
+Item = 175290481 True Freq = 1
+Item = 179128599 True Freq = 1
+Item = 195773912 True Freq = 80280
+Item = 198119996 True Freq = 1
+Item = 199075104 True Freq = 1
+Item = 215200283 True Freq = 1
+Item = 237353086 True Freq = 1
+Item = 240669600 True Freq = 1
+Item = 243294334 True Freq = 1
+Item = 248449032 True Freq = 1
+Item = 249198981 True Freq = 1
+Item = 258748550 True Freq = 1
+Item = 275606856 True Freq = 1
+Item = 286615497 True Freq = 1
+Item = 299082413 True Freq = 1
+Item = 312336097 True Freq = 1
+Item = 313346712 True Freq = 1
+Item = 314743959 True Freq = 1
+Item = 320915134 True Freq = 1
+Item = 332256740 True Freq = 1
+Item = 337818087 True Freq = 1
+Item = 339323283 True Freq = 80161
+Item = 346066635 True Freq = 1
+Item = 356196297 True Freq = 1
+Item = 360121151 True Freq = 1
+Item = 363867557 True Freq = 1
+Item = 369734002 True Freq = 1
+Item = 376792730 True Freq = 1
+Item = 379749801 True Freq = 1
+Item = 386243413 True Freq = 1
+Item = 389129844 True Freq = 1
+Item = 396664420 True Freq = 1
+Item = 415304513 True Freq = 1
+Item = 423405450 True Freq = 1
+Item = 423678507 True Freq = 1
+Item = 434415286 True Freq = 80012
+Item = 444746492 True Freq = 1
+Item = 447482020 True Freq = 1
+Item = 449955399 True Freq = 1
+Item = 456567809 True Freq = 1
+Item = 459025634 True Freq = 1
+Item = 466248769 True Freq = 1
+Item = 503793786 True Freq = 1
+Item = 516489059 True Freq = 1
+Item = 522828392 True Freq = 1
+Item = 549396616 True Freq = 1
+Item = 550421513 True Freq = 1
+Item = 554220237 True Freq = 1
+Item = 571064283 True Freq = 1
+Item = 571457948 True Freq = 1
+Item = 572502753 True Freq = 1
+Item = 579773545 True Freq = 1
+Item = 582539687 True Freq = 1
+Item = 583904890 True Freq = 1
+Item = 585950997 True Freq = 1
+Item = 599637144 True Freq = 1
+Item = 605737694 True Freq = 1
+Item = 607778998 True Freq = 1
+Item = 610450352 True Freq = 1
+Item = 610872096 True Freq = 1
+Item = 615775949 True Freq = 1
+Item = 641486445 True Freq = 79600
+Item = 642449662 True Freq = 1
+Item = 652013736 True Freq = 1
+Item = 652536028 True Freq = 1
+Item = 655700212 True Freq = 1
+Item = 658968633 True Freq = 1
+Item = 660919562 True Freq = 1
+Item = 670015910 True Freq = 1
+Item = 675697526 True Freq = 1
+Item = 677197585 True Freq = 1
+Item = 687099722 True Freq = 1
+Item = 695691452 True Freq = 1
+Item = 730629676 True Freq = 1
+Item = 735808083 True Freq = 1
+Item = 744838269 True Freq = 1
+Item = 745851845 True Freq = 1
+Item = 762126087 True Freq = 1
+Item = 762483581 True Freq = 1
+Item = 769633158 True Freq = 1
+Item = 778826117 True Freq = 1
+Item = 798166615 True Freq = 1
+Item = 800260707 True Freq = 1
+Item = 800996429 True Freq = 1
+Item = 803576661 True Freq = 1
+Item = 819911327 True Freq = 80096
+Item = 825483323 True Freq = 1
+Item = 836685630 True Freq = 1
+Item = 850670476 True Freq = 1
+Item = 857477002 True Freq = 1
+Item = 859121527 True Freq = 1
+Item = 859182685 True Freq = 1
+Item = 870070186 True Freq = 79779
+Item = 872261745 True Freq = 1
+Item = 883824883 True Freq = 1
+Item = 884054731 True Freq = 1
+Item = 885577232 True Freq = 1
+Item = 894519786 True Freq = 1
+Item = 909228256 True Freq = 1
+Item = 915148284 True Freq = 1
+Item = 924004826 True Freq = 1
+Item = 934231113 True Freq = 1
+Item = 949367523 True Freq = 1
+Item = 953459711 True Freq = 1
+Item = 961311837 True Freq = 1
+Item = 962374831 True Freq = 1
+Item = 976567483 True Freq = 1
+Item = 981145248 True Freq = 2
+Item = 982222182 True Freq = 1
+Item = 983327409 True Freq = 1
+Item = 1001905345 True Freq = 1
+Item = 1005205074 True Freq = 1
+Item = 1039227623 True Freq = 1
+Item = 1051773959 True Freq = 1
+Item = 1053912863 True Freq = 1
+Item = 1062773255 True Freq = 1
+Item = 1067862751 True Freq = 1
+Item = 1072136385 True Freq = 1
+Item = 1082755002 True Freq = 1
+Item = 1093622186 True Freq = 1
+Item = 1100091331 True Freq = 1
+Item = 1100254351 True Freq = 1
+Item = 1124150058 True Freq = 1
+Item = 1126645922 True Freq = 1
+Item = 1126924834 True Freq = 1
+Item = 1128292825 True Freq = 1
+Item = 1129140270 True Freq = 1
+Item = 1136351499 True Freq = 1
+Item = 1151100744 True Freq = 1
+Item = 1154265923 True Freq = 1
+Item = 1156489275 True Freq = 1
+Item = 1163359234 True Freq = 1
+Item = 1170669133 True Freq = 1
+Item = 1174020175 True Freq = 1
+Item = 1175483685 True Freq = 1
+Item = 1191721817 True Freq = 1
+Item = 1194484900 True Freq = 1
+Item = 1196260704 True Freq = 1
+Item = 1199023566 True Freq = 1
+Item = 1207374214 True Freq = 1
+Item = 1212278927 True Freq = 1
+Item = 1215571131 True Freq = 1
+Item = 1216853337 True Freq = 1
+Item = 1218382765 True Freq = 1
+Item = 1218410425 True Freq = 1
+Item = 1226772648 True Freq = 1
+Item = 1228404402 True Freq = 1
+Item = 1231541044 True Freq = 1
+Item = 1239947027 True Freq = 1
+Item = 1267871765 True Freq = 1
+Item = 1268538240 True Freq = 1
+Item = 1269609784 True Freq = 1
+Item = 1290622889 True Freq = 1
+Item = 1292208114 True Freq = 1
+Item = 1292357285 True Freq = 1
+Item = 1301753439 True Freq = 1
+Item = 1323261589 True Freq = 1
+Item = 1334243368 True Freq = 1
+Item = 1345738621 True Freq = 1
+Item = 1347668280 True Freq = 1
+Item = 1367347512 True Freq = 1
+Item = 1367929164 True Freq = 1
+Item = 1383316729 True Freq = 1
+Item = 1385524214 True Freq = 1
+Item = 1385952934 True Freq = 1
+Item = 1394825854 True Freq = 1
+Item = 1395640288 True Freq = 1
+Item = 1396683642 True Freq = 1
+Item = 1408115322 True Freq = 1
+Item = 1409900213 True Freq = 1
+Item = 1412552045 True Freq = 1
+Item = 1428634927 True Freq = 1
+Item = 1429241250 True Freq = 1
+Item = 1431586949 True Freq = 1
+Item = 1442084759 True Freq = 1
+Item = 1447072403 True Freq = 1
+Item = 1447414957 True Freq = 1
+Item = 1453508221 True Freq = 1
+Item = 1454043691 True Freq = 1
+Item = 1459054200 True Freq = 1
+Item = 1465730646 True Freq = 1
+Item = 1468102298 True Freq = 1
+Item = 1468168604 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1482234770 True Freq = 1
+Item = 1485353114 True Freq = 1
+Item = 1487154074 True Freq = 1
+Item = 1488884401 True Freq = 1
+Item = 1496070386 True Freq = 1
+Item = 1499799325 True Freq = 1
+Item = 1502211201 True Freq = 1
+Item = 1518201145 True Freq = 1
+Item = 1521666210 True Freq = 1
+Item = 1525301986 True Freq = 1
+Item = 1545864093 True Freq = 1
+Item = 1581989000 True Freq = 1
+Item = 1583092581 True Freq = 1
+Item = 1590293530 True Freq = 79482
+Item = 1590823558 True Freq = 1
+Item = 1603680255 True Freq = 1
+Item = 1603915525 True Freq = 1
+Item = 1605167163 True Freq = 1
+Item = 1611717827 True Freq = 1
+Item = 1625849438 True Freq = 1
+Item = 1628734826 True Freq = 1
+Item = 1645045133 True Freq = 1
+Item = 1662128515 True Freq = 1
+Item = 1667783255 True Freq = 1
+Item = 1676012060 True Freq = 1
+Item = 1683463309 True Freq = 1
+Item = 1684525753 True Freq = 1
+Item = 1690049656 True Freq = 80737
+Item = 1702786830 True Freq = 1
+Item = 1707058377 True Freq = 1
+Item = 1713532391 True Freq = 1
+Item = 1717090939 True Freq = 1
+Item = 1730439424 True Freq = 1
+Item = 1732374304 True Freq = 1
+Item = 1750201879 True Freq = 1
+Item = 1750455613 True Freq = 1
+Item = 1752621131 True Freq = 1
+Item = 1756925602 True Freq = 1
+Item = 1770896889 True Freq = 1
+Item = 1776265873 True Freq = 1
+Item = 1789965015 True Freq = 1
+Item = 1809807875 True Freq = 1
+Item = 1822781642 True Freq = 1
+Item = 1824468495 True Freq = 1
+Item = 1833121164 True Freq = 1
+Item = 1838855269 True Freq = 1
+Item = 1861233040 True Freq = 1
+Item = 1865210692 True Freq = 1
+Item = 1882855356 True Freq = 1
+Item = 1889279025 True Freq = 1
+Item = 1900269814 True Freq = 1
+Item = 1907519417 True Freq = 1
+Item = 1909255070 True Freq = 1
+Item = 1924505341 True Freq = 1
+Item = 1927194345 True Freq = 1
+Item = 1936875793 True Freq = 80062
+Item = 1962407916 True Freq = 1
+Item = 1976672338 True Freq = 1
+Item = 1980274434 True Freq = 1
+Item = 1980437720 True Freq = 1
+Item = 1986958119 True Freq = 1
+Item = 1996918598 True Freq = 1
+Item = 2016506019 True Freq = 1
+Item = 2018349882 True Freq = 1
+Item = 2020320508 True Freq = 1
+Item = 2021707579 True Freq = 1
+Item = 2028565442 True Freq = 1
+Item = 2038488384 True Freq = 1
+Item = 2040017621 True Freq = 1
+Item = 2040509099 True Freq = 1
+Item = 2055070096 True Freq = 1
+Item = 2085088942 True Freq = 1
+Item = 2088670653 True Freq = 1
+Item = 2098047171 True Freq = 1
+Item = 2103857304 True Freq = 1
+Item = 2105567115 True Freq = 1
+Item = 2119541173 True Freq = 1
+Item = 2135787705 True Freq = 1
+Item = 2138791989 True Freq = 1
+
+
+============================================================
+ALGORITHM: SS | PARAM: 0.02 | RUN: 1
+COMMAND ARGS: eps=0.02, w=15, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:27:06.300000] is: 9640
+Batch size at time [2026-06-19 10:27:06.500000] is: 32032
+Batch size at time [2026-06-19 10:27:06.700000] is: 47262
+Batch size at time [2026-06-19 10:27:06.900000] is: 22648
+Batch size at time [2026-06-19 10:27:07.100000] is: 38458
+Batch size at time [2026-06-19 10:27:07.300000] is: 33137
+Batch size at time [2026-06-19 10:27:07.500000] is: 25436
+Batch size at time [2026-06-19 10:27:07.700000] is: 29078
+Batch size at time [2026-06-19 10:27:07.900000] is: 19437
+Batch size at time [2026-06-19 10:27:08.100000] is: 19721
+Batch size at time [2026-06-19 10:27:08.300000] is: 23553
+Batch size at time [2026-06-19 10:27:08.500000] is: 12372
+Batch size at time [2026-06-19 10:27:08.700000] is: 15794
+Batch size at time [2026-06-19 10:27:08.900000] is: 13986
+Batch size at time [2026-06-19 10:27:09.100000] is: 1678
+Batch size at time [2026-06-19 10:27:09.300000] is: 10349
+Batch size at time [2026-06-19 10:27:09.500000] is: 7547
+Batch size at time [2026-06-19 10:27:09.700000] is: 15939
+Batch size at time [2026-06-19 10:27:09.800000] is: 17195
+Batch size at time [2026-06-19 10:27:10.100000] is: 11465
+Batch size at time [2026-06-19 10:27:10.300000] is: 20552
+Batch size at time [2026-06-19 10:27:10.500000] is: 13144
+Batch size at time [2026-06-19 10:27:10.700000] is: 23899
+Batch size at time [2026-06-19 10:27:10.900000] is: 22388
+Batch size at time [2026-06-19 10:27:11.100000] is: 19001
+Batch size at time [2026-06-19 10:27:11.300000] is: 22509
+Batch size at time [2026-06-19 10:27:11.500000] is: 23901
+Batch size at time [2026-06-19 10:27:11.700000] is: 24601
+Batch size at time [2026-06-19 10:27:11.900000] is: 28246
+Batch size at time [2026-06-19 10:27:12] is: 20841
+Batch size at time [2026-06-19 10:27:12.300000] is: 23900
+Batch size at time [2026-06-19 10:27:12.500000] is: 26564
+Batch size at time [2026-06-19 10:27:12.700000] is: 13562
+Batch size at time [2026-06-19 10:27:12.900000] is: 17752
+Batch size at time [2026-06-19 10:27:13.100000] is: 15097
+Batch size at time [2026-06-19 10:27:13.300000] is: 19289
+Batch size at time [2026-06-19 10:27:13.500000] is: 23921
+Batch size at time [2026-06-19 10:27:13.700000] is: 13562
+Batch size at time [2026-06-19 10:27:13.900000] is: 26972
+Batch size at time [2026-06-19 10:27:14.100000] is: 25028
+Batch size at time [2026-06-19 10:27:14.300000] is: 17752
+Batch size at time [2026-06-19 10:27:14.500000] is: 31315
+Batch size at time [2026-06-19 10:27:14.600000] is: 19580
+Batch size at time [2026-06-19 10:27:14.900000] is: 34804
+Batch size at time [2026-06-19 10:27:15.100000] is: 29921
+Batch size at time [2026-06-19 10:27:15.300000] is: 14127
+Batch size at time [2026-06-19 10:27:15.500000] is: 21045
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.02
+delta = 0.05
+d = 5
+w = 15
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 23
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 273
+Item = 3752900 True Freq = 1
+Item = 12398985 True Freq = 1
+Item = 13158747 True Freq = 1
+Item = 14673339 True Freq = 39880
+Item = 18046601 True Freq = 1
+Item = 25206408 True Freq = 1
+Item = 35245736 True Freq = 1
+Item = 39717065 True Freq = 1
+Item = 47572560 True Freq = 1
+Item = 50369502 True Freq = 1
+Item = 97975266 True Freq = 1
+Item = 101672384 True Freq = 1
+Item = 104300125 True Freq = 1
+Item = 113886814 True Freq = 1
+Item = 114283329 True Freq = 1
+Item = 117640355 True Freq = 1
+Item = 119101037 True Freq = 1
+Item = 121575215 True Freq = 1
+Item = 124597856 True Freq = 1
+Item = 131384798 True Freq = 1
+Item = 134147331 True Freq = 1
+Item = 136605930 True Freq = 1
+Item = 139559047 True Freq = 1
+Item = 145620817 True Freq = 1
+Item = 155177711 True Freq = 1
+Item = 159877630 True Freq = 1
+Item = 161228253 True Freq = 1
+Item = 177130373 True Freq = 1
+Item = 178751343 True Freq = 1
+Item = 185452947 True Freq = 1
+Item = 189713867 True Freq = 1
+Item = 189865954 True Freq = 1
+Item = 195773912 True Freq = 80280
+Item = 196573663 True Freq = 1
+Item = 197755063 True Freq = 1
+Item = 198573127 True Freq = 1
+Item = 215200283 True Freq = 1
+Item = 234139058 True Freq = 1
+Item = 239743526 True Freq = 1
+Item = 243884081 True Freq = 1
+Item = 272193140 True Freq = 1
+Item = 286982194 True Freq = 1
+Item = 289255410 True Freq = 1
+Item = 291035432 True Freq = 1
+Item = 292459386 True Freq = 1
+Item = 298661299 True Freq = 1
+Item = 299419022 True Freq = 1
+Item = 315768742 True Freq = 1
+Item = 321174499 True Freq = 1
+Item = 331964794 True Freq = 1
+Item = 339308454 True Freq = 1
+Item = 339323283 True Freq = 80161
+Item = 379851575 True Freq = 1
+Item = 387337800 True Freq = 1
+Item = 390836830 True Freq = 1
+Item = 396958342 True Freq = 1
+Item = 398948309 True Freq = 1
+Item = 413212388 True Freq = 1
+Item = 416484965 True Freq = 1
+Item = 419720594 True Freq = 1
+Item = 420884863 True Freq = 1
+Item = 422670931 True Freq = 1
+Item = 423678507 True Freq = 1
+Item = 434415286 True Freq = 80012
+Item = 435490843 True Freq = 1
+Item = 437820503 True Freq = 1
+Item = 442278590 True Freq = 1
+Item = 456868065 True Freq = 1
+Item = 460363133 True Freq = 1
+Item = 467724916 True Freq = 1
+Item = 483479914 True Freq = 1
+Item = 503793786 True Freq = 1
+Item = 527028997 True Freq = 1
+Item = 534010075 True Freq = 1
+Item = 562917414 True Freq = 1
+Item = 563994659 True Freq = 1
+Item = 566735930 True Freq = 1
+Item = 586637313 True Freq = 1
+Item = 591655056 True Freq = 1
+Item = 606284968 True Freq = 1
+Item = 611491743 True Freq = 1
+Item = 617425591 True Freq = 1
+Item = 623052592 True Freq = 1
+Item = 627741589 True Freq = 1
+Item = 641486445 True Freq = 79600
+Item = 645900026 True Freq = 1
+Item = 660014708 True Freq = 1
+Item = 663276952 True Freq = 1
+Item = 665914806 True Freq = 1
+Item = 675371755 True Freq = 1
+Item = 680275988 True Freq = 1
+Item = 684652890 True Freq = 1
+Item = 685134104 True Freq = 1
+Item = 686094868 True Freq = 1
+Item = 704906931 True Freq = 1
+Item = 709384303 True Freq = 1
+Item = 723478264 True Freq = 1
+Item = 724017407 True Freq = 1
+Item = 725141795 True Freq = 1
+Item = 725839415 True Freq = 1
+Item = 732151841 True Freq = 1
+Item = 752137273 True Freq = 1
+Item = 764091138 True Freq = 1
+Item = 799033126 True Freq = 1
+Item = 802244075 True Freq = 1
+Item = 809217360 True Freq = 1
+Item = 810828488 True Freq = 1
+Item = 819911327 True Freq = 80096
+Item = 826269573 True Freq = 1
+Item = 827427909 True Freq = 1
+Item = 828572456 True Freq = 1
+Item = 829122195 True Freq = 1
+Item = 831628806 True Freq = 1
+Item = 839704325 True Freq = 1
+Item = 841042387 True Freq = 1
+Item = 856860439 True Freq = 1
+Item = 859182685 True Freq = 1
+Item = 870070186 True Freq = 79779
+Item = 870427849 True Freq = 1
+Item = 870703246 True Freq = 1
+Item = 883590243 True Freq = 1
+Item = 885995895 True Freq = 1
+Item = 888598297 True Freq = 1
+Item = 892404919 True Freq = 1
+Item = 895020898 True Freq = 1
+Item = 901648632 True Freq = 1
+Item = 906306775 True Freq = 1
+Item = 924004826 True Freq = 1
+Item = 926566840 True Freq = 1
+Item = 936344473 True Freq = 1
+Item = 937914881 True Freq = 1
+Item = 939701327 True Freq = 1
+Item = 947134098 True Freq = 1
+Item = 953441168 True Freq = 1
+Item = 953777820 True Freq = 1
+Item = 954260611 True Freq = 1
+Item = 960123161 True Freq = 1
+Item = 971520178 True Freq = 1
+Item = 971789641 True Freq = 1
+Item = 972108142 True Freq = 1
+Item = 983932227 True Freq = 1
+Item = 993750598 True Freq = 1
+Item = 996192598 True Freq = 1
+Item = 1007539436 True Freq = 1
+Item = 1011227764 True Freq = 1
+Item = 1016594062 True Freq = 1
+Item = 1032295925 True Freq = 1
+Item = 1039227623 True Freq = 1
+Item = 1042351084 True Freq = 1
+Item = 1055961672 True Freq = 1
+Item = 1064029818 True Freq = 1
+Item = 1093622186 True Freq = 1
+Item = 1095873624 True Freq = 1
+Item = 1131049916 True Freq = 1
+Item = 1131424897 True Freq = 1
+Item = 1133800243 True Freq = 1
+Item = 1163602584 True Freq = 1
+Item = 1164896503 True Freq = 1
+Item = 1179393223 True Freq = 1
+Item = 1182086281 True Freq = 1
+Item = 1185420043 True Freq = 1
+Item = 1214487468 True Freq = 1
+Item = 1229873802 True Freq = 1
+Item = 1255753306 True Freq = 1
+Item = 1262820224 True Freq = 1
+Item = 1271734751 True Freq = 1
+Item = 1272964402 True Freq = 1
+Item = 1279976612 True Freq = 1
+Item = 1281341222 True Freq = 1
+Item = 1305277409 True Freq = 1
+Item = 1310807956 True Freq = 1
+Item = 1313307945 True Freq = 1
+Item = 1332202469 True Freq = 1
+Item = 1342843986 True Freq = 1
+Item = 1345036181 True Freq = 1
+Item = 1347914369 True Freq = 1
+Item = 1351353905 True Freq = 1
+Item = 1358953032 True Freq = 1
+Item = 1360074987 True Freq = 1
+Item = 1360079021 True Freq = 1
+Item = 1365235786 True Freq = 1
+Item = 1365847478 True Freq = 1
+Item = 1366197576 True Freq = 1
+Item = 1374365075 True Freq = 1
+Item = 1385153903 True Freq = 1
+Item = 1388304958 True Freq = 1
+Item = 1411398707 True Freq = 1
+Item = 1419352286 True Freq = 1
+Item = 1432198576 True Freq = 1
+Item = 1437823513 True Freq = 1
+Item = 1438775691 True Freq = 1
+Item = 1446923009 True Freq = 1
+Item = 1471070205 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1488884401 True Freq = 1
+Item = 1491087947 True Freq = 1
+Item = 1514803192 True Freq = 1
+Item = 1518360888 True Freq = 1
+Item = 1526292187 True Freq = 1
+Item = 1549217372 True Freq = 1
+Item = 1551124744 True Freq = 1
+Item = 1551736822 True Freq = 1
+Item = 1568295635 True Freq = 1
+Item = 1584442777 True Freq = 1
+Item = 1587224521 True Freq = 1
+Item = 1589086514 True Freq = 1
+Item = 1590293530 True Freq = 79482
+Item = 1602670159 True Freq = 1
+Item = 1603051775 True Freq = 1
+Item = 1607852032 True Freq = 1
+Item = 1609454798 True Freq = 1
+Item = 1613917135 True Freq = 1
+Item = 1614196803 True Freq = 1
+Item = 1620876609 True Freq = 1
+Item = 1649995038 True Freq = 1
+Item = 1653869918 True Freq = 1
+Item = 1688999296 True Freq = 1
+Item = 1689233857 True Freq = 1
+Item = 1690049656 True Freq = 80737
+Item = 1698694674 True Freq = 1
+Item = 1702931539 True Freq = 1
+Item = 1711781767 True Freq = 1
+Item = 1718411623 True Freq = 1
+Item = 1720253910 True Freq = 1
+Item = 1728417815 True Freq = 1
+Item = 1730378886 True Freq = 1
+Item = 1731032464 True Freq = 1
+Item = 1744688947 True Freq = 1
+Item = 1744947582 True Freq = 1
+Item = 1753160392 True Freq = 1
+Item = 1767474967 True Freq = 1
+Item = 1770896889 True Freq = 1
+Item = 1775003372 True Freq = 1
+Item = 1776617210 True Freq = 1
+Item = 1792788529 True Freq = 1
+Item = 1799769151 True Freq = 1
+Item = 1826079401 True Freq = 1
+Item = 1826455021 True Freq = 1
+Item = 1835770654 True Freq = 1
+Item = 1856371245 True Freq = 1
+Item = 1857622297 True Freq = 1
+Item = 1863799972 True Freq = 1
+Item = 1873271320 True Freq = 1
+Item = 1873714259 True Freq = 1
+Item = 1888199578 True Freq = 1
+Item = 1893116071 True Freq = 1
+Item = 1914049636 True Freq = 1
+Item = 1916225563 True Freq = 1
+Item = 1919416843 True Freq = 1
+Item = 1936875793 True Freq = 80062
+Item = 1943019545 True Freq = 1
+Item = 1957461335 True Freq = 1
+Item = 1964363249 True Freq = 1
+Item = 1982421472 True Freq = 1
+Item = 2021832917 True Freq = 1
+Item = 2021975663 True Freq = 1
+Item = 2024938391 True Freq = 1
+Item = 2042607946 True Freq = 1
+Item = 2043986566 True Freq = 1
+Item = 2050314644 True Freq = 1
+Item = 2052492518 True Freq = 1
+Item = 2064116538 True Freq = 1
+Item = 2066865158 True Freq = 1
+Item = 2069414564 True Freq = 1
+Item = 2079348722 True Freq = 1
+Item = 2079842006 True Freq = 1
+Item = 2080920562 True Freq = 1
+Item = 2088507657 True Freq = 1
+Item = 2089575472 True Freq = 1
+Item = 2113240705 True Freq = 1
+Item = 2117354303 True Freq = 1
+Item = 2135181379 True Freq = 1
+Item = 2141616522 True Freq = 1
+
+
+============================================================
+ALGORITHM: SS | PARAM: 0.02 | RUN: 2
+COMMAND ARGS: eps=0.02, w=15, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:27:22.500000] is: 1259
+Batch size at time [2026-06-19 10:27:22.700000] is: 25435
+Batch size at time [2026-06-19 10:27:22.900000] is: 141947
+Batch size at time [2026-06-19 10:27:23.100000] is: 91560
+Batch size at time [2026-06-19 10:27:23.300000] is: 52433
+Batch size at time [2026-06-19 10:27:23.500000] is: 112671
+Batch size at time [2026-06-19 10:27:23.700000] is: 25880
+Batch size at time [2026-06-19 10:27:23.900000] is: 68652
+Batch size at time [2026-06-19 10:27:24.100000] is: 129173
+Batch size at time [2026-06-19 10:27:24.300000] is: 28101
+Batch size at time [2026-06-19 10:27:24.500000] is: 113113
+Batch size at time [2026-06-19 10:27:24.700000] is: 53107
+Batch size at time [2026-06-19 10:27:24.900000] is: 38451
+Batch size at time [2026-06-19 10:27:25.100000] is: 76753
+Batch size at time [2026-06-19 10:27:25.200000] is: 11607
+Batch size at time [2026-06-19 10:27:25.500000] is: 29858
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.02
+delta = 0.05
+d = 5
+w = 15
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 27
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 218
+Item = 501737 True Freq = 1
+Item = 10018728 True Freq = 1
+Item = 15038423 True Freq = 1
+Item = 35245736 True Freq = 1
+Item = 60429161 True Freq = 1
+Item = 69840724 True Freq = 1
+Item = 77714672 True Freq = 1
+Item = 79544511 True Freq = 1
+Item = 88726922 True Freq = 1
+Item = 101375303 True Freq = 1
+Item = 104300125 True Freq = 1
+Item = 117342142 True Freq = 1
+Item = 137294161 True Freq = 1
+Item = 146815981 True Freq = 1
+Item = 154430215 True Freq = 1
+Item = 166363324 True Freq = 1
+Item = 191342686 True Freq = 1
+Item = 195773912 True Freq = 80280
+Item = 216558708 True Freq = 1
+Item = 223781925 True Freq = 1
+Item = 235229098 True Freq = 1
+Item = 248806816 True Freq = 1
+Item = 269846062 True Freq = 1
+Item = 301010876 True Freq = 1
+Item = 305986153 True Freq = 1
+Item = 306166561 True Freq = 1
+Item = 310935793 True Freq = 1
+Item = 311339899 True Freq = 1
+Item = 314743959 True Freq = 1
+Item = 330472266 True Freq = 1
+Item = 330555093 True Freq = 1
+Item = 339323283 True Freq = 80161
+Item = 354956562 True Freq = 1
+Item = 367059757 True Freq = 1
+Item = 380346962 True Freq = 1
+Item = 386103909 True Freq = 1
+Item = 399957453 True Freq = 1
+Item = 416676508 True Freq = 1
+Item = 417848105 True Freq = 1
+Item = 433452187 True Freq = 1
+Item = 434415286 True Freq = 80012
+Item = 440981359 True Freq = 1
+Item = 453315348 True Freq = 1
+Item = 455738640 True Freq = 1
+Item = 464542135 True Freq = 1
+Item = 466861861 True Freq = 1
+Item = 493748937 True Freq = 1
+Item = 500775023 True Freq = 1
+Item = 505108216 True Freq = 1
+Item = 509409966 True Freq = 1
+Item = 517766433 True Freq = 1
+Item = 526302347 True Freq = 1
+Item = 538175298 True Freq = 1
+Item = 545599061 True Freq = 1
+Item = 560298815 True Freq = 1
+Item = 565944130 True Freq = 1
+Item = 575525476 True Freq = 1
+Item = 584343816 True Freq = 1
+Item = 594197544 True Freq = 1
+Item = 615975642 True Freq = 1
+Item = 641486445 True Freq = 79600
+Item = 660919562 True Freq = 1
+Item = 661784636 True Freq = 1
+Item = 663241399 True Freq = 1
+Item = 663276952 True Freq = 1
+Item = 675737979 True Freq = 1
+Item = 684652890 True Freq = 1
+Item = 730842427 True Freq = 1
+Item = 739620195 True Freq = 1
+Item = 744838269 True Freq = 1
+Item = 755024055 True Freq = 1
+Item = 775556346 True Freq = 1
+Item = 779306357 True Freq = 1
+Item = 802021270 True Freq = 1
+Item = 802418498 True Freq = 1
+Item = 806926294 True Freq = 1
+Item = 810991677 True Freq = 1
+Item = 816829223 True Freq = 1
+Item = 817695399 True Freq = 1
+Item = 819911327 True Freq = 80096
+Item = 825483323 True Freq = 1
+Item = 829967460 True Freq = 1
+Item = 832754988 True Freq = 1
+Item = 842388102 True Freq = 1
+Item = 857133160 True Freq = 1
+Item = 859182685 True Freq = 1
+Item = 861088378 True Freq = 1
+Item = 863396362 True Freq = 1
+Item = 870070186 True Freq = 79779
+Item = 870665712 True Freq = 1
+Item = 899406166 True Freq = 1
+Item = 917481817 True Freq = 1
+Item = 924004826 True Freq = 1
+Item = 939343869 True Freq = 1
+Item = 940685282 True Freq = 1
+Item = 956369925 True Freq = 1
+Item = 965716661 True Freq = 1
+Item = 990586492 True Freq = 1
+Item = 992199500 True Freq = 1
+Item = 1007020414 True Freq = 1
+Item = 1022545345 True Freq = 1
+Item = 1032555590 True Freq = 1
+Item = 1038501322 True Freq = 1
+Item = 1039227623 True Freq = 1
+Item = 1043366264 True Freq = 1
+Item = 1044687765 True Freq = 1
+Item = 1046468746 True Freq = 1
+Item = 1064029818 True Freq = 1
+Item = 1079967465 True Freq = 1
+Item = 1090802758 True Freq = 1
+Item = 1093622186 True Freq = 1
+Item = 1102962422 True Freq = 1
+Item = 1108640928 True Freq = 1
+Item = 1125008147 True Freq = 1
+Item = 1133800243 True Freq = 1
+Item = 1138301101 True Freq = 1
+Item = 1140000832 True Freq = 1
+Item = 1141744354 True Freq = 1
+Item = 1156709690 True Freq = 1
+Item = 1163602584 True Freq = 1
+Item = 1170190313 True Freq = 1
+Item = 1170884310 True Freq = 1
+Item = 1191146246 True Freq = 1
+Item = 1192284452 True Freq = 1
+Item = 1198510830 True Freq = 1
+Item = 1211030349 True Freq = 1
+Item = 1211384379 True Freq = 1
+Item = 1221153749 True Freq = 1
+Item = 1222667254 True Freq = 1
+Item = 1231091723 True Freq = 1
+Item = 1241251468 True Freq = 1
+Item = 1247719630 True Freq = 1
+Item = 1251806171 True Freq = 1
+Item = 1278510264 True Freq = 1
+Item = 1282275557 True Freq = 1
+Item = 1307302459 True Freq = 1
+Item = 1310055764 True Freq = 1
+Item = 1321752063 True Freq = 1
+Item = 1324162207 True Freq = 1
+Item = 1329509096 True Freq = 1
+Item = 1331714420 True Freq = 1
+Item = 1336575421 True Freq = 1
+Item = 1340323746 True Freq = 1
+Item = 1350128841 True Freq = 1
+Item = 1355438191 True Freq = 1
+Item = 1379659867 True Freq = 1
+Item = 1392900254 True Freq = 1
+Item = 1401844826 True Freq = 1
+Item = 1410881519 True Freq = 1
+Item = 1412552045 True Freq = 1
+Item = 1424432131 True Freq = 1
+Item = 1425071074 True Freq = 1
+Item = 1438307005 True Freq = 1
+Item = 1453744424 True Freq = 1
+Item = 1454588416 True Freq = 1
+Item = 1457793126 True Freq = 1
+Item = 1463897278 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1479502981 True Freq = 1
+Item = 1479829983 True Freq = 1
+Item = 1490227154 True Freq = 1
+Item = 1495116568 True Freq = 1
+Item = 1513443059 True Freq = 1
+Item = 1523032049 True Freq = 1
+Item = 1549544058 True Freq = 1
+Item = 1551401731 True Freq = 1
+Item = 1551665795 True Freq = 1
+Item = 1561020085 True Freq = 1
+Item = 1571287937 True Freq = 1
+Item = 1585224387 True Freq = 1
+Item = 1588810085 True Freq = 1
+Item = 1590293530 True Freq = 79482
+Item = 1592422341 True Freq = 1
+Item = 1602945517 True Freq = 1
+Item = 1603681002 True Freq = 1
+Item = 1616726908 True Freq = 1
+Item = 1630142142 True Freq = 1
+Item = 1632080572 True Freq = 1
+Item = 1655190611 True Freq = 1
+Item = 1660643778 True Freq = 1
+Item = 1664508606 True Freq = 1
+Item = 1667437076 True Freq = 1
+Item = 1676612649 True Freq = 1
+Item = 1684908960 True Freq = 1
+Item = 1685138036 True Freq = 1
+Item = 1690049656 True Freq = 80737
+Item = 1722628202 True Freq = 1
+Item = 1728908607 True Freq = 1
+Item = 1751032840 True Freq = 1
+Item = 1770896889 True Freq = 1
+Item = 1779254693 True Freq = 1
+Item = 1795813121 True Freq = 1
+Item = 1803067035 True Freq = 1
+Item = 1804619321 True Freq = 1
+Item = 1819854945 True Freq = 1
+Item = 1820391510 True Freq = 1
+Item = 1862687288 True Freq = 1
+Item = 1879723268 True Freq = 1
+Item = 1888429353 True Freq = 1
+Item = 1890808904 True Freq = 1
+Item = 1907519417 True Freq = 1
+Item = 1914152188 True Freq = 1
+Item = 1914190268 True Freq = 1
+Item = 1924280016 True Freq = 1
+Item = 1926559451 True Freq = 1
+Item = 1936875793 True Freq = 80062
+Item = 1966299134 True Freq = 1
+Item = 1966645805 True Freq = 1
+Item = 1977054446 True Freq = 1
+Item = 2001411340 True Freq = 1
+Item = 2001762047 True Freq = 1
+Item = 2015873631 True Freq = 1
+Item = 2041738304 True Freq = 1
+Item = 2048663459 True Freq = 1
+Item = 2097607144 True Freq = 1
+Item = 2101751777 True Freq = 1
+Item = 2119535004 True Freq = 1
+Item = 2146769478 True Freq = 1
+
+
+============================================================
+ALGORITHM: SS | PARAM: 0.02 | RUN: 3
+COMMAND ARGS: eps=0.02, w=15, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:27:32.900000] is: 1259
+Batch size at time [2026-06-19 10:27:33.100000] is: 8940
+Batch size at time [2026-06-19 10:27:33.300000] is: 28115
+Batch size at time [2026-06-19 10:27:33.500000] is: 34956
+Batch size at time [2026-06-19 10:27:33.700000] is: 16923
+Batch size at time [2026-06-19 10:27:33.900000] is: 32433
+Batch size at time [2026-06-19 10:27:34.100000] is: 15252
+Batch size at time [2026-06-19 10:27:34.300000] is: 22786
+Batch size at time [2026-06-19 10:27:34.500000] is: 25730
+Batch size at time [2026-06-19 10:27:34.700000] is: 3216
+Batch size at time [2026-06-19 10:27:34.900000] is: 19422
+Batch size at time [2026-06-19 10:27:35.100000] is: 15105
+Batch size at time [2026-06-19 10:27:35.300000] is: 12716
+Batch size at time [2026-06-19 10:27:35.500000] is: 19155
+Batch size at time [2026-06-19 10:27:35.700000] is: 13287
+Batch size at time [2026-06-19 10:27:35.900000] is: 16643
+Batch size at time [2026-06-19 10:27:36.100000] is: 18168
+Batch size at time [2026-06-19 10:27:36.300000] is: 12303
+Batch size at time [2026-06-19 10:27:36.500000] is: 17330
+Batch size at time [2026-06-19 10:27:36.700000] is: 13851
+Batch size at time [2026-06-19 10:27:36.900000] is: 20407
+Batch size at time [2026-06-19 10:27:37.100000] is: 24605
+Batch size at time [2026-06-19 10:27:37.300000] is: 10766
+Batch size at time [2026-06-19 10:27:37.500000] is: 18180
+Batch size at time [2026-06-19 10:27:37.700000] is: 16914
+Batch size at time [2026-06-19 10:27:37.900000] is: 1540
+Batch size at time [2026-06-19 10:27:38] is: 13142
+Batch size at time [2026-06-19 10:27:38.300000] is: 8385
+Batch size at time [2026-06-19 10:27:38.400000] is: 6849
+Batch size at time [2026-06-19 10:27:38.700000] is: 12872
+Batch size at time [2026-06-19 10:27:38.900000] is: 6579
+Batch size at time [2026-06-19 10:27:39.100000] is: 12990
+Batch size at time [2026-06-19 10:27:39.300000] is: 12445
+Batch size at time [2026-06-19 10:27:39.500000] is: 14397
+Batch size at time [2026-06-19 10:27:39.700000] is: 19428
+Batch size at time [2026-06-19 10:27:39.900000] is: 10621
+Batch size at time [2026-06-19 10:27:40.100000] is: 22228
+Batch size at time [2026-06-19 10:27:40.300000] is: 19441
+Batch size at time [2026-06-19 10:27:40.500000] is: 14685
+Batch size at time [2026-06-19 10:27:40.700000] is: 22228
+Batch size at time [2026-06-19 10:27:40.900000] is: 17467
+Batch size at time [2026-06-19 10:27:41] is: 5727
+Batch size at time [2026-06-19 10:27:41.300000] is: 17066
+Batch size at time [2026-06-19 10:27:41.500000] is: 6710
+Batch size at time [2026-06-19 10:27:41.700000] is: 14124
+Batch size at time [2026-06-19 10:27:41.800000] is: 13832
+Batch size at time [2026-06-19 10:27:42.100000] is: 11045
+Batch size at time [2026-06-19 10:27:42.300000] is: 19289
+Batch size at time [2026-06-19 10:27:42.400000] is: 12310
+Batch size at time [2026-06-19 10:27:42.700000] is: 18602
+Batch size at time [2026-06-19 10:27:42.900000] is: 21111
+Batch size at time [2026-06-19 10:27:43.100000] is: 12853
+Batch size at time [2026-06-19 10:27:43.200000] is: 17057
+Batch size at time [2026-06-19 10:27:43.400000] is: 12022
+Batch size at time [2026-06-19 10:27:43.700000] is: 17056
+Batch size at time [2026-06-19 10:27:43.900000] is: 21956
+Batch size at time [2026-06-19 10:27:44] is: 10202
+Batch size at time [2026-06-19 10:27:44.300000] is: 24185
+Batch size at time [2026-06-19 10:27:44.500000] is: 22229
+Batch size at time [2026-06-19 10:27:44.600000] is: 2795
+Batch size at time [2026-06-19 10:27:44.900000] is: 13425
+Batch size at time [2026-06-19 10:27:45.100000] is: 12159
+Batch size at time [2026-06-19 10:27:45.300000] is: 8528
+Batch size at time [2026-06-19 10:27:45.400000] is: 12732
+Batch size at time [2026-06-19 10:27:45.700000] is: 9796
+Batch size at time [2026-06-19 10:27:45.900000] is: 9430
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.02
+delta = 0.05
+d = 5
+w = 15
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 27
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 98
+Item = 31782985 True Freq = 1
+Item = 44782982 True Freq = 1
+Item = 95372167 True Freq = 1
+Item = 146868984 True Freq = 1
+Item = 151585705 True Freq = 1
+Item = 195773912 True Freq = 80280
+Item = 209375909 True Freq = 1
+Item = 337488697 True Freq = 1
+Item = 338372701 True Freq = 1
+Item = 339323283 True Freq = 80161
+Item = 372575553 True Freq = 1
+Item = 404102712 True Freq = 1
+Item = 425897611 True Freq = 1
+Item = 427412230 True Freq = 1
+Item = 434415286 True Freq = 80012
+Item = 434822838 True Freq = 1
+Item = 454739474 True Freq = 1
+Item = 465276194 True Freq = 1
+Item = 502760725 True Freq = 1
+Item = 510014058 True Freq = 1
+Item = 528475350 True Freq = 1
+Item = 554632585 True Freq = 1
+Item = 584674289 True Freq = 1
+Item = 585948565 True Freq = 1
+Item = 594197544 True Freq = 1
+Item = 638051077 True Freq = 1
+Item = 638246366 True Freq = 1
+Item = 638923282 True Freq = 1
+Item = 641486445 True Freq = 79600
+Item = 662530544 True Freq = 1
+Item = 670616373 True Freq = 1
+Item = 816824807 True Freq = 1
+Item = 819911327 True Freq = 80096
+Item = 845578648 True Freq = 1
+Item = 847913618 True Freq = 1
+Item = 859217775 True Freq = 1
+Item = 870070186 True Freq = 79779
+Item = 870781630 True Freq = 1
+Item = 904437045 True Freq = 1
+Item = 904468045 True Freq = 1
+Item = 904879663 True Freq = 1
+Item = 905422978 True Freq = 1
+Item = 924004826 True Freq = 1
+Item = 976909249 True Freq = 1
+Item = 982655547 True Freq = 1
+Item = 1015549107 True Freq = 1
+Item = 1019916802 True Freq = 1
+Item = 1037996307 True Freq = 1
+Item = 1039227623 True Freq = 1
+Item = 1047624302 True Freq = 1
+Item = 1093622186 True Freq = 1
+Item = 1115625308 True Freq = 1
+Item = 1128883347 True Freq = 1
+Item = 1138301101 True Freq = 1
+Item = 1193652678 True Freq = 1
+Item = 1209578497 True Freq = 1
+Item = 1235506945 True Freq = 1
+Item = 1242428705 True Freq = 1
+Item = 1274900740 True Freq = 1
+Item = 1293607837 True Freq = 1
+Item = 1307685180 True Freq = 1
+Item = 1321798470 True Freq = 1
+Item = 1373002778 True Freq = 1
+Item = 1397610368 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1484444728 True Freq = 1
+Item = 1486194339 True Freq = 1
+Item = 1491370919 True Freq = 1
+Item = 1510453863 True Freq = 1
+Item = 1555524400 True Freq = 1
+Item = 1584314526 True Freq = 1
+Item = 1590293530 True Freq = 79482
+Item = 1645316034 True Freq = 1
+Item = 1652309513 True Freq = 1
+Item = 1683376160 True Freq = 1
+Item = 1690049656 True Freq = 80737
+Item = 1708343498 True Freq = 1
+Item = 1712584962 True Freq = 1
+Item = 1714781683 True Freq = 1
+Item = 1753761561 True Freq = 1
+Item = 1770896889 True Freq = 1
+Item = 1787914825 True Freq = 1
+Item = 1821041011 True Freq = 1
+Item = 1824147286 True Freq = 1
+Item = 1836079621 True Freq = 1
+Item = 1900624339 True Freq = 1
+Item = 1936875793 True Freq = 80062
+Item = 1937893399 True Freq = 1
+Item = 1966077266 True Freq = 1
+Item = 1984894804 True Freq = 1
+Item = 1986042121 True Freq = 1
+Item = 1999762326 True Freq = 1
+Item = 2011243422 True Freq = 1
+Item = 2015278443 True Freq = 1
+Item = 2049378384 True Freq = 1
+Item = 2060392250 True Freq = 1
+Item = 2108691063 True Freq = 1
+Item = 2120033604 True Freq = 1
+
+
+============================================================
+ALGORITHM: SS | PARAM: 0.04 | RUN: 1
+COMMAND ARGS: eps=0.04, w=15, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:27:52.900000] is: 8663
+Batch size at time [2026-06-19 10:27:53.100000] is: 25871
+Batch size at time [2026-06-19 10:27:53.300000] is: 46711
+Batch size at time [2026-06-19 10:27:53.500000] is: 33553
+Batch size at time [2026-06-19 10:27:53.700000] is: 33845
+Batch size at time [2026-06-19 10:27:53.900000] is: 38452
+Batch size at time [2026-06-19 10:27:54.100000] is: 10619
+Batch size at time [2026-06-19 10:27:54.300000] is: 32430
+Batch size at time [2026-06-19 10:27:54.500000] is: 22232
+Batch size at time [2026-06-19 10:27:54.600000] is: 16919
+Batch size at time [2026-06-19 10:27:54.900000] is: 19298
+Batch size at time [2026-06-19 10:27:55.100000] is: 14674
+Batch size at time [2026-06-19 10:27:55.300000] is: 18036
+Batch size at time [2026-06-19 10:27:55.500000] is: 15230
+Batch size at time [2026-06-19 10:27:55.600000] is: 10219
+Batch size at time [2026-06-19 10:27:55.900000] is: 19570
+Batch size at time [2026-06-19 10:27:56.100000] is: 13562
+Batch size at time [2026-06-19 10:27:56.300000] is: 2793
+Batch size at time [2026-06-19 10:27:56.500000] is: 10766
+Batch size at time [2026-06-19 10:27:56.700000] is: 13842
+Batch size at time [2026-06-19 10:27:56.900000] is: 15519
+Batch size at time [2026-06-19 10:27:57.100000] is: 16218
+Batch size at time [2026-06-19 10:27:57.300000] is: 2798
+Batch size at time [2026-06-19 10:27:57.500000] is: 14677
+Batch size at time [2026-06-19 10:27:57.700000] is: 10203
+Batch size at time [2026-06-19 10:27:57.900000] is: 13712
+Batch size at time [2026-06-19 10:27:58.100000] is: 18595
+Batch size at time [2026-06-19 10:27:58.200000] is: 3352
+Batch size at time [2026-06-19 10:27:58.500000] is: 13986
+Batch size at time [2026-06-19 10:27:58.700000] is: 12435
+Batch size at time [2026-06-19 10:27:58.900000] is: 9784
+Batch size at time [2026-06-19 10:27:59.100000] is: 16770
+Batch size at time [2026-06-19 10:27:59.300000] is: 8529
+Batch size at time [2026-06-19 10:27:59.400000] is: 11461
+Batch size at time [2026-06-19 10:27:59.700000] is: 15527
+Batch size at time [2026-06-19 10:27:59.900000] is: 2655
+Batch size at time [2026-06-19 10:28:00.100000] is: 13284
+Batch size at time [2026-06-19 10:28:00.300000] is: 6154
+Batch size at time [2026-06-19 10:28:00.500000] is: 14405
+Batch size at time [2026-06-19 10:28:00.700000] is: 12859
+Batch size at time [2026-06-19 10:28:00.900000] is: 10195
+Batch size at time [2026-06-19 10:28:01.100000] is: 14538
+Batch size at time [2026-06-19 10:28:01.300000] is: 15668
+Batch size at time [2026-06-19 10:28:01.500000] is: 14399
+Batch size at time [2026-06-19 10:28:01.700000] is: 20541
+Batch size at time [2026-06-19 10:28:01.900000] is: 14683
+Batch size at time [2026-06-19 10:28:02.100000] is: 15797
+Batch size at time [2026-06-19 10:28:02.300000] is: 18883
+Batch size at time [2026-06-19 10:28:02.400000] is: 9510
+Batch size at time [2026-06-19 10:28:02.700000] is: 21251
+Batch size at time [2026-06-19 10:28:02.900000] is: 14811
+Batch size at time [2026-06-19 10:28:03.100000] is: 13141
+Batch size at time [2026-06-19 10:28:03.300000] is: 15230
+Batch size at time [2026-06-19 10:28:03.400000] is: 8531
+Batch size at time [2026-06-19 10:28:03.700000] is: 12580
+Batch size at time [2026-06-19 10:28:03.900000] is: 13853
+Batch size at time [2026-06-19 10:28:04.100000] is: 5307
+Batch size at time [2026-06-19 10:28:04.300000] is: 11186
+Batch size at time [2026-06-19 10:28:04.500000] is: 5595
+Batch size at time [2026-06-19 10:28:04.700000] is: 13559
+Batch size at time [2026-06-19 10:28:04.900000] is: 11883
+Batch size at time [2026-06-19 10:28:05.100000] is: 9926
+Batch size at time [2026-06-19 10:28:05.300000] is: 17893
+Batch size at time [2026-06-19 10:28:05.400000] is: 13285
+Batch size at time [2026-06-19 10:28:05.700000] is: 15803
+Batch size at time [2026-06-19 10:28:05.900000] is: 17903
+Batch size at time [2026-06-19 10:28:06.100000] is: 3841
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.04
+delta = 0.05
+d = 5
+w = 15
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 19
+Item = 14673339 True Freq = 39880
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 632507218 True Freq = 39947
+Item = 637121204 True Freq = 40134
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 978604355 True Freq = 40019
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 173
+Item = 21212375 True Freq = 1
+Item = 31782985 True Freq = 1
+Item = 32082663 True Freq = 1
+Item = 42509143 True Freq = 1
+Item = 51974424 True Freq = 1
+Item = 56125410 True Freq = 1
+Item = 58156778 True Freq = 1
+Item = 60924095 True Freq = 1
+Item = 95622726 True Freq = 1
+Item = 110516493 True Freq = 1
+Item = 130553773 True Freq = 1
+Item = 138303542 True Freq = 1
+Item = 138495762 True Freq = 1
+Item = 141075927 True Freq = 1
+Item = 154430215 True Freq = 1
+Item = 155603927 True Freq = 1
+Item = 172283115 True Freq = 1
+Item = 176440859 True Freq = 1
+Item = 195773912 True Freq = 80280
+Item = 199222722 True Freq = 1
+Item = 202614126 True Freq = 1
+Item = 214965274 True Freq = 1
+Item = 215887267 True Freq = 1
+Item = 222872386 True Freq = 1
+Item = 274309548 True Freq = 1
+Item = 280235833 True Freq = 1
+Item = 289406153 True Freq = 1
+Item = 302064657 True Freq = 1
+Item = 302675378 True Freq = 1
+Item = 319327531 True Freq = 1
+Item = 320740930 True Freq = 1
+Item = 328633063 True Freq = 1
+Item = 339323283 True Freq = 80161
+Item = 386594842 True Freq = 1
+Item = 397146263 True Freq = 1
+Item = 422236767 True Freq = 1
+Item = 422784756 True Freq = 1
+Item = 434415286 True Freq = 80012
+Item = 445767752 True Freq = 1
+Item = 462448226 True Freq = 1
+Item = 477090881 True Freq = 1
+Item = 492108639 True Freq = 1
+Item = 534452744 True Freq = 1
+Item = 606340196 True Freq = 1
+Item = 608937409 True Freq = 1
+Item = 616444569 True Freq = 1
+Item = 619705416 True Freq = 1
+Item = 620411313 True Freq = 1
+Item = 629392349 True Freq = 1
+Item = 632507218 True Freq = 39947
+Item = 634849990 True Freq = 1
+Item = 636719036 True Freq = 1
+Item = 641486445 True Freq = 79600
+Item = 642449662 True Freq = 1
+Item = 665533639 True Freq = 1
+Item = 669199748 True Freq = 1
+Item = 669938077 True Freq = 1
+Item = 678990135 True Freq = 1
+Item = 690006107 True Freq = 1
+Item = 697819465 True Freq = 1
+Item = 709089208 True Freq = 1
+Item = 717544470 True Freq = 1
+Item = 744087741 True Freq = 1
+Item = 752695897 True Freq = 1
+Item = 759576393 True Freq = 1
+Item = 793460355 True Freq = 1
+Item = 802418498 True Freq = 1
+Item = 813777802 True Freq = 1
+Item = 816824807 True Freq = 1
+Item = 819911327 True Freq = 80096
+Item = 828965074 True Freq = 1
+Item = 829967460 True Freq = 1
+Item = 832754988 True Freq = 1
+Item = 837286325 True Freq = 1
+Item = 843158851 True Freq = 1
+Item = 848467845 True Freq = 1
+Item = 857543602 True Freq = 1
+Item = 870070186 True Freq = 79779
+Item = 893060162 True Freq = 1
+Item = 924004826 True Freq = 1
+Item = 935238111 True Freq = 1
+Item = 936364690 True Freq = 1
+Item = 956983782 True Freq = 1
+Item = 981011210 True Freq = 1
+Item = 992646238 True Freq = 1
+Item = 1038579727 True Freq = 1
+Item = 1039227623 True Freq = 1
+Item = 1046213660 True Freq = 1
+Item = 1079523483 True Freq = 1
+Item = 1086112113 True Freq = 1
+Item = 1093622186 True Freq = 1
+Item = 1095588425 True Freq = 1
+Item = 1099310148 True Freq = 1
+Item = 1112694228 True Freq = 1
+Item = 1116003124 True Freq = 1
+Item = 1126645922 True Freq = 1
+Item = 1136374873 True Freq = 1
+Item = 1164471439 True Freq = 1
+Item = 1174612401 True Freq = 1
+Item = 1191912114 True Freq = 1
+Item = 1204506161 True Freq = 1
+Item = 1211030349 True Freq = 1
+Item = 1223867114 True Freq = 1
+Item = 1227253452 True Freq = 1
+Item = 1260031284 True Freq = 1
+Item = 1266932185 True Freq = 1
+Item = 1295267708 True Freq = 1
+Item = 1309844818 True Freq = 1
+Item = 1338902009 True Freq = 1
+Item = 1346434010 True Freq = 1
+Item = 1347632866 True Freq = 1
+Item = 1367204251 True Freq = 1
+Item = 1379659867 True Freq = 1
+Item = 1381503992 True Freq = 1
+Item = 1407302720 True Freq = 1
+Item = 1415803654 True Freq = 1
+Item = 1417911565 True Freq = 1
+Item = 1431346049 True Freq = 1
+Item = 1444132971 True Freq = 1
+Item = 1446259466 True Freq = 1
+Item = 1471787179 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1487919436 True Freq = 1
+Item = 1510975559 True Freq = 1
+Item = 1515494273 True Freq = 1
+Item = 1553472138 True Freq = 1
+Item = 1566581361 True Freq = 1
+Item = 1575261505 True Freq = 1
+Item = 1590293530 True Freq = 79482
+Item = 1593548959 True Freq = 1
+Item = 1605109565 True Freq = 1
+Item = 1618761926 True Freq = 1
+Item = 1656970862 True Freq = 1
+Item = 1657137029 True Freq = 1
+Item = 1658387013 True Freq = 1
+Item = 1663566034 True Freq = 1
+Item = 1666559576 True Freq = 1
+Item = 1679312716 True Freq = 1
+Item = 1690049656 True Freq = 80737
+Item = 1714877947 True Freq = 1
+Item = 1742407064 True Freq = 1
+Item = 1751700993 True Freq = 1
+Item = 1752906264 True Freq = 1
+Item = 1770896889 True Freq = 1
+Item = 1781247115 True Freq = 1
+Item = 1826987910 True Freq = 1
+Item = 1835203465 True Freq = 1
+Item = 1836677604 True Freq = 1
+Item = 1884779387 True Freq = 1
+Item = 1907858440 True Freq = 1
+Item = 1925755321 True Freq = 1
+Item = 1933588230 True Freq = 1
+Item = 1936875793 True Freq = 80062
+Item = 1947193322 True Freq = 1
+Item = 1964879596 True Freq = 1
+Item = 1986794875 True Freq = 1
+Item = 1996882418 True Freq = 1
+Item = 1999350962 True Freq = 1
+Item = 2021707579 True Freq = 1
+Item = 2033994461 True Freq = 1
+Item = 2041878948 True Freq = 1
+Item = 2043807279 True Freq = 1
+Item = 2050286732 True Freq = 1
+Item = 2050626604 True Freq = 1
+Item = 2067476536 True Freq = 1
+Item = 2079132960 True Freq = 1
+Item = 2079999849 True Freq = 1
+Item = 2080781738 True Freq = 1
+Item = 2084967399 True Freq = 1
+Item = 2085964988 True Freq = 1
+Item = 2103511765 True Freq = 1
+Item = 2112061390 True Freq = 1
+Item = 2132135634 True Freq = 1
+
+
+============================================================
+ALGORITHM: SS | PARAM: 0.04 | RUN: 2
+COMMAND ARGS: eps=0.04, w=15, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:28:12.900000] is: 2052
+Batch size at time [2026-06-19 10:28:13.100000] is: 46052
+Batch size at time [2026-06-19 10:28:13.300000] is: 156742
+Batch size at time [2026-06-19 10:28:13.500000] is: 39281
+Batch size at time [2026-06-19 10:28:13.700000] is: 56345
+Batch size at time [2026-06-19 10:28:13.900000] is: 106535
+Batch size at time [2026-06-19 10:28:14.100000] is: 16077
+Batch size at time [2026-06-19 10:28:14.300000] is: 54949
+Batch size at time [2026-06-19 10:28:14.500000] is: 40407
+Batch size at time [2026-06-19 10:28:14.700000] is: 17744
+Batch size at time [2026-06-19 10:28:14.900000] is: 48791
+Batch size at time [2026-06-19 10:28:15] is: 10909
+Batch size at time [2026-06-19 10:28:15.300000] is: 44464
+Batch size at time [2026-06-19 10:28:15.500000] is: 41379
+Batch size at time [2026-06-19 10:28:15.700000] is: 15351
+Batch size at time [2026-06-19 10:28:15.900000] is: 47832
+Batch size at time [2026-06-19 10:28:16.100000] is: 17906
+Batch size at time [2026-06-19 10:28:16.300000] is: 36766
+Batch size at time [2026-06-19 10:28:16.500000] is: 30613
+Batch size at time [2026-06-19 10:28:16.700000] is: 17331
+Batch size at time [2026-06-19 10:28:16.900000] is: 23493
+Batch size at time [2026-06-19 10:28:17.100000] is: 19711
+Batch size at time [2026-06-19 10:28:17.300000] is: 16919
+Batch size at time [2026-06-19 10:28:17.500000] is: 21808
+Batch size at time [2026-06-19 10:28:17.600000] is: 4611
+Batch size at time [2026-06-19 10:28:17.900000] is: 19292
+Batch size at time [2026-06-19 10:28:18.100000] is: 14123
+Batch size at time [2026-06-19 10:28:18.300000] is: 13991
+Batch size at time [2026-06-19 10:28:18.500000] is: 18526
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.04
+delta = 0.05
+d = 5
+w = 15
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 17
+Item = 14673339 True Freq = 39880
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 632507218 True Freq = 39947
+Item = 637121204 True Freq = 40134
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 978604355 True Freq = 40019
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 224
+Item = 1980487 True Freq = 1
+Item = 3898220 True Freq = 1
+Item = 31001167 True Freq = 1
+Item = 31371749 True Freq = 1
+Item = 41514699 True Freq = 1
+Item = 44083564 True Freq = 1
+Item = 68043237 True Freq = 1
+Item = 72573434 True Freq = 1
+Item = 80870765 True Freq = 1
+Item = 142282448 True Freq = 1
+Item = 151106666 True Freq = 1
+Item = 152698143 True Freq = 1
+Item = 157367749 True Freq = 1
+Item = 161768108 True Freq = 1
+Item = 172084770 True Freq = 1
+Item = 181519458 True Freq = 1
+Item = 185452947 True Freq = 1
+Item = 188037374 True Freq = 1
+Item = 195773912 True Freq = 80280
+Item = 205338572 True Freq = 1
+Item = 206188337 True Freq = 1
+Item = 219970481 True Freq = 1
+Item = 259525933 True Freq = 1
+Item = 260453500 True Freq = 1
+Item = 281550407 True Freq = 1
+Item = 293345155 True Freq = 1
+Item = 309409217 True Freq = 1
+Item = 315832944 True Freq = 1
+Item = 324649036 True Freq = 1
+Item = 333119721 True Freq = 1
+Item = 336533470 True Freq = 1
+Item = 339323283 True Freq = 80161
+Item = 340033072 True Freq = 1
+Item = 346549791 True Freq = 1
+Item = 355866364 True Freq = 1
+Item = 359646286 True Freq = 1
+Item = 379112127 True Freq = 1
+Item = 386103909 True Freq = 1
+Item = 391320122 True Freq = 1
+Item = 394648979 True Freq = 1
+Item = 402675391 True Freq = 1
+Item = 433237295 True Freq = 1
+Item = 434415286 True Freq = 80012
+Item = 457321076 True Freq = 1
+Item = 460576301 True Freq = 1
+Item = 460820884 True Freq = 1
+Item = 464744787 True Freq = 1
+Item = 472722266 True Freq = 1
+Item = 487829276 True Freq = 1
+Item = 499310608 True Freq = 1
+Item = 501385086 True Freq = 1
+Item = 511111385 True Freq = 1
+Item = 516709086 True Freq = 1
+Item = 521081734 True Freq = 1
+Item = 523271617 True Freq = 1
+Item = 527425825 True Freq = 1
+Item = 529935322 True Freq = 1
+Item = 536634565 True Freq = 1
+Item = 545599061 True Freq = 1
+Item = 570995946 True Freq = 1
+Item = 572776200 True Freq = 1
+Item = 574097418 True Freq = 1
+Item = 592293499 True Freq = 1
+Item = 595116440 True Freq = 1
+Item = 616034487 True Freq = 1
+Item = 627700191 True Freq = 1
+Item = 633670407 True Freq = 1
+Item = 641486445 True Freq = 79600
+Item = 642680567 True Freq = 1
+Item = 646208317 True Freq = 1
+Item = 656719941 True Freq = 1
+Item = 687099722 True Freq = 1
+Item = 701657503 True Freq = 1
+Item = 714212477 True Freq = 1
+Item = 721652037 True Freq = 1
+Item = 724017407 True Freq = 1
+Item = 731677247 True Freq = 1
+Item = 734940774 True Freq = 1
+Item = 740391226 True Freq = 1
+Item = 744104404 True Freq = 1
+Item = 769037887 True Freq = 1
+Item = 783773273 True Freq = 1
+Item = 785071068 True Freq = 1
+Item = 786582893 True Freq = 1
+Item = 792094261 True Freq = 1
+Item = 796001744 True Freq = 1
+Item = 802244075 True Freq = 1
+Item = 810828488 True Freq = 1
+Item = 819911327 True Freq = 80096
+Item = 820339670 True Freq = 1
+Item = 834490978 True Freq = 1
+Item = 860426353 True Freq = 1
+Item = 866096252 True Freq = 1
+Item = 870070186 True Freq = 79779
+Item = 884219765 True Freq = 1
+Item = 898385773 True Freq = 1
+Item = 910607178 True Freq = 1
+Item = 918076173 True Freq = 1
+Item = 924004826 True Freq = 1
+Item = 936699209 True Freq = 1
+Item = 941996852 True Freq = 1
+Item = 944452037 True Freq = 1
+Item = 953777820 True Freq = 1
+Item = 980800960 True Freq = 1
+Item = 981280963 True Freq = 1
+Item = 1032438268 True Freq = 1
+Item = 1039227623 True Freq = 1
+Item = 1064717676 True Freq = 1
+Item = 1081277579 True Freq = 1
+Item = 1086983465 True Freq = 1
+Item = 1093622186 True Freq = 1
+Item = 1136351499 True Freq = 1
+Item = 1148020871 True Freq = 1
+Item = 1184237496 True Freq = 1
+Item = 1197366615 True Freq = 1
+Item = 1197751337 True Freq = 1
+Item = 1198510830 True Freq = 1
+Item = 1212278927 True Freq = 1
+Item = 1229095541 True Freq = 1
+Item = 1239432067 True Freq = 1
+Item = 1240297683 True Freq = 1
+Item = 1241251468 True Freq = 1
+Item = 1245619143 True Freq = 1
+Item = 1247625855 True Freq = 1
+Item = 1260031284 True Freq = 1
+Item = 1262629542 True Freq = 1
+Item = 1264433149 True Freq = 1
+Item = 1276385556 True Freq = 1
+Item = 1282975095 True Freq = 1
+Item = 1291692498 True Freq = 1
+Item = 1292357285 True Freq = 1
+Item = 1295267708 True Freq = 1
+Item = 1298380034 True Freq = 1
+Item = 1299143861 True Freq = 1
+Item = 1308831813 True Freq = 1
+Item = 1324983058 True Freq = 1
+Item = 1331755634 True Freq = 1
+Item = 1346051591 True Freq = 1
+Item = 1347668280 True Freq = 1
+Item = 1351131338 True Freq = 1
+Item = 1357810651 True Freq = 1
+Item = 1360348918 True Freq = 1
+Item = 1360995286 True Freq = 1
+Item = 1365847478 True Freq = 1
+Item = 1369981877 True Freq = 1
+Item = 1371708893 True Freq = 1
+Item = 1374514751 True Freq = 1
+Item = 1385153903 True Freq = 1
+Item = 1402282186 True Freq = 1
+Item = 1410308951 True Freq = 1
+Item = 1417911565 True Freq = 1
+Item = 1431346049 True Freq = 1
+Item = 1447072403 True Freq = 1
+Item = 1465730646 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1499001406 True Freq = 1
+Item = 1500130829 True Freq = 1
+Item = 1513190134 True Freq = 1
+Item = 1520224817 True Freq = 1
+Item = 1524712858 True Freq = 1
+Item = 1530715703 True Freq = 1
+Item = 1536802564 True Freq = 1
+Item = 1540242118 True Freq = 1
+Item = 1545181708 True Freq = 1
+Item = 1551665795 True Freq = 1
+Item = 1552193644 True Freq = 1
+Item = 1557601723 True Freq = 1
+Item = 1588391693 True Freq = 1
+Item = 1590293530 True Freq = 79482
+Item = 1594306353 True Freq = 1
+Item = 1603680255 True Freq = 1
+Item = 1616726908 True Freq = 1
+Item = 1633319721 True Freq = 1
+Item = 1652058183 True Freq = 1
+Item = 1689295541 True Freq = 1
+Item = 1690049656 True Freq = 80737
+Item = 1690925548 True Freq = 1
+Item = 1694200965 True Freq = 1
+Item = 1698460826 True Freq = 1
+Item = 1698781162 True Freq = 1
+Item = 1699787292 True Freq = 1
+Item = 1708838270 True Freq = 1
+Item = 1736763265 True Freq = 1
+Item = 1745715981 True Freq = 1
+Item = 1770896889 True Freq = 1
+Item = 1790861526 True Freq = 1
+Item = 1799769151 True Freq = 1
+Item = 1801356618 True Freq = 1
+Item = 1824673946 True Freq = 1
+Item = 1825821614 True Freq = 1
+Item = 1829129626 True Freq = 1
+Item = 1837429754 True Freq = 1
+Item = 1838855269 True Freq = 1
+Item = 1841783917 True Freq = 1
+Item = 1848939212 True Freq = 1
+Item = 1849613009 True Freq = 1
+Item = 1859985156 True Freq = 1
+Item = 1862687288 True Freq = 1
+Item = 1870206204 True Freq = 1
+Item = 1872664948 True Freq = 1
+Item = 1884001528 True Freq = 1
+Item = 1889279025 True Freq = 1
+Item = 1900269814 True Freq = 1
+Item = 1928666879 True Freq = 1
+Item = 1936875793 True Freq = 80062
+Item = 1957753123 True Freq = 1
+Item = 1964865332 True Freq = 1
+Item = 1972562584 True Freq = 1
+Item = 1975108445 True Freq = 1
+Item = 1980106359 True Freq = 1
+Item = 1999972727 True Freq = 1
+Item = 2000851163 True Freq = 1
+Item = 2014765062 True Freq = 1
+Item = 2040047768 True Freq = 1
+Item = 2040651691 True Freq = 1
+Item = 2046044559 True Freq = 1
+Item = 2050626604 True Freq = 1
+Item = 2055754164 True Freq = 1
+Item = 2063479572 True Freq = 1
+Item = 2079576576 True Freq = 1
+Item = 2100713087 True Freq = 1
+Item = 2114736059 True Freq = 1
+Item = 2123601277 True Freq = 1
+Item = 2128727119 True Freq = 1
+
+
+============================================================
+ALGORITHM: SS | PARAM: 0.04 | RUN: 3
+COMMAND ARGS: eps=0.04, w=15, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:28:25.700000] is: 20681
+Batch size at time [2026-06-19 10:28:25.900000] is: 136207
+Batch size at time [2026-06-19 10:28:26.400000] is: 140
+Batch size at time [2026-06-19 10:28:26.600000] is: 8676
+Batch size at time [2026-06-19 10:28:26.900000] is: 123589
+Batch size at time [2026-06-19 10:28:27.100000] is: 44027
+Batch size at time [2026-06-19 10:28:27.300000] is: 92423
+Batch size at time [2026-06-19 10:28:27.500000] is: 52009
+Batch size at time [2026-06-19 10:28:27.700000] is: 19302
+Batch size at time [2026-06-19 10:28:27.900000] is: 36056
+Batch size at time [2026-06-19 10:28:28.100000] is: 17333
+Batch size at time [2026-06-19 10:28:28.300000] is: 38168
+Batch size at time [2026-06-19 10:28:28.500000] is: 38597
+Batch size at time [2026-06-19 10:28:28.600000] is: 12160
+Batch size at time [2026-06-19 10:28:28.900000] is: 34103
+Batch size at time [2026-06-19 10:28:29.100000] is: 24055
+Batch size at time [2026-06-19 10:28:29.300000] is: 4333
+Batch size at time [2026-06-19 10:28:29.500000] is: 19564
+Batch size at time [2026-06-19 10:28:29.700000] is: 12166
+Batch size at time [2026-06-19 10:28:29.900000] is: 16778
+Batch size at time [2026-06-19 10:28:30.100000] is: 15806
+Batch size at time [2026-06-19 10:28:30.300000] is: 5178
+Batch size at time [2026-06-19 10:28:30.500000] is: 13978
+Batch size at time [2026-06-19 10:28:30.600000] is: 8524
+Batch size at time [2026-06-19 10:28:30.900000] is: 12855
+Batch size at time [2026-06-19 10:28:31.100000] is: 17197
+Batch size at time [2026-06-19 10:28:31.300000] is: 11321
+Batch size at time [2026-06-19 10:28:31.500000] is: 17757
+Batch size at time [2026-06-19 10:28:31.700000] is: 20278
+Batch size at time [2026-06-19 10:28:31.900000] is: 7262
+Batch size at time [2026-06-19 10:28:32.100000] is: 13567
+Batch size at time [2026-06-19 10:28:32.300000] is: 14396
+Batch size at time [2026-06-19 10:28:32.500000] is: 15515
+Batch size at time [2026-06-19 10:28:32.700000] is: 20835
+Batch size at time [2026-06-19 10:28:32.900000] is: 10759
+Batch size at time [2026-06-19 10:28:33.100000] is: 20841
+Batch size at time [2026-06-19 10:28:33.300000] is: 17071
+Batch size at time [2026-06-19 10:28:33.500000] is: 6493
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.04
+delta = 0.05
+d = 5
+w = 15
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 23
+Item = 14673339 True Freq = 39880
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 637121204 True Freq = 40134
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 978604355 True Freq = 40019
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 208
+Item = 16047329 True Freq = 1
+Item = 17914073 True Freq = 1
+Item = 35245736 True Freq = 1
+Item = 40492282 True Freq = 1
+Item = 66097523 True Freq = 1
+Item = 68126009 True Freq = 1
+Item = 74821671 True Freq = 1
+Item = 79299267 True Freq = 1
+Item = 112427822 True Freq = 1
+Item = 128205640 True Freq = 1
+Item = 128650607 True Freq = 1
+Item = 165607519 True Freq = 1
+Item = 166363324 True Freq = 1
+Item = 187227770 True Freq = 1
+Item = 193026340 True Freq = 1
+Item = 195773912 True Freq = 80280
+Item = 226754714 True Freq = 1
+Item = 231738519 True Freq = 1
+Item = 240669600 True Freq = 1
+Item = 248484369 True Freq = 1
+Item = 249114307 True Freq = 1
+Item = 249669033 True Freq = 1
+Item = 266532436 True Freq = 1
+Item = 267637318 True Freq = 1
+Item = 272422947 True Freq = 1
+Item = 299515020 True Freq = 1
+Item = 308528420 True Freq = 1
+Item = 324332129 True Freq = 1
+Item = 339323283 True Freq = 80161
+Item = 340846874 True Freq = 1
+Item = 363786713 True Freq = 1
+Item = 371539397 True Freq = 1
+Item = 377413169 True Freq = 1
+Item = 405282002 True Freq = 1
+Item = 414465144 True Freq = 1
+Item = 416565523 True Freq = 1
+Item = 427229160 True Freq = 1
+Item = 429469200 True Freq = 1
+Item = 434415286 True Freq = 80012
+Item = 449303585 True Freq = 1
+Item = 462234406 True Freq = 1
+Item = 489822816 True Freq = 1
+Item = 505348329 True Freq = 1
+Item = 516454230 True Freq = 1
+Item = 534887640 True Freq = 1
+Item = 562917414 True Freq = 1
+Item = 570654932 True Freq = 1
+Item = 573313298 True Freq = 1
+Item = 585338475 True Freq = 1
+Item = 585948565 True Freq = 1
+Item = 594454545 True Freq = 1
+Item = 608360723 True Freq = 1
+Item = 615775949 True Freq = 1
+Item = 618011618 True Freq = 1
+Item = 625350194 True Freq = 1
+Item = 639107057 True Freq = 1
+Item = 641486445 True Freq = 79600
+Item = 646208317 True Freq = 1
+Item = 647673322 True Freq = 1
+Item = 664932028 True Freq = 1
+Item = 677205554 True Freq = 1
+Item = 681487683 True Freq = 1
+Item = 686537761 True Freq = 1
+Item = 696252293 True Freq = 1
+Item = 704217922 True Freq = 1
+Item = 723552231 True Freq = 1
+Item = 728590759 True Freq = 1
+Item = 739620195 True Freq = 1
+Item = 754219329 True Freq = 1
+Item = 754220187 True Freq = 1
+Item = 755602139 True Freq = 1
+Item = 763056625 True Freq = 1
+Item = 767233359 True Freq = 1
+Item = 786227454 True Freq = 1
+Item = 804925231 True Freq = 1
+Item = 817056419 True Freq = 1
+Item = 819911327 True Freq = 80096
+Item = 826269573 True Freq = 1
+Item = 831580659 True Freq = 1
+Item = 853292700 True Freq = 1
+Item = 855168732 True Freq = 1
+Item = 870070186 True Freq = 79779
+Item = 872261745 True Freq = 1
+Item = 879432975 True Freq = 1
+Item = 885577232 True Freq = 1
+Item = 890072870 True Freq = 1
+Item = 890766320 True Freq = 1
+Item = 892482682 True Freq = 1
+Item = 912872547 True Freq = 1
+Item = 915697887 True Freq = 1
+Item = 923607657 True Freq = 1
+Item = 924004826 True Freq = 1
+Item = 938492489 True Freq = 1
+Item = 939347513 True Freq = 1
+Item = 940685282 True Freq = 1
+Item = 950095787 True Freq = 1
+Item = 954142251 True Freq = 1
+Item = 963128395 True Freq = 1
+Item = 971294205 True Freq = 1
+Item = 978604355 True Freq = 40019
+Item = 1008781267 True Freq = 1
+Item = 1016922596 True Freq = 1
+Item = 1029517946 True Freq = 1
+Item = 1035467189 True Freq = 1
+Item = 1039227623 True Freq = 1
+Item = 1048096331 True Freq = 1
+Item = 1056914368 True Freq = 1
+Item = 1075722801 True Freq = 1
+Item = 1082677737 True Freq = 1
+Item = 1093622186 True Freq = 1
+Item = 1100091331 True Freq = 1
+Item = 1113305142 True Freq = 1
+Item = 1120886073 True Freq = 1
+Item = 1134778374 True Freq = 1
+Item = 1154685792 True Freq = 1
+Item = 1160070246 True Freq = 1
+Item = 1160719571 True Freq = 1
+Item = 1162126526 True Freq = 1
+Item = 1165878265 True Freq = 1
+Item = 1170267214 True Freq = 1
+Item = 1171041593 True Freq = 1
+Item = 1197751337 True Freq = 1
+Item = 1210361690 True Freq = 1
+Item = 1223984982 True Freq = 1
+Item = 1239536319 True Freq = 1
+Item = 1239947027 True Freq = 1
+Item = 1249330424 True Freq = 1
+Item = 1277305430 True Freq = 1
+Item = 1288209334 True Freq = 1
+Item = 1319094852 True Freq = 1
+Item = 1353956026 True Freq = 1
+Item = 1373210860 True Freq = 1
+Item = 1383316729 True Freq = 1
+Item = 1393251762 True Freq = 1
+Item = 1401668006 True Freq = 1
+Item = 1402403792 True Freq = 1
+Item = 1413260220 True Freq = 1
+Item = 1419352286 True Freq = 1
+Item = 1426166076 True Freq = 1
+Item = 1442084759 True Freq = 1
+Item = 1462377419 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1499555032 True Freq = 1
+Item = 1511692002 True Freq = 1
+Item = 1529007660 True Freq = 1
+Item = 1538921599 True Freq = 1
+Item = 1559472925 True Freq = 1
+Item = 1563486763 True Freq = 1
+Item = 1570300484 True Freq = 1
+Item = 1575468595 True Freq = 1
+Item = 1580542239 True Freq = 1
+Item = 1590293530 True Freq = 79482
+Item = 1594153218 True Freq = 1
+Item = 1602945517 True Freq = 1
+Item = 1630192987 True Freq = 1
+Item = 1640563807 True Freq = 1
+Item = 1660752443 True Freq = 1
+Item = 1661305761 True Freq = 1
+Item = 1669895946 True Freq = 1
+Item = 1680750855 True Freq = 1
+Item = 1690049656 True Freq = 80737
+Item = 1691880766 True Freq = 1
+Item = 1701257435 True Freq = 1
+Item = 1710960483 True Freq = 1
+Item = 1717018283 True Freq = 1
+Item = 1733266627 True Freq = 1
+Item = 1758309286 True Freq = 1
+Item = 1762660476 True Freq = 1
+Item = 1770896889 True Freq = 1
+Item = 1773136557 True Freq = 1
+Item = 1778099056 True Freq = 1
+Item = 1778540579 True Freq = 1
+Item = 1783073213 True Freq = 1
+Item = 1815964867 True Freq = 1
+Item = 1826987910 True Freq = 1
+Item = 1832501705 True Freq = 1
+Item = 1848670032 True Freq = 1
+Item = 1853071244 True Freq = 1
+Item = 1859660130 True Freq = 1
+Item = 1868904575 True Freq = 1
+Item = 1889435512 True Freq = 1
+Item = 1890873092 True Freq = 1
+Item = 1893126562 True Freq = 1
+Item = 1894106981 True Freq = 1
+Item = 1908057228 True Freq = 1
+Item = 1917807923 True Freq = 1
+Item = 1936875793 True Freq = 80062
+Item = 1976121598 True Freq = 1
+Item = 1980952198 True Freq = 1
+Item = 1986508903 True Freq = 1
+Item = 1986688038 True Freq = 1
+Item = 2002411586 True Freq = 1
+Item = 2011206823 True Freq = 1
+Item = 2016506019 True Freq = 1
+Item = 2028331063 True Freq = 1
+Item = 2062899166 True Freq = 1
+Item = 2067476536 True Freq = 1
+Item = 2067773388 True Freq = 1
+Item = 2069294448 True Freq = 1
+Item = 2073713371 True Freq = 1
+Item = 2075485886 True Freq = 1
+Item = 2090600103 True Freq = 1
+Item = 2092025972 True Freq = 1
+Item = 2099407609 True Freq = 1
+Item = 2101801376 True Freq = 1
+Item = 2118020866 True Freq = 1
+Item = 2123484226 True Freq = 1
+Item = 2146394169 True Freq = 1
+
+
+============================================================
+ALGORITHM: CM | PARAM: 15 | RUN: 1
+COMMAND ARGS: eps=0.04, w=15, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:28:40.100000] is: 1259
+Batch size at time [2026-06-19 10:28:40.300000] is: 28937
+Batch size at time [2026-06-19 10:28:40.500000] is: 133269
+Batch size at time [2026-06-19 10:28:40.900000] is: 147070
+Batch size at time [2026-06-19 10:28:41.100000] is: 143167
+Batch size at time [2026-06-19 10:28:41.300000] is: 1957
+Batch size at time [2026-06-19 10:28:41.400000] is: 5311
+Batch size at time [2026-06-19 10:28:41.700000] is: 13003
+Batch size at time [2026-06-19 10:28:41.900000] is: 22942
+Batch size at time [2026-06-19 10:28:42.100000] is: 105816
+Batch size at time [2026-06-19 10:28:42.300000] is: 52426
+Batch size at time [2026-06-19 10:28:42.500000] is: 44746
+Batch size at time [2026-06-19 10:28:42.700000] is: 98422
+Batch size at time [2026-06-19 10:28:42.900000] is: 9224
+Batch size at time [2026-06-19 10:28:43.100000] is: 46132
+Batch size at time [2026-06-19 10:28:43.300000] is: 47682
+Batch size at time [2026-06-19 10:28:43.500000] is: 35921
+Batch size at time [2026-06-19 10:28:43.700000] is: 54827
+Batch size at time [2026-06-19 10:28:43.900000] is: 7889
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.04
+delta = 0.05
+d = 5
+w = 15
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 22
+Item = 14673339 True Freq = 39880
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 632507218 True Freq = 39947
+Item = 637121204 True Freq = 40134
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 978604355 True Freq = 40019
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 218
+Item = 11975220 True Freq = 1
+Item = 23515215 True Freq = 1
+Item = 31038755 True Freq = 1
+Item = 38499137 True Freq = 1
+Item = 41394697 True Freq = 1
+Item = 51974424 True Freq = 1
+Item = 56162623 True Freq = 1
+Item = 81167900 True Freq = 1
+Item = 102475351 True Freq = 1
+Item = 105165292 True Freq = 1
+Item = 106478486 True Freq = 1
+Item = 112427822 True Freq = 1
+Item = 119101037 True Freq = 1
+Item = 120613934 True Freq = 1
+Item = 130167100 True Freq = 1
+Item = 142282448 True Freq = 1
+Item = 160915763 True Freq = 1
+Item = 171267047 True Freq = 1
+Item = 172959102 True Freq = 1
+Item = 182326226 True Freq = 1
+Item = 185901322 True Freq = 1
+Item = 188037374 True Freq = 1
+Item = 190187078 True Freq = 1
+Item = 194576251 True Freq = 1
+Item = 195773912 True Freq = 80280
+Item = 201204401 True Freq = 1
+Item = 204334539 True Freq = 1
+Item = 205373786 True Freq = 1
+Item = 224609504 True Freq = 1
+Item = 231058576 True Freq = 1
+Item = 292627189 True Freq = 1
+Item = 298661299 True Freq = 1
+Item = 313098944 True Freq = 1
+Item = 322783370 True Freq = 1
+Item = 329468823 True Freq = 1
+Item = 332558060 True Freq = 1
+Item = 339323283 True Freq = 80161
+Item = 343859827 True Freq = 1
+Item = 346760030 True Freq = 1
+Item = 356196297 True Freq = 1
+Item = 360392962 True Freq = 1
+Item = 394648979 True Freq = 1
+Item = 396350891 True Freq = 1
+Item = 412219285 True Freq = 1
+Item = 419147235 True Freq = 1
+Item = 423758183 True Freq = 1
+Item = 428499077 True Freq = 1
+Item = 434415286 True Freq = 80012
+Item = 442278590 True Freq = 1
+Item = 461967741 True Freq = 1
+Item = 462234406 True Freq = 1
+Item = 465119798 True Freq = 1
+Item = 475864326 True Freq = 1
+Item = 477288330 True Freq = 1
+Item = 519094163 True Freq = 1
+Item = 520138394 True Freq = 1
+Item = 534887640 True Freq = 1
+Item = 545428885 True Freq = 1
+Item = 558225518 True Freq = 1
+Item = 559877237 True Freq = 1
+Item = 574097418 True Freq = 1
+Item = 574874297 True Freq = 1
+Item = 591087602 True Freq = 1
+Item = 592243107 True Freq = 1
+Item = 603742525 True Freq = 1
+Item = 607675556 True Freq = 1
+Item = 610782236 True Freq = 1
+Item = 625004044 True Freq = 1
+Item = 625036051 True Freq = 1
+Item = 630125429 True Freq = 1
+Item = 633206958 True Freq = 1
+Item = 634849990 True Freq = 1
+Item = 638051077 True Freq = 1
+Item = 641486445 True Freq = 79600
+Item = 642331457 True Freq = 1
+Item = 642972080 True Freq = 1
+Item = 648441732 True Freq = 1
+Item = 653845034 True Freq = 1
+Item = 655700212 True Freq = 1
+Item = 665914806 True Freq = 1
+Item = 668491763 True Freq = 1
+Item = 676761366 True Freq = 1
+Item = 706251612 True Freq = 1
+Item = 729852511 True Freq = 1
+Item = 734090125 True Freq = 1
+Item = 749576846 True Freq = 1
+Item = 760332679 True Freq = 1
+Item = 771749476 True Freq = 1
+Item = 785824492 True Freq = 1
+Item = 786227454 True Freq = 1
+Item = 793460355 True Freq = 1
+Item = 800021774 True Freq = 1
+Item = 809217360 True Freq = 1
+Item = 811398846 True Freq = 1
+Item = 815272783 True Freq = 1
+Item = 819911327 True Freq = 80096
+Item = 826004387 True Freq = 1
+Item = 829802791 True Freq = 1
+Item = 839704325 True Freq = 1
+Item = 845936205 True Freq = 1
+Item = 859158319 True Freq = 1
+Item = 863027499 True Freq = 1
+Item = 870070186 True Freq = 79779
+Item = 875462140 True Freq = 1
+Item = 903353907 True Freq = 1
+Item = 924004826 True Freq = 1
+Item = 933645433 True Freq = 1
+Item = 938492489 True Freq = 1
+Item = 966188454 True Freq = 1
+Item = 1002505139 True Freq = 1
+Item = 1028616608 True Freq = 1
+Item = 1034526422 True Freq = 1
+Item = 1036673526 True Freq = 1
+Item = 1039227623 True Freq = 1
+Item = 1048533602 True Freq = 1
+Item = 1054805433 True Freq = 1
+Item = 1063123208 True Freq = 1
+Item = 1082374525 True Freq = 1
+Item = 1093622186 True Freq = 1
+Item = 1131424897 True Freq = 1
+Item = 1136309191 True Freq = 1
+Item = 1138575194 True Freq = 1
+Item = 1150824318 True Freq = 1
+Item = 1162239642 True Freq = 1
+Item = 1168983164 True Freq = 1
+Item = 1179393223 True Freq = 1
+Item = 1212311001 True Freq = 1
+Item = 1212679229 True Freq = 1
+Item = 1214918257 True Freq = 1
+Item = 1224219109 True Freq = 1
+Item = 1226732352 True Freq = 1
+Item = 1264232155 True Freq = 1
+Item = 1274204314 True Freq = 1
+Item = 1276385556 True Freq = 1
+Item = 1278510264 True Freq = 1
+Item = 1305277409 True Freq = 1
+Item = 1313307945 True Freq = 1
+Item = 1317396077 True Freq = 1
+Item = 1319779038 True Freq = 1
+Item = 1321798470 True Freq = 1
+Item = 1338437883 True Freq = 1
+Item = 1352301567 True Freq = 1
+Item = 1357405977 True Freq = 1
+Item = 1357532538 True Freq = 1
+Item = 1358953032 True Freq = 1
+Item = 1367979207 True Freq = 1
+Item = 1368643448 True Freq = 1
+Item = 1369056456 True Freq = 1
+Item = 1389834827 True Freq = 1
+Item = 1402942427 True Freq = 1
+Item = 1412412205 True Freq = 1
+Item = 1417036921 True Freq = 1
+Item = 1427130714 True Freq = 1
+Item = 1453744424 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1482414834 True Freq = 1
+Item = 1522135584 True Freq = 1
+Item = 1523944584 True Freq = 1
+Item = 1525591780 True Freq = 1
+Item = 1526292187 True Freq = 1
+Item = 1529875673 True Freq = 1
+Item = 1547047488 True Freq = 1
+Item = 1551617334 True Freq = 1
+Item = 1554338522 True Freq = 1
+Item = 1568295635 True Freq = 1
+Item = 1588901237 True Freq = 1
+Item = 1590293530 True Freq = 79482
+Item = 1594703013 True Freq = 1
+Item = 1595985234 True Freq = 1
+Item = 1606544263 True Freq = 1
+Item = 1612510455 True Freq = 1
+Item = 1613599385 True Freq = 1
+Item = 1620331575 True Freq = 1
+Item = 1632080572 True Freq = 1
+Item = 1663293370 True Freq = 1
+Item = 1664643630 True Freq = 1
+Item = 1669895946 True Freq = 1
+Item = 1672131625 True Freq = 1
+Item = 1673425803 True Freq = 1
+Item = 1674209097 True Freq = 1
+Item = 1683463309 True Freq = 1
+Item = 1690049656 True Freq = 80737
+Item = 1698694674 True Freq = 1
+Item = 1708274302 True Freq = 1
+Item = 1717953559 True Freq = 1
+Item = 1725773890 True Freq = 1
+Item = 1750455613 True Freq = 1
+Item = 1753088050 True Freq = 1
+Item = 1764680295 True Freq = 1
+Item = 1770896889 True Freq = 1
+Item = 1778099056 True Freq = 1
+Item = 1807403723 True Freq = 1
+Item = 1808165362 True Freq = 1
+Item = 1816402850 True Freq = 1
+Item = 1827251641 True Freq = 1
+Item = 1837020754 True Freq = 1
+Item = 1839385322 True Freq = 1
+Item = 1842505715 True Freq = 1
+Item = 1848885304 True Freq = 1
+Item = 1856371245 True Freq = 1
+Item = 1862697509 True Freq = 1
+Item = 1885147254 True Freq = 1
+Item = 1888199578 True Freq = 1
+Item = 1893116071 True Freq = 1
+Item = 1933588230 True Freq = 1
+Item = 1936875793 True Freq = 80062
+Item = 1958859654 True Freq = 1
+Item = 1959710339 True Freq = 1
+Item = 1964363249 True Freq = 1
+Item = 1971347408 True Freq = 1
+Item = 1982421472 True Freq = 1
+Item = 1997222674 True Freq = 1
+Item = 2006412534 True Freq = 1
+Item = 2021536330 True Freq = 1
+Item = 2026349674 True Freq = 1
+Item = 2078122918 True Freq = 1
+Item = 2082543348 True Freq = 1
+Item = 2135181379 True Freq = 1
+
+
+============================================================
+ALGORITHM: CM | PARAM: 15 | RUN: 2
+COMMAND ARGS: eps=0.04, w=15, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:28:50.700000] is: 1259
+Batch size at time [2026-06-19 10:28:50.900000] is: 41951
+Batch size at time [2026-06-19 10:28:51.100000] is: 131718
+Batch size at time [2026-06-19 10:28:51.300000] is: 14962
+Batch size at time [2026-06-19 10:28:51.500000] is: 78847
+Batch size at time [2026-06-19 10:28:51.700000] is: 76755
+Batch size at time [2026-06-19 10:28:51.900000] is: 13984
+Batch size at time [2026-06-19 10:28:52.100000] is: 64028
+Batch size at time [2026-06-19 10:28:52.300000] is: 18456
+Batch size at time [2026-06-19 10:28:52.500000] is: 66129
+Batch size at time [2026-06-19 10:28:52.700000] is: 59414
+Batch size at time [2026-06-19 10:28:52.900000] is: 14396
+Batch size at time [2026-06-19 10:28:53.100000] is: 52720
+Batch size at time [2026-06-19 10:28:53.300000] is: 27523
+Batch size at time [2026-06-19 10:28:53.500000] is: 40278
+Batch size at time [2026-06-19 10:28:53.700000] is: 44308
+Batch size at time [2026-06-19 10:28:53.900000] is: 16228
+Batch size at time [2026-06-19 10:28:54.100000] is: 34112
+Batch size at time [2026-06-19 10:28:54.300000] is: 20963
+Batch size at time [2026-06-19 10:28:54.500000] is: 24602
+Batch size at time [2026-06-19 10:28:54.700000] is: 24609
+Batch size at time [2026-06-19 10:28:54.900000] is: 18459
+Batch size at time [2026-06-19 10:28:55.100000] is: 24741
+Batch size at time [2026-06-19 10:28:55.300000] is: 26003
+Batch size at time [2026-06-19 10:28:55.500000] is: 11049
+Batch size at time [2026-06-19 10:28:55.700000] is: 19290
+Batch size at time [2026-06-19 10:28:55.900000] is: 15392
+Batch size at time [2026-06-19 10:28:56.100000] is: 15658
+Batch size at time [2026-06-19 10:28:56.300000] is: 2166
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.04
+delta = 0.05
+d = 5
+w = 15
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 16
+Item = 14673339 True Freq = 39880
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 632507218 True Freq = 39947
+Item = 637121204 True Freq = 40134
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 978604355 True Freq = 40019
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 224
+Item = 445536 True Freq = 1
+Item = 4062445 True Freq = 1
+Item = 9321622 True Freq = 1
+Item = 10018728 True Freq = 1
+Item = 15038423 True Freq = 1
+Item = 22160356 True Freq = 1
+Item = 30207256 True Freq = 1
+Item = 31388722 True Freq = 1
+Item = 31955313 True Freq = 1
+Item = 42054846 True Freq = 1
+Item = 57026849 True Freq = 1
+Item = 71572768 True Freq = 1
+Item = 75814607 True Freq = 1
+Item = 79544511 True Freq = 1
+Item = 105714525 True Freq = 1
+Item = 112757447 True Freq = 1
+Item = 116697813 True Freq = 1
+Item = 117342142 True Freq = 1
+Item = 133407329 True Freq = 1
+Item = 136605930 True Freq = 1
+Item = 140783989 True Freq = 1
+Item = 160938945 True Freq = 1
+Item = 161433418 True Freq = 1
+Item = 166195210 True Freq = 1
+Item = 172742390 True Freq = 1
+Item = 173729821 True Freq = 1
+Item = 177130373 True Freq = 1
+Item = 178066492 True Freq = 1
+Item = 179818410 True Freq = 1
+Item = 186048428 True Freq = 1
+Item = 195773912 True Freq = 80280
+Item = 218194543 True Freq = 1
+Item = 224901122 True Freq = 1
+Item = 231157328 True Freq = 1
+Item = 245000727 True Freq = 1
+Item = 265386596 True Freq = 1
+Item = 300037351 True Freq = 1
+Item = 301010876 True Freq = 1
+Item = 305120335 True Freq = 1
+Item = 309465129 True Freq = 1
+Item = 333119721 True Freq = 1
+Item = 339323283 True Freq = 80161
+Item = 340536108 True Freq = 1
+Item = 353668022 True Freq = 1
+Item = 353870474 True Freq = 1
+Item = 356990505 True Freq = 1
+Item = 365275338 True Freq = 1
+Item = 377413169 True Freq = 1
+Item = 384092187 True Freq = 1
+Item = 390836830 True Freq = 1
+Item = 391320122 True Freq = 1
+Item = 420248082 True Freq = 1
+Item = 427512349 True Freq = 1
+Item = 434415286 True Freq = 80012
+Item = 444178917 True Freq = 1
+Item = 453315348 True Freq = 1
+Item = 484330854 True Freq = 1
+Item = 514622330 True Freq = 1
+Item = 521345494 True Freq = 1
+Item = 534234600 True Freq = 1
+Item = 544760224 True Freq = 1
+Item = 544841855 True Freq = 1
+Item = 572776200 True Freq = 1
+Item = 584343816 True Freq = 1
+Item = 585214001 True Freq = 1
+Item = 587323207 True Freq = 1
+Item = 594197544 True Freq = 1
+Item = 609059145 True Freq = 1
+Item = 626813299 True Freq = 1
+Item = 641486445 True Freq = 79600
+Item = 644324682 True Freq = 1
+Item = 662820695 True Freq = 1
+Item = 663241399 True Freq = 1
+Item = 670657150 True Freq = 1
+Item = 671698841 True Freq = 1
+Item = 679440150 True Freq = 1
+Item = 723478264 True Freq = 1
+Item = 725940013 True Freq = 1
+Item = 751246017 True Freq = 1
+Item = 767020739 True Freq = 1
+Item = 777267315 True Freq = 1
+Item = 787063884 True Freq = 1
+Item = 791718408 True Freq = 1
+Item = 809947206 True Freq = 1
+Item = 819911327 True Freq = 80096
+Item = 820466832 True Freq = 1
+Item = 828572456 True Freq = 1
+Item = 843358923 True Freq = 1
+Item = 870070186 True Freq = 79779
+Item = 885995895 True Freq = 1
+Item = 888785324 True Freq = 1
+Item = 892404919 True Freq = 1
+Item = 924004826 True Freq = 1
+Item = 955180214 True Freq = 1
+Item = 965223185 True Freq = 1
+Item = 966788474 True Freq = 1
+Item = 986968576 True Freq = 1
+Item = 994981639 True Freq = 1
+Item = 1001919604 True Freq = 1
+Item = 1007350834 True Freq = 1
+Item = 1020268365 True Freq = 1
+Item = 1030545202 True Freq = 1
+Item = 1037996307 True Freq = 1
+Item = 1039227623 True Freq = 1
+Item = 1048386735 True Freq = 1
+Item = 1051773959 True Freq = 1
+Item = 1062047656 True Freq = 1
+Item = 1067725641 True Freq = 1
+Item = 1069097975 True Freq = 1
+Item = 1085198596 True Freq = 1
+Item = 1092086132 True Freq = 1
+Item = 1093002998 True Freq = 1
+Item = 1093622186 True Freq = 1
+Item = 1107068837 True Freq = 1
+Item = 1118590961 True Freq = 1
+Item = 1138301101 True Freq = 1
+Item = 1141744354 True Freq = 1
+Item = 1155456520 True Freq = 1
+Item = 1161179054 True Freq = 1
+Item = 1170669133 True Freq = 1
+Item = 1175857788 True Freq = 1
+Item = 1189788290 True Freq = 1
+Item = 1199023566 True Freq = 1
+Item = 1216853337 True Freq = 1
+Item = 1230066256 True Freq = 1
+Item = 1240209125 True Freq = 1
+Item = 1257951520 True Freq = 1
+Item = 1271175685 True Freq = 1
+Item = 1271918431 True Freq = 1
+Item = 1273189789 True Freq = 1
+Item = 1274204314 True Freq = 1
+Item = 1279296475 True Freq = 1
+Item = 1279976612 True Freq = 1
+Item = 1293849515 True Freq = 1
+Item = 1294530586 True Freq = 1
+Item = 1319779038 True Freq = 1
+Item = 1334691687 True Freq = 1
+Item = 1345653258 True Freq = 1
+Item = 1348607914 True Freq = 1
+Item = 1368643448 True Freq = 1
+Item = 1383533434 True Freq = 1
+Item = 1386462293 True Freq = 1
+Item = 1386818669 True Freq = 1
+Item = 1387081161 True Freq = 1
+Item = 1408115322 True Freq = 1
+Item = 1438775691 True Freq = 1
+Item = 1444642048 True Freq = 1
+Item = 1449478295 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1478648512 True Freq = 1
+Item = 1480045394 True Freq = 1
+Item = 1486495299 True Freq = 1
+Item = 1493572068 True Freq = 1
+Item = 1502794954 True Freq = 1
+Item = 1513443059 True Freq = 1
+Item = 1520701543 True Freq = 1
+Item = 1525990739 True Freq = 1
+Item = 1551124744 True Freq = 1
+Item = 1571287937 True Freq = 1
+Item = 1582027644 True Freq = 1
+Item = 1590293530 True Freq = 79482
+Item = 1603681002 True Freq = 1
+Item = 1605109565 True Freq = 1
+Item = 1607093596 True Freq = 1
+Item = 1614633610 True Freq = 1
+Item = 1641461642 True Freq = 1
+Item = 1642470105 True Freq = 1
+Item = 1644908008 True Freq = 1
+Item = 1649995038 True Freq = 1
+Item = 1656970862 True Freq = 1
+Item = 1690049656 True Freq = 80737
+Item = 1690344281 True Freq = 1
+Item = 1697808129 True Freq = 1
+Item = 1701862058 True Freq = 1
+Item = 1729875296 True Freq = 1
+Item = 1735424949 True Freq = 1
+Item = 1744688947 True Freq = 1
+Item = 1750201879 True Freq = 1
+Item = 1753519143 True Freq = 1
+Item = 1758309286 True Freq = 1
+Item = 1767474967 True Freq = 1
+Item = 1770896889 True Freq = 1
+Item = 1776265873 True Freq = 1
+Item = 1776424146 True Freq = 1
+Item = 1777997949 True Freq = 1
+Item = 1778501441 True Freq = 1
+Item = 1787542940 True Freq = 1
+Item = 1795813121 True Freq = 1
+Item = 1803082566 True Freq = 1
+Item = 1830408617 True Freq = 1
+Item = 1832501705 True Freq = 1
+Item = 1832651959 True Freq = 1
+Item = 1853817943 True Freq = 1
+Item = 1865562959 True Freq = 1
+Item = 1867702563 True Freq = 1
+Item = 1871857276 True Freq = 1
+Item = 1876940765 True Freq = 1
+Item = 1882855356 True Freq = 1
+Item = 1897938923 True Freq = 1
+Item = 1907519417 True Freq = 1
+Item = 1915906877 True Freq = 1
+Item = 1920248709 True Freq = 1
+Item = 1920734415 True Freq = 1
+Item = 1933483889 True Freq = 1
+Item = 1936875793 True Freq = 80062
+Item = 1960082191 True Freq = 1
+Item = 1975679573 True Freq = 1
+Item = 1998477810 True Freq = 1
+Item = 1999611072 True Freq = 1
+Item = 1999972727 True Freq = 1
+Item = 2012475560 True Freq = 1
+Item = 2015649755 True Freq = 1
+Item = 2026229351 True Freq = 1
+Item = 2032296177 True Freq = 1
+Item = 2034811066 True Freq = 1
+Item = 2040651691 True Freq = 1
+Item = 2062054082 True Freq = 1
+Item = 2108691063 True Freq = 1
+Item = 2109250387 True Freq = 1
+Item = 2113240705 True Freq = 1
+Item = 2113782395 True Freq = 1
+Item = 2117447483 True Freq = 1
+Item = 2122533493 True Freq = 1
+Item = 2146769478 True Freq = 1
+
+
+============================================================
+ALGORITHM: CM | PARAM: 15 | RUN: 3
+COMMAND ARGS: eps=0.04, w=15, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:29:02.900000] is: 4053
+Batch size at time [2026-06-19 10:29:03.100000] is: 82925
+Batch size at time [2026-06-19 10:29:03.300000] is: 29640
+Batch size at time [2026-06-19 10:29:03.500000] is: 38174
+Batch size at time [2026-06-19 10:29:03.700000] is: 65149
+Batch size at time [2026-06-19 10:29:03.800000] is: 6709
+Batch size at time [2026-06-19 10:29:04.100000] is: 20551
+Batch size at time [2026-06-19 10:29:04.300000] is: 21954
+Batch size at time [2026-06-19 10:29:04.500000] is: 19718
+Batch size at time [2026-06-19 10:29:04.700000] is: 113795
+Batch size at time [2026-06-19 10:29:04.900000] is: 76485
+Batch size at time [2026-06-19 10:29:05.100000] is: 137010
+Batch size at time [2026-06-19 10:29:05.300000] is: 94776
+Batch size at time [2026-06-19 10:29:05.500000] is: 19155
+Batch size at time [2026-06-19 10:29:05.700000] is: 73120
+Batch size at time [2026-06-19 10:29:05.900000] is: 41516
+Batch size at time [2026-06-19 10:29:06.100000] is: 29089
+Batch size at time [2026-06-19 10:29:06.300000] is: 75489
+Batch size at time [2026-06-19 10:29:06.400000] is: 2515
+Batch size at time [2026-06-19 10:29:06.700000] is: 18738
+Batch size at time [2026-06-19 10:29:06.900000] is: 29439
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.04
+delta = 0.05
+d = 5
+w = 15
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 16
+Item = 14673339 True Freq = 39880
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 632507218 True Freq = 39947
+Item = 637121204 True Freq = 40134
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 165
+Item = 1980487 True Freq = 1
+Item = 38514783 True Freq = 1
+Item = 41394697 True Freq = 1
+Item = 49885723 True Freq = 1
+Item = 74120954 True Freq = 1
+Item = 84322507 True Freq = 1
+Item = 101672384 True Freq = 1
+Item = 120278134 True Freq = 1
+Item = 132114313 True Freq = 1
+Item = 133506153 True Freq = 1
+Item = 146815981 True Freq = 1
+Item = 157367749 True Freq = 1
+Item = 159877630 True Freq = 1
+Item = 195773912 True Freq = 80280
+Item = 203489517 True Freq = 1
+Item = 216008388 True Freq = 1
+Item = 244487821 True Freq = 1
+Item = 251784433 True Freq = 1
+Item = 254749575 True Freq = 1
+Item = 286957689 True Freq = 1
+Item = 315768742 True Freq = 1
+Item = 319467769 True Freq = 1
+Item = 321521778 True Freq = 1
+Item = 336141418 True Freq = 1
+Item = 338192182 True Freq = 1
+Item = 339323283 True Freq = 80161
+Item = 390690121 True Freq = 1
+Item = 412219285 True Freq = 1
+Item = 419147235 True Freq = 1
+Item = 434415286 True Freq = 80012
+Item = 470334590 True Freq = 1
+Item = 472722266 True Freq = 1
+Item = 475487986 True Freq = 1
+Item = 491180282 True Freq = 1
+Item = 516752987 True Freq = 1
+Item = 521081734 True Freq = 1
+Item = 525317688 True Freq = 1
+Item = 529927689 True Freq = 1
+Item = 542871716 True Freq = 1
+Item = 544554047 True Freq = 1
+Item = 545952238 True Freq = 1
+Item = 562376451 True Freq = 1
+Item = 582539687 True Freq = 1
+Item = 592906579 True Freq = 1
+Item = 597790477 True Freq = 1
+Item = 602387657 True Freq = 1
+Item = 616606520 True Freq = 1
+Item = 623052592 True Freq = 1
+Item = 629015711 True Freq = 1
+Item = 633670407 True Freq = 1
+Item = 639107057 True Freq = 1
+Item = 641486445 True Freq = 79600
+Item = 668491763 True Freq = 1
+Item = 695691452 True Freq = 1
+Item = 706251612 True Freq = 1
+Item = 709945968 True Freq = 1
+Item = 721607527 True Freq = 1
+Item = 745851845 True Freq = 1
+Item = 779834410 True Freq = 1
+Item = 785526375 True Freq = 1
+Item = 796133573 True Freq = 1
+Item = 809593073 True Freq = 1
+Item = 819911327 True Freq = 80096
+Item = 833528435 True Freq = 1
+Item = 836408178 True Freq = 1
+Item = 870070186 True Freq = 79779
+Item = 885945422 True Freq = 1
+Item = 894519786 True Freq = 1
+Item = 908831181 True Freq = 1
+Item = 909958637 True Freq = 1
+Item = 914683312 True Freq = 1
+Item = 924004826 True Freq = 1
+Item = 926566840 True Freq = 1
+Item = 928186917 True Freq = 1
+Item = 940821146 True Freq = 1
+Item = 942470620 True Freq = 1
+Item = 965061469 True Freq = 1
+Item = 966188454 True Freq = 1
+Item = 980800960 True Freq = 1
+Item = 1007528696 True Freq = 1
+Item = 1011117215 True Freq = 1
+Item = 1024080370 True Freq = 1
+Item = 1028616608 True Freq = 1
+Item = 1039227623 True Freq = 1
+Item = 1039893540 True Freq = 1
+Item = 1057495217 True Freq = 1
+Item = 1061561782 True Freq = 1
+Item = 1079967465 True Freq = 1
+Item = 1093622186 True Freq = 1
+Item = 1095114995 True Freq = 1
+Item = 1115672674 True Freq = 1
+Item = 1122589318 True Freq = 1
+Item = 1163334208 True Freq = 1
+Item = 1167647516 True Freq = 1
+Item = 1187080660 True Freq = 1
+Item = 1192799444 True Freq = 1
+Item = 1197384009 True Freq = 1
+Item = 1211384379 True Freq = 1
+Item = 1213137969 True Freq = 1
+Item = 1236041449 True Freq = 1
+Item = 1250144355 True Freq = 1
+Item = 1262629542 True Freq = 1
+Item = 1268418528 True Freq = 1
+Item = 1307564158 True Freq = 1
+Item = 1309850586 True Freq = 1
+Item = 1353762791 True Freq = 1
+Item = 1355738897 True Freq = 1
+Item = 1360605026 True Freq = 1
+Item = 1360713696 True Freq = 1
+Item = 1365847478 True Freq = 1
+Item = 1368643448 True Freq = 1
+Item = 1371506654 True Freq = 1
+Item = 1371708893 True Freq = 1
+Item = 1374514751 True Freq = 1
+Item = 1388304958 True Freq = 1
+Item = 1392564096 True Freq = 1
+Item = 1409584105 True Freq = 1
+Item = 1413680292 True Freq = 1
+Item = 1425966172 True Freq = 1
+Item = 1427121103 True Freq = 1
+Item = 1437407110 True Freq = 1
+Item = 1453508221 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1483228130 True Freq = 1
+Item = 1493572068 True Freq = 1
+Item = 1503599361 True Freq = 1
+Item = 1511692002 True Freq = 1
+Item = 1518670301 True Freq = 1
+Item = 1524436924 True Freq = 1
+Item = 1539587293 True Freq = 1
+Item = 1571374245 True Freq = 1
+Item = 1579469272 True Freq = 1
+Item = 1590293530 True Freq = 79482
+Item = 1594153218 True Freq = 1
+Item = 1621647980 True Freq = 1
+Item = 1686448163 True Freq = 1
+Item = 1686965376 True Freq = 1
+Item = 1688758098 True Freq = 1
+Item = 1690049656 True Freq = 80737
+Item = 1707058377 True Freq = 1
+Item = 1736436654 True Freq = 1
+Item = 1737704863 True Freq = 1
+Item = 1750366338 True Freq = 1
+Item = 1770896889 True Freq = 1
+Item = 1776617210 True Freq = 1
+Item = 1847462910 True Freq = 1
+Item = 1848670032 True Freq = 1
+Item = 1850294666 True Freq = 1
+Item = 1851328593 True Freq = 1
+Item = 1865044195 True Freq = 1
+Item = 1928213130 True Freq = 1
+Item = 1931638770 True Freq = 1
+Item = 1936875793 True Freq = 80062
+Item = 1977986257 True Freq = 1
+Item = 1990020268 True Freq = 1
+Item = 2021975663 True Freq = 1
+Item = 2035679290 True Freq = 1
+Item = 2042366207 True Freq = 1
+Item = 2046211759 True Freq = 1
+Item = 2057997036 True Freq = 1
+Item = 2058114001 True Freq = 1
+Item = 2079348722 True Freq = 1
+Item = 2098449631 True Freq = 1
+Item = 2101801376 True Freq = 1
+Item = 2119541173 True Freq = 1
+
+
+============================================================
+ALGORITHM: CM | PARAM: 30 | RUN: 1
+COMMAND ARGS: eps=0.04, w=30, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:29:13.700000] is: 4053
+Batch size at time [2026-06-19 10:29:13.900000] is: 88659
+Batch size at time [2026-06-19 10:29:14.100000] is: 56490
+Batch size at time [2026-06-19 10:29:14.500000] is: 189291
+Batch size at time [2026-06-19 10:29:14.700000] is: 128067
+Batch size at time [2026-06-19 10:29:14.900000] is: 20711
+Batch size at time [2026-06-19 10:29:15.100000] is: 103580
+Batch size at time [2026-06-19 10:29:15.300000] is: 81780
+Batch size at time [2026-06-19 10:29:15.500000] is: 12593
+Batch size at time [2026-06-19 10:29:15.700000] is: 36884
+Batch size at time [2026-06-19 10:29:15.900000] is: 28954
+Batch size at time [2026-06-19 10:29:16.100000] is: 87793
+Batch size at time [2026-06-19 10:29:16.300000] is: 61528
+Batch size at time [2026-06-19 10:29:16.500000] is: 28235
+Batch size at time [2026-06-19 10:29:16.700000] is: 61111
+Batch size at time [2026-06-19 10:29:16.900000] is: 10271
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.04
+delta = 0.05
+d = 5
+w = 30
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 20
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 632507218 True Freq = 39947
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 978604355 True Freq = 40019
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 32
+Item = 132114313 True Freq = 1
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 350287655 True Freq = 1
+Item = 390690121 True Freq = 1
+Item = 434415286 True Freq = 80012
+Item = 542871716 True Freq = 1
+Item = 552405868 True Freq = 1
+Item = 610782236 True Freq = 1
+Item = 641486445 True Freq = 79600
+Item = 721607527 True Freq = 1
+Item = 812679531 True Freq = 1
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1039227623 True Freq = 1
+Item = 1056322283 True Freq = 1
+Item = 1070369168 True Freq = 1
+Item = 1212790004 True Freq = 1
+Item = 1296616523 True Freq = 1
+Item = 1302515782 True Freq = 1
+Item = 1303850776 True Freq = 1
+Item = 1366674321 True Freq = 1
+Item = 1410494350 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1474546552 True Freq = 1
+Item = 1524598736 True Freq = 1
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1770896889 True Freq = 1
+Item = 1815905894 True Freq = 1
+Item = 1831102878 True Freq = 1
+Item = 1936875793 True Freq = 80062
+
+
+============================================================
+ALGORITHM: CM | PARAM: 30 | RUN: 2
+COMMAND ARGS: eps=0.04, w=30, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:29:24.100000] is: 1538
+Batch size at time [2026-06-19 10:29:24.300000] is: 3355
+Batch size at time [2026-06-19 10:29:24.500000] is: 10059
+Batch size at time [2026-06-19 10:29:24.700000] is: 12862
+Batch size at time [2026-06-19 10:29:24.900000] is: 7700
+Batch size at time [2026-06-19 10:29:25.100000] is: 16781
+Batch size at time [2026-06-19 10:29:25.300000] is: 3494
+Batch size at time [2026-06-19 10:29:25.500000] is: 15525
+Batch size at time [2026-06-19 10:29:25.700000] is: 12169
+Batch size at time [2026-06-19 10:29:25.900000] is: 12443
+Batch size at time [2026-06-19 10:29:26.100000] is: 17335
+Batch size at time [2026-06-19 10:29:26.200000] is: 11183
+Batch size at time [2026-06-19 10:29:26.500000] is: 12454
+Batch size at time [2026-06-19 10:29:26.700000] is: 14964
+Batch size at time [2026-06-19 10:29:26.900000] is: 9644
+Batch size at time [2026-06-19 10:29:27.100000] is: 18038
+Batch size at time [2026-06-19 10:29:27.300000] is: 15241
+Batch size at time [2026-06-19 10:29:27.400000] is: 13270
+Batch size at time [2026-06-19 10:29:27.700000] is: 15803
+Batch size at time [2026-06-19 10:29:27.800000] is: 10199
+Batch size at time [2026-06-19 10:29:28.100000] is: 18040
+Batch size at time [2026-06-19 10:29:28.300000] is: 19435
+Batch size at time [2026-06-19 10:29:28.500000] is: 12869
+Batch size at time [2026-06-19 10:29:28.700000] is: 22637
+Batch size at time [2026-06-19 10:29:28.900000] is: 13006
+Batch size at time [2026-06-19 10:29:29.100000] is: 12438
+Batch size at time [2026-06-19 10:29:29.200000] is: 19021
+Batch size at time [2026-06-19 10:29:29.500000] is: 12163
+Batch size at time [2026-06-19 10:29:29.700000] is: 21804
+Batch size at time [2026-06-19 10:29:29.900000] is: 18039
+Batch size at time [2026-06-19 10:29:30] is: 8391
+Batch size at time [2026-06-19 10:29:30.300000] is: 16775
+Batch size at time [2026-06-19 10:29:30.500000] is: 10767
+Batch size at time [2026-06-19 10:29:30.600000] is: 13003
+Batch size at time [2026-06-19 10:29:30.800000] is: 13696
+Batch size at time [2026-06-19 10:29:31] is: 3216
+Batch size at time [2026-06-19 10:29:31.300000] is: 3077
+Batch size at time [2026-06-19 10:29:31.500000] is: 4337
+Batch size at time [2026-06-19 10:29:31.900000] is: 3920
+Batch size at time [2026-06-19 10:29:32.100000] is: 3082
+Batch size at time [2026-06-19 10:29:32.200000] is: 2240
+Batch size at time [2026-06-19 10:29:32.400000] is: 7684
+Batch size at time [2026-06-19 10:29:32.700000] is: 699
+Batch size at time [2026-06-19 10:29:32.900000] is: 5169
+Batch size at time [2026-06-19 10:29:33] is: 4194
+Batch size at time [2026-06-19 10:29:33.300000] is: 7547
+Batch size at time [2026-06-19 10:29:33.500000] is: 9650
+Batch size at time [2026-06-19 10:29:33.700000] is: 7264
+Batch size at time [2026-06-19 10:29:33.900000] is: 12441
+Batch size at time [2026-06-19 10:29:34] is: 13837
+Batch size at time [2026-06-19 10:29:34.300000] is: 10906
+Batch size at time [2026-06-19 10:29:34.500000] is: 17192
+Batch size at time [2026-06-19 10:29:34.700000] is: 12729
+Batch size at time [2026-06-19 10:29:34.900000] is: 20419
+Batch size at time [2026-06-19 10:29:35.100000] is: 17615
+Batch size at time [2026-06-19 10:29:35.300000] is: 11461
+Batch size at time [2026-06-19 10:29:35.500000] is: 17043
+Batch size at time [2026-06-19 10:29:35.700000] is: 11468
+Batch size at time [2026-06-19 10:29:35.900000] is: 18838
+Batch size at time [2026-06-19 10:29:36.100000] is: 18630
+Batch size at time [2026-06-19 10:29:36.300000] is: 11885
+Batch size at time [2026-06-19 10:29:36.500000] is: 18868
+Batch size at time [2026-06-19 10:29:36.700000] is: 15808
+Batch size at time [2026-06-19 10:29:36.900000] is: 11611
+Batch size at time [2026-06-19 10:29:37.100000] is: 20412
+Batch size at time [2026-06-19 10:29:37.300000] is: 14250
+Batch size at time [2026-06-19 10:29:37.500000] is: 7828
+Batch size at time [2026-06-19 10:29:37.700000] is: 17471
+Batch size at time [2026-06-19 10:29:37.800000] is: 11042
+Batch size at time [2026-06-19 10:29:38.100000] is: 19852
+Batch size at time [2026-06-19 10:29:38.200000] is: 17627
+Batch size at time [2026-06-19 10:29:38.500000] is: 17754
+Batch size at time [2026-06-19 10:29:38.600000] is: 24182
+Batch size at time [2026-06-19 10:29:38.900000] is: 16218
+Batch size at time [2026-06-19 10:29:39] is: 18031
+Batch size at time [2026-06-19 10:29:39.300000] is: 20978
+Batch size at time [2026-06-19 10:29:39.500000] is: 10080
+Batch size at time [2026-06-19 10:29:39.700000] is: 15304
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.04
+delta = 0.05
+d = 5
+w = 30
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 19
+Item = 14673339 True Freq = 39880
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 978604355 True Freq = 40019
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 18
+Item = 2884218 True Freq = 1
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 560298815 True Freq = 1
+Item = 641486445 True Freq = 79600
+Item = 721302065 True Freq = 1
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 881966911 True Freq = 1
+Item = 1021221588 True Freq = 1
+Item = 1039227623 True Freq = 1
+Item = 1218460868 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1770896889 True Freq = 1
+Item = 1936875793 True Freq = 80062
+
+
+============================================================
+ALGORITHM: CM | PARAM: 30 | RUN: 3
+COMMAND ARGS: eps=0.04, w=30, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:29:46.700000] is: 9640
+Batch size at time [2026-06-19 10:29:46.900000] is: 44753
+Batch size at time [2026-06-19 10:29:47.100000] is: 64877
+Batch size at time [2026-06-19 10:29:47.300000] is: 28954
+Batch size at time [2026-06-19 10:29:47.500000] is: 41248
+Batch size at time [2026-06-19 10:29:47.700000] is: 49060
+Batch size at time [2026-06-19 10:29:47.900000] is: 20550
+Batch size at time [2026-06-19 10:29:48.100000] is: 40690
+Batch size at time [2026-06-19 10:29:48.300000] is: 25162
+Batch size at time [2026-06-19 10:29:48.500000] is: 34960
+Batch size at time [2026-06-19 10:29:48.700000] is: 30518
+Batch size at time [2026-06-19 10:29:48.900000] is: 22746
+Batch size at time [2026-06-19 10:29:49.100000] is: 26424
+Batch size at time [2026-06-19 10:29:49.300000] is: 19154
+Batch size at time [2026-06-19 10:29:49.400000] is: 16636
+Batch size at time [2026-06-19 10:29:49.700000] is: 26848
+Batch size at time [2026-06-19 10:29:49.900000] is: 15242
+Batch size at time [2026-06-19 10:29:50.100000] is: 29627
+Batch size at time [2026-06-19 10:29:50.300000] is: 31169
+Batch size at time [2026-06-19 10:29:50.500000] is: 8119
+Batch size at time [2026-06-19 10:29:50.700000] is: 26008
+Batch size at time [2026-06-19 10:29:50.900000] is: 19856
+Batch size at time [2026-06-19 10:29:51.100000] is: 20397
+Batch size at time [2026-06-19 10:29:51.300000] is: 27134
+Batch size at time [2026-06-19 10:29:51.500000] is: 11321
+Batch size at time [2026-06-19 10:29:51.700000] is: 21661
+Batch size at time [2026-06-19 10:29:51.900000] is: 21672
+Batch size at time [2026-06-19 10:29:52] is: 13981
+Batch size at time [2026-06-19 10:29:52.300000] is: 24477
+Batch size at time [2026-06-19 10:29:52.500000] is: 16499
+Batch size at time [2026-06-19 10:29:52.700000] is: 27390
+Batch size at time [2026-06-19 10:29:52.900000] is: 24881
+Batch size at time [2026-06-19 10:29:53.100000] is: 10770
+Batch size at time [2026-06-19 10:29:53.300000] is: 27262
+Batch size at time [2026-06-19 10:29:53.500000] is: 19719
+Batch size at time [2026-06-19 10:29:53.700000] is: 19286
+Batch size at time [2026-06-19 10:29:53.900000] is: 26381
+Batch size at time [2026-06-19 10:29:54.100000] is: 12623
+Batch size at time [2026-06-19 10:29:54.300000] is: 7412
+Batch size at time [2026-06-19 10:29:54.500000] is: 20289
+Batch size at time [2026-06-19 10:29:54.700000] is: 13839
+Batch size at time [2026-06-19 10:29:54.900000] is: 765
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.04
+delta = 0.05
+d = 5
+w = 30
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 22
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 632507218 True Freq = 39947
+Item = 637121204 True Freq = 40134
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 978604355 True Freq = 40019
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 19
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 362826162 True Freq = 1
+Item = 434415286 True Freq = 80012
+Item = 446267484 True Freq = 1
+Item = 545346215 True Freq = 1
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1039227623 True Freq = 1
+Item = 1084579053 True Freq = 1
+Item = 1123960095 True Freq = 1
+Item = 1130445332 True Freq = 1
+Item = 1457532913 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1770896889 True Freq = 1
+Item = 1936875793 True Freq = 80062
+
+
+============================================================
+ALGORITHM: CM | PARAM: 60 | RUN: 1
+COMMAND ARGS: eps=0.04, w=60, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:30:01.700000] is: 32155
+Batch size at time [2026-06-19 10:30:01.900000] is: 111873
+Batch size at time [2026-06-19 10:30:02.100000] is: 44605
+Batch size at time [2026-06-19 10:30:02.300000] is: 143458
+Batch size at time [2026-06-19 10:30:02.500000] is: 36633
+Batch size at time [2026-06-19 10:30:02.700000] is: 91996
+Batch size at time [2026-06-19 10:30:02.900000] is: 129575
+Batch size at time [2026-06-19 10:30:03.100000] is: 13305
+Batch size at time [2026-06-19 10:30:03.300000] is: 45021
+Batch size at time [2026-06-19 10:30:03.500000] is: 83878
+Batch size at time [2026-06-19 10:30:03.700000] is: 68649
+Batch size at time [2026-06-19 10:30:03.900000] is: 107927
+Batch size at time [2026-06-19 10:30:04.100000] is: 37046
+Batch size at time [2026-06-19 10:30:04.300000] is: 31323
+Batch size at time [2026-06-19 10:30:04.500000] is: 22556
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.04
+delta = 0.05
+d = 5
+w = 60
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 18
+Item = 14673339 True Freq = 39880
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 632507218 True Freq = 39947
+Item = 637121204 True Freq = 40134
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 978604355 True Freq = 40019
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 12
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1039227623 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1770896889 True Freq = 1
+Item = 1936875793 True Freq = 80062
+
+
+============================================================
+ALGORITHM: CM | PARAM: 60 | RUN: 2
+COMMAND ARGS: eps=0.04, w=60, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:30:11.900000] is: 4053
+Batch size at time [2026-06-19 10:30:12.100000] is: 31041
+Batch size at time [2026-06-19 10:30:12.300000] is: 31042
+Batch size at time [2026-06-19 10:30:12.500000] is: 20283
+Batch size at time [2026-06-19 10:30:12.700000] is: 34110
+Batch size at time [2026-06-19 10:30:12.900000] is: 31052
+Batch size at time [2026-06-19 10:30:13.100000] is: 1815
+Batch size at time [2026-06-19 10:30:13.300000] is: 7268
+Batch size at time [2026-06-19 10:30:13.500000] is: 20417
+Batch size at time [2026-06-19 10:30:13.700000] is: 28789
+Batch size at time [2026-06-19 10:30:13.900000] is: 29082
+Batch size at time [2026-06-19 10:30:14.100000] is: 19432
+Batch size at time [2026-06-19 10:30:14.300000] is: 21536
+Batch size at time [2026-06-19 10:30:14.500000] is: 16080
+Batch size at time [2026-06-19 10:30:14.700000] is: 22926
+Batch size at time [2026-06-19 10:30:14.900000] is: 23069
+Batch size at time [2026-06-19 10:30:15.100000] is: 15016
+Batch size at time [2026-06-19 10:30:15.300000] is: 29299
+Batch size at time [2026-06-19 10:30:15.500000] is: 27826
+Batch size at time [2026-06-19 10:30:15.700000] is: 15933
+Batch size at time [2026-06-19 10:30:15.900000] is: 23215
+Batch size at time [2026-06-19 10:30:16.100000] is: 16632
+Batch size at time [2026-06-19 10:30:16.300000] is: 24340
+Batch size at time [2026-06-19 10:30:16.500000] is: 26002
+Batch size at time [2026-06-19 10:30:16.600000] is: 6428
+Batch size at time [2026-06-19 10:30:16.900000] is: 17465
+Batch size at time [2026-06-19 10:30:17.100000] is: 16078
+Batch size at time [2026-06-19 10:30:17.300000] is: 18729
+Batch size at time [2026-06-19 10:30:17.500000] is: 22515
+Batch size at time [2026-06-19 10:30:17.700000] is: 14131
+Batch size at time [2026-06-19 10:30:17.900000] is: 17616
+Batch size at time [2026-06-19 10:30:18.100000] is: 18721
+Batch size at time [2026-06-19 10:30:18.300000] is: 14674
+Batch size at time [2026-06-19 10:30:18.500000] is: 20008
+Batch size at time [2026-06-19 10:30:18.700000] is: 15516
+Batch size at time [2026-06-19 10:30:18.900000] is: 19844
+Batch size at time [2026-06-19 10:30:19.100000] is: 26285
+Batch size at time [2026-06-19 10:30:19.300000] is: 19304
+Batch size at time [2026-06-19 10:30:19.500000] is: 25444
+Batch size at time [2026-06-19 10:30:19.700000] is: 26553
+Batch size at time [2026-06-19 10:30:19.800000] is: 19007
+Batch size at time [2026-06-19 10:30:20.100000] is: 33143
+Batch size at time [2026-06-19 10:30:20.300000] is: 23348
+Batch size at time [2026-06-19 10:30:20.500000] is: 19430
+Batch size at time [2026-06-19 10:30:20.700000] is: 26840
+Batch size at time [2026-06-19 10:30:20.900000] is: 16219
+Batch size at time [2026-06-19 10:30:21.100000] is: 30356
+Batch size at time [2026-06-19 10:30:21.300000] is: 12088
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.04
+delta = 0.05
+d = 5
+w = 60
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 21
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 632507218 True Freq = 39947
+Item = 637121204 True Freq = 40134
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 978604355 True Freq = 40019
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 12
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1039227623 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1770896889 True Freq = 1
+Item = 1936875793 True Freq = 80062
+
+
+============================================================
+ALGORITHM: CM | PARAM: 60 | RUN: 3
+COMMAND ARGS: eps=0.04, w=60, d=5
+============================================================
+/Users/nicolas/miniconda3/envs/spark/lib/python3.11/site-packages/pyspark/python/lib/pyspark.zip/pyspark/streaming/context.py:72: FutureWarning: DStream is deprecated as of Spark 3.4.0. Migrate to Structured Streaming.
+Starting streaming engine
+Waiting for shutdown condition
+Batch size at time [2026-06-19 10:30:28.300000] is: 16190
+Batch size at time [2026-06-19 10:30:28.500000] is: 105738
+Batch size at time [2026-06-19 10:30:28.700000] is: 18887
+Batch size at time [2026-06-19 10:30:28.900000] is: 118406
+Batch size at time [2026-06-19 10:30:29.100000] is: 173230
+Batch size at time [2026-06-19 10:30:29.300000] is: 25024
+Batch size at time [2026-06-19 10:30:29.500000] is: 88777
+Batch size at time [2026-06-19 10:30:29.700000] is: 25022
+Batch size at time [2026-06-19 10:30:29.900000] is: 34954
+Batch size at time [2026-06-19 10:30:30.100000] is: 46410
+Batch size at time [2026-06-19 10:30:30.300000] is: 19993
+Batch size at time [2026-06-19 10:30:30.500000] is: 26571
+Batch size at time [2026-06-19 10:30:30.700000] is: 29918
+Batch size at time [2026-06-19 10:30:30.900000] is: 6283
+Batch size at time [2026-06-19 10:30:31.100000] is: 30770
+Batch size at time [2026-06-19 10:30:31.300000] is: 13004
+Batch size at time [2026-06-19 10:30:31.500000] is: 21384
+Batch size at time [2026-06-19 10:30:31.700000] is: 20125
+Batch size at time [2026-06-19 10:30:31.900000] is: 13981
+Batch size at time [2026-06-19 10:30:32.100000] is: 24462
+Batch size at time [2026-06-19 10:30:32.300000] is: 19442
+Batch size at time [2026-06-19 10:30:32.500000] is: 13138
+Batch size at time [2026-06-19 10:30:32.600000] is: 18733
+Batch size at time [2026-06-19 10:30:32.900000] is: 12161
+Batch size at time [2026-06-19 10:30:33.100000] is: 13004
+Batch size at time [2026-06-19 10:30:33.300000] is: 17194
+Batch size at time [2026-06-19 10:30:33.500000] is: 11049
+Batch size at time [2026-06-19 10:30:33.700000] is: 15946
+Batch size at time [2026-06-19 10:30:33.900000] is: 11615
+Batch size at time [2026-06-19 10:30:34] is: 8589
+Stopping the streaming engine
+Streaming engine stopped
+INPUT PARAMETERS
+n = 1000000
+phi = 0.07
+epsilon = 0.04
+delta = 0.05
+d = 5
+w = 60
+port = 8888
+
+TRUE FREQUENT ITEMS
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+STICKY SAMPLING
+Size of dictionary = 21
+Item = 14673339 True Freq = 39880
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 632507218 True Freq = 39947
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 978604355 True Freq = 40019
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1936875793 True Freq = 80062
+
+COUNT-MIN SKETCH
+Size of F_CM = 12
+Item = 195773912 True Freq = 80280
+Item = 339323283 True Freq = 80161
+Item = 434415286 True Freq = 80012
+Item = 641486445 True Freq = 79600
+Item = 819911327 True Freq = 80096
+Item = 870070186 True Freq = 79779
+Item = 1039227623 True Freq = 1
+Item = 1472610405 True Freq = 79928
+Item = 1590293530 True Freq = 79482
+Item = 1690049656 True Freq = 80737
+Item = 1770896889 True Freq = 1
+Item = 1936875793 True Freq = 80062
+

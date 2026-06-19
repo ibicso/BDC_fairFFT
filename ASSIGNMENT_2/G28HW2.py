@@ -15,7 +15,6 @@ processed_batches = OrderedDict()
 THRESHOLD = -1
 P = 8191
 
-random.seed(42)  # make deterministic stream results reproducible
 
 
 def getTrueFreqItems():
